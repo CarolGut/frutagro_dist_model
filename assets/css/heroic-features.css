@@ -725,7 +725,7 @@ fieldset legend {
 	margin-left: 40px;
 	padding: 12px 0;
 	position: relative;
-	margin-left: 20px;
+	margin-left: 12px;
 	padding-left: 20px;
 }
 
@@ -742,33 +742,31 @@ fieldset legend {
 	transform: translateY(-50%);
 }
 
-.header-top-settings ul li .dropdown-list {
-	top: 100%;
-	right: 0;
-	position: absolute;
-	opacity: 0;
-	visibility: hidden;
-	-webkit-transform: translateY(30px);
-	-ms-transform: translateY(30px);
-	transform: translateY(30px);
-	-webkit-transition: 0.4s;
-	-o-transition: 0.4s;
-	transition: 0.4s;
-	padding: 15px 15px 20px;
-	width: 150px;
-	z-index: 9;
-	border-bottom: 2px solid #7fbb35;
-	background-color: #fff;
-	-webkit-box-shadow: 0 0 6.65px 0.35px rgba(0, 0, 0, 0.15);
-	box-shadow: 0 0 6.65px 0.35px rgba(0, 0, 0, 0.15);
+.header-top-settings ul li .dropdown-menu {
+	top: 95%;
+  right: 0;
+  position: absolute;
+  -webkit-transform: translateY(30px);
+  -ms-transform: translateY(30px);
+  transform: translateY(30px);
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  padding: 15px 15px 20px;
+  width: 150px;
+  z-index: 9;
+  border-bottom: 2px solid #7fbb35;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 6.65px 0.35px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 6.65px 0.35px rgba(0, 0, 0, 0.15);
 }
 
-.header-top-settings ul li .dropdown-list li {
+.header-top-settings ul li .dropdown-menu li {
 	margin-left: 0;
 	padding: 0;
 }
 
-.header-top-settings ul li .dropdown-list li a {
+.header-top-settings ul li .dropdown-menu li a {
 	color: #222222;
 	font-size: 13px;
 	display: block;
@@ -776,15 +774,16 @@ fieldset legend {
 	text-transform: capitalize;
 }
 
-.header-top-settings ul li .dropdown-list li a:hover {
+.header-top-settings ul li .dropdown-menu li a:hover {
 	color: #7fbb35;
+	background-color: transparent;
 }
 
-.header-top-settings ul li .dropdown-list li:before {
+.header-top-settings ul li .dropdown-menu li:before {
 	display: none;
 }
 
-.header-top-settings ul li .dropdown-list.account-list {
+.header-top-settings ul li .dropdown-menu.account-list {
 	width: 200px;
 }
 
@@ -792,7 +791,7 @@ fieldset legend {
 	color: #7fbb35;
 }
 
-.header-top-settings ul li:hover .dropdown-list,
+.header-top-settings ul li:hover .dropdown-menu,
 .header-top-settings ul li:hover .cart-list {
 	opacity: 1;
 	visibility: visible;
@@ -1414,6 +1413,7 @@ only screen and (max-width: 767.98px) {
 
 .mobile-header-top {
 	border-bottom: 1px solid #e5e5e5;
+	border-top: 1px solid #e5e5e5;
 }
 
 .mobile-header-top .header-top-settings {

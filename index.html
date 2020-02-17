@@ -31,41 +31,42 @@
           <div class="row align-items-center">
             <div class="col-lg-6">
               <div class="welcome-message">
-                <p>Bienvenido a la tienda de compras en línea Distribuidora frutagro !</p>
+                <h1 class="h6 regular">Bienvenido a la tienda de compras en línea Distribuidora frutagro !</h1>
               </div>
             </div>
             <div class="col-lg-6">
               <div class="header-top-settings">
                 <ul class="nav align-items-center">
-
-                  <li class="curreny-wrap">
-                    <i class="fa icon-venezuela-bolivar"></i> VEN
-                    <i class="fa fa-angle-down"></i>
-                    <ul class="dropdown-list curreny-list">
-                      <li> <i class="fa icon-venezuela-bolivar"></i> VEN</a></li>
-                      <li><a href="#"><i class="fa fa-dollar-sign"></i> USD</a></li>
+                  <li class="currency dropdown curreny-wrap">
+                    <a class="nav-link p-0" data-toggle="dropdown" id="navbarDropdown" role="button"
+                      aria-haspopup="true" aria-expanded="false"><i class="fa icon-venezuela-bolivar"></i> VEN
+                      <i class="fa fa-angle-down"></i></a>
+                    <ul class="dropdown-menu curreny-list" role="menu">
+                      <li><a class="dropdown-item" href="#"><i class="fa icon-venezuela-bolivar"></i> VEN</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fa fa-dollar-sign"></i> USD</a></a></li>
                     </ul>
                   </li>
-                  <li class="language">
-                    <img src="assets/img/icon/en.png" alt="">
-                    Español
-                    <i class="fa fa-angle-down"></i>
-
-                    <ul class="dropdown-list">
-                      <li><a href="#"><img src="assets/img/icon/en.png" alt=""> Español</a></li>
-                      <li><a href="#"><img src="assets/img/icon/fr.png" alt=""> English</a></li>
+                  <li class="languaje dropdown curreny-wrap">
+                    <a class="nav-link p-0" data-toggle="dropdown" id="navbarDropdown" role="button"
+                      aria-haspopup="true" aria-expanded="false"><img src="assets/img/icon/en.png" alt="">
+                      Español
+                      <i class="fa fa-angle-down"></i></a>
+                    <ul class="dropdown-menu curreny-list" role="menu">
+                      <li><a class="dropdown-item" href="#"><img src="assets/img/icon/en.png" alt=""> Español</a></li>
+                      <li><a class="dropdown-item" href="#"><img src="assets/img/icon/fr.png" alt=""> English</a></li>
                     </ul>
                   </li>
-                  <li class="account-settings">
-                    <i class="fas fa-user"></i> <!-- uses solid style -->
-                    My account
-                    <i class="fa fa-angle-down"></i>
-                    <ul class="dropdown-list account-list">
-                      <li><a href="my-account.html"><i class="fas fa-user"></i> My account</a></li>
-                      <li><a href="login-register.html">login register</a></li>
-                      <li><a href="wishlist.html">wishlist</a></li>
-                      <li><a href="checkout.html">checkout</a></li>
-                    </ul>
+                  <li class="account-settings dropdown curreny-wrap">
+                    <a class="nav-link p-0" data-toggle="dropdown" id="navbarDropdown" role="button"
+                      aria-haspopup="true" aria-expanded="false"><i class="fas fa-user"></i>&nbsp;Mi cuenta
+                      <i class="fa fa-angle-down"></i>
+                      <ul class="dropdown-menu curreny-list account-list" role="menu">
+                        <li><a class="dropdown-item" href="my-account.html"><i class="fas fa-user"></i> &nbsp;Mi
+                            cuenta</a></li>
+                        <li><a class="dropdown-item" href="login-register.html">&nbsp;login register</a></li>
+                        <li><a class="dropdown-item" href="wishlist.html">&nbsp;wishlist</a></li>
+                        <li><a class="dropdown-item" href="checkout.html">&nbsp;checkout</a></li>
+                      </ul>
                   </li>
                 </ul>
               </div>
@@ -131,15 +132,9 @@
             <div class="col-lg-3 ml-auto">
               <div class="header-configure-area">
                 <ul class="nav justify-content-end">
-                  <li>
-                    <a href="wishlist.html">
-                      <i class="ion-android-favorite-outline"></i>
-                      <span class="notification">0</span>
-                    </a>
-                  </li>
                   <li class="mini-cart-wrap">
                     <a href="cart.html">
-                      <i class="fa  fa-shopping-cart"></i>
+                      <i class="fa fa-shopping-cart"></i>
                       <span class="notification">2</span>
                     </a>
                     <ul class="cart-list">
@@ -443,36 +438,50 @@
     <div class="mobile-header d-lg-none d-md-block sticky">
       <!--mobile header top start -->
       <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="welcome-message text-center my-2">
+              <span>Bienvenido a la tienda de compras en línea</span>
+              <span>Distribuidora frutagro !</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
         <div class="row align-items-center">
           <div class="col-12">
             <div class="mobile-header-top">
               <div class="header-top-settings">
                 <ul class="nav align-items-center justify-content-center">
-                  <li class="account-settings">
-                    My account
-                    <i class="fa fa-angle-down"></i>
-                    <ul class="dropdown-list account-list">
-                      <li><a href="#">my account</a></li>
-                      <li><a href="#">login register</a></li>
-                      <li><a href="#">wishlist</a></li>
-                      <li><a href="#">checkout</a></li>
+                  <li class="account-settings dropdown curreny-wrap">
+                    <a class="nav-link p-0" data-toggle="dropdown" id="navbarDropdown" role="button"
+                      aria-haspopup="true" aria-expanded="false"><i class="fas fa-user"></i>&nbsp;Mi cuenta
+                      <i class="fa fa-angle-down"></i>
+                      <ul class="dropdown-menu curreny-list account-list" role="menu">
+                        <li><a class="dropdown-item" href="my-account.html"><i class="fas fa-user"></i> &nbsp;Mi
+                            cuenta</a></li>
+                        <li><a class="dropdown-item" href="login-register.html">&nbsp;login register</a></li>
+                        <li><a class="dropdown-item" href="wishlist.html">&nbsp;wishlist</a></li>
+                        <li><a class="dropdown-item" href="checkout.html">&nbsp;checkout</a></li>
+                      </ul>
+                  </li>
+                  <li class="currency dropdown curreny-wrap">
+                    <a class="nav-link p-0" data-toggle="dropdown" id="navbarDropdown" role="button"
+                      aria-haspopup="true" aria-expanded="false"><i class="fa icon-venezuela-bolivar"></i> VEN
+                      <i class="fa fa-angle-down"></i></a>
+                    <ul class="dropdown-menu curreny-list" role="menu">
+                      <li><a class="dropdown-item" href="#"><i class="fa icon-venezuela-bolivar"></i> VEN</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fa fa-dollar-sign"></i> USD</a></a></li>
                     </ul>
                   </li>
-                  <li class="curreny-wrap">
-                    $ USD
-                    <i class="fa fa-angle-down"></i>
-                    <ul class="dropdown-list curreny-list">
-                      <li><a href="#">$ usd</a></li>
-                      <li><a href="#"> € EURO</a></li>
-                    </ul>
-                  </li>
-                  <li class="language">
-                    <img src="assets/img/icon/en.png" alt="">
-                    English
-                    <i class="fa fa-angle-down"></i>
-                    <ul class="dropdown-list">
-                      <li><a href="#"><img src="assets/img/icon/en.png" alt=""> english</a></li>
-                      <li><a href="#"><img src="assets/img/icon/fr.png" alt=""> french</a></li>
+                  <li class="languaje dropdown curreny-wrap">
+                    <a class="nav-link p-0" data-toggle="dropdown" id="navbarDropdown" role="button"
+                      aria-haspopup="true" aria-expanded="false"><img src="assets/img/icon/en.png" alt="">
+                      Español
+                      <i class="fa fa-angle-down"></i></a>
+                    <ul class="dropdown-menu curreny-list" role="menu">
+                      <li><a class="dropdown-item" href="#"><img src="assets/img/icon/en.png" alt=""> Español</a></li>
+                      <li><a class="dropdown-item" href="#"><img src="assets/img/icon/fr.png" alt=""> English</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -483,7 +492,7 @@
             <div class="mobile-main-header">
               <div class="mobile-logo">
                 <a href="index.html">
-                  <img src="assets/img/logo/logo.png" alt="Brand Logo">
+                  <img src="assets/img/frutagro_logo.png" alt="frutagro_logo">
                 </a>
               </div>
               <div class="mobile-menu-toggler">
@@ -741,7 +750,9 @@
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="assets/js/prueba.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
 </body>
 
