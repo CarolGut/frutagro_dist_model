@@ -51,6 +51,11 @@ p {
 	margin-bottom: 0;
 }
 
+.h6 {
+	font-size: 14px;
+}
+
+
 h1,
 .h1,
 h2,
@@ -63,7 +68,6 @@ h5,
 .h5,
 h6,
 .h6 {
-	font-weight: 700;
 	color: #222222;
 	margin-bottom: 0;
 }
@@ -838,11 +842,11 @@ fieldset legend {
 
 /*------- header middile area start -------*/
 .header-middle-area {
-	padding: 40px 0;
+	padding: 20px 0;
 }
 
 .search-box-inner-wrap {
-	height: 56px;
+	height: 50px;
 	border: 2px solid #e5e5e5;
 	border-radius: 50px;
 }
@@ -862,8 +866,8 @@ fieldset legend {
 .search-box-inner .search-field-wrap {
 	-webkit-flex-basis: 60%;
 	-ms-flex-preferred-size: 60%;
-	flex-basis: 60%;
-	max-width: 60%;
+	flex-basis: 90%;
+	max-width: 90%;
 	position: relative;
 }
 
@@ -883,7 +887,6 @@ fieldset legend {
 .search-box-inner .search-field-wrap .search-field {
 	width: 100%;
 	border: none;
-	line-height: 48px;
 	padding: 0 15px;
 	border-radius: 50px;
 }
@@ -910,11 +913,11 @@ fieldset legend {
 }
 
 .search-box-inner .search-btn {
-	-webkit-flex-basis: 10%;
-	-ms-flex-preferred-size: 10%;
-	flex-basis: 10%;
-	max-width: 10%;
-	padding-right: 4px;
+	-webkit-flex-basis: 12%;
+	-ms-flex-preferred-size: 12%;
+	flex-basis: 12%;
+	max-width: 12%;
+	padding-right: 3px;
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -927,8 +930,8 @@ fieldset legend {
 }
 
 .search-box-inner .search-btn i {
-	width: 45px;
-	height: 45px;
+	width: 42px;
+	height: 42px;
 	background-color: #7fbb35;
 	border-radius: 50%;
 	text-align: center;
@@ -2174,7 +2177,7 @@ only screen and (max-width: 767.98px) {
 @media only screen and (min-width: 768px) and (max-width: 991.98px),
 only screen and (max-width: 767.98px) {
 	.hero-slider-wrapper {
-			margin-top: 0 !important;
+			margin-top: 10px !important;
 	}
 }
 
@@ -2190,7 +2193,7 @@ only screen and (max-width: 767.98px) {
 }
 
 .hero-slider-content {
-	padding: 0 80px;
+	padding: 0 125px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991.98px),
