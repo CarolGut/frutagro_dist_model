@@ -358,13 +358,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff934b', end
     top: 11px;
 }
 .top-categories-search {
-    left: 0;
+    left: 350px;
     margin: auto;
     box-shadow: 0 2px 8px 0 rgba(255, 97, 98, 0.46);
     position: absolute;
     right: 0;
-    top: 16px;
-    width: 679px;
+    top: 41px;
+    width: 510px;
 }
 .top-categories-search .form-control {
     border: medium none;
@@ -1275,8 +1275,9 @@ label {
     }
     .osahan-menu .my-2.my-lg-0 .main-nav-right {
         position: absolute;
-        right: 76px;
-        top: 0;
+        right: 72px;
+				top: 0;
+				padding: 13px 0px;
     }
     .main-nav-right .btn .mdi {
         font-size: 17px !important;
@@ -1335,7 +1336,14 @@ label {
     }
     .osahan-menu .navbar-brand {
         padding: 20px 15px;
-    }
+		}
+		.logo {
+			width: 14rem;
+		}
+
+		.meni {
+			justify-content: center !important;
+	}
 
 }
 /* Small devices (landscape phones, 576px and up) */
@@ -1404,7 +1412,8 @@ label {
     .osahan-menu .my-2.my-lg-0 .main-nav-right {
         position: absolute;
         right: 76px;
-        top: 0;
+				top: 0;
+				padding: 20px 0px;
     }
     .main-nav-right .btn .mdi {
         font-size: 17px !important;
@@ -1453,7 +1462,10 @@ label {
     }
     .meni {
         justify-content: center !important;
-    }
+		}		
+		.logo {
+			width: 21rem;
+		}
 }
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) { 
@@ -1507,7 +1519,8 @@ label {
     .osahan-menu .my-2.my-lg-0 .main-nav-right {
         position: absolute;
         right: 76px;
-        top: 0;
+				top: 0;
+				padding: 26px 0px;
     }
     .main-nav-right .btn .mdi {
         font-size: 17px !important;
@@ -1547,7 +1560,10 @@ label {
     }
     .osahan-menu .navbar-brand {
         padding: 20px 15px;
-    }
+		}
+		.logo {
+			width: 24rem;
+		}
 }
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) { 
@@ -1571,7 +1587,8 @@ label {
         font-size: 17px !important;
         line-height: unset !important;
         margin: 0;
-        vertical-align: initial !important;
+				vertical-align: initial !important;
+				padding: 6px;
     }
     .location-top {
         display:none;
@@ -1592,11 +1609,11 @@ label {
         right: 0px;
     }
     .top-categories-search {
-        left: 0;
+        left: 380px;
         margin: auto;
         position: absolute;
         right: 0;
-        top: 16px;
+        top: 40px;
         width: 45%;
     }
     .top-categories-search .form-control-select, .top-categories-search .select2-container {
@@ -1604,22 +1621,28 @@ label {
     }
     .container {
         max-width: 100%;
-    }
+		}	
+		.logo {
+			width: 24rem;
+		}
 }
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     .top-categories-search .form-control {
         min-width: auto;
-    }
+		}
+		.logo {
+			width: 25rem;
+		}
 }
 
 
-.currency a {
+.currency span, .currency a {
 	cursor: pointer;
 	margin: 0 5px;
 }
 
-@media (min-width: 335px) {
+@media (max-width: 360px) {
     .currency a {
         margin: 0px;
     }
@@ -1638,28 +1661,34 @@ label {
 	transform: translateY(-50%);
 }
 
+.currency1:before {
+	top: 50%;
+	width: 1px;
+	height: 50%;
+	content: "";
+	position: absolute;
+	background-color: #e5e5e5;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
 .currency .dropdown-menu {
-    top: 100%;
-    right: 0;
-    position: absolute;
-    -webkit-transition: 0.4s;
-    -o-transition: 0.4s;
-    transition: 0.4s;
-    padding: 10px 5px;
-    width: 150px;
-    z-index: 9;
+    width: 8rem;
     border-bottom: 2px solid #6b8649;
-    background-color: #fff;
     -webkit-box-shadow: 0 0 6.65px 0.35px rgba(0, 0, 0, 0.15);
-    box-shadow: 0 0 6.65px 0.35px rgba(0, 0, 0, 0.15);
-    }
+		box-shadow: 0 0 6.65px 0.35px rgba(0, 0, 0, 0.15);
+		position: absolute;
+		left: 15px;
+		z-index: 1000;
+		float: left;
+		min-width: 4rem;
+}
 
 .currency .dropdown-menu li {
 	margin-left: 0;
 	padding: 0;
 }
-
-
 
 .currency .dropdown-menu li a:hover {
 	color: #7fbb35;
@@ -1683,15 +1712,6 @@ label {
 	transform: translateY(0);
 }
 
-.currency:first-child {
-	margin-left: 0;
-	padding-left: 0;
-}
-
 .currency:first-child:before {
 	display: none;
-}
-
-.logo {
-    height: 10px;
 }
