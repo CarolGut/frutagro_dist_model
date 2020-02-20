@@ -15,6 +15,8 @@
 
   <!-- Custom styles for this template -->
   <link href="assets/css/heroic-features2.css" rel="stylesheet">
+  <link href="assets/icons/css/all.css" rel="stylesheet">
+  <link href="assets/personal-icon-v1.0/personal-all.css" rel="stylesheet">
 
 </head>
 
@@ -23,18 +25,46 @@
   <div class="navbar-top pt-2 pb-2">
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6 py-1">
           <a href="#" class="mb-0 text-white">
             Tasa del dia: <strong><span class="text-light"><i class="fa icon-venezuela-bolivar"></i> 89500 <span
                   class="mdi mdi-tag-faces"></span></span> </strong> </a>
         </div>
-        <div class="col-md-6 text-right">
-          <a href="#" class="text-white"><i aria-hidden="true" class="mdi mdi-map-marker-circle"></i> New York</a>
-          
-          <a href="#" data-target="#bd-example-modal" data-toggle="modal" class="text-white ml-3 mr-3"><i
-              class="mdi mdi-lock"></i> Sign In</a>
-          <a href="#" data-target="#bd-example-modal" data-toggle="modal" class="text-white"><i
-              class="mdi mdi-account-circle"></i> Sign Up</a>
+        <div class="col-md-6 text-right py-1">
+          <div class="container">
+            <div class="row justify-content-end meni">
+              <div class="col-auto currency dropdown">
+                <a class="nav-link p-0" data-toggle="dropdown" id="navbarDropdown" role="button"
+                      aria-haspopup="true" aria-expanded="false"><i class="fa icon-venezuela-bolivar"></i> VEN
+                      <i class="fa fa-angle-down"></i></a>
+                <ul class="dropdown-menu curreny-list" role="menu">
+                  <li><a class="dropdown-item" href="#"><i class="fa icon-venezuela-bolivar"></i> VEN</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fa fa-dollar-sign"></i> USD</a></a></li>
+                </ul>
+              </div>
+              <div class="col-auto currency dropdown">
+                <a class="nav-link p-0" data-toggle="dropdown" id="navbarDropdown1" role="button"
+                  aria-haspopup="true" aria-expanded="false"><img src="assets/img/icon/en.png" alt="">
+                  Español
+                  <i class="fa fa-angle-down"></i></a>
+                <ul class="dropdown-menu curreny-list" role="menu">
+                  <li><a class="dropdown-item" href="#"><img src="assets/img/icon/en.png" alt=""> Español</a></li>
+                  <li><a class="dropdown-item" href="#"><img src="assets/img/icon/fr.png" alt=""> English</a></li>
+                </ul>
+              </div>
+              <div class="col-auto currency dropdown">
+                <a class="nav-link p-0" data-toggle="dropdown" id="navbarDropdown2" role="button"
+                  aria-haspopup="true" aria-expanded="false"><i class="fas fa-user"></i>&nbsp;Mi cuenta
+                  <i class="fa fa-angle-down"></i>
+                  <ul class="dropdown-menu curreny-list account-list" role="menu">
+                    <li><a class="dropdown-item" href="my-account.html"><i class="fas fa-user"></i> &nbsp;Mi
+                        cuenta</a></li>
+                <li><a class="dropdown-item" href="login-register.html">&nbsp;login register</a></li>
+                <li><a class="dropdown-item" href="wishlist.html">&nbsp;wishlist</a></li>
+                <li><a class="dropdown-item" href="checkout.html">&nbsp;checkout</a></li>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -42,7 +72,7 @@
 
   <nav class="navbar navbar-light navbar-expand-lg bg-dark bg-faded osahan-menu">
     <div class="container">
-      <a class="navbar-brand" href="index.html"> <img src="assets/img/frutagro_logo.svg" alt="logo"> </a>
+      <a class="navbar-brand" href="index.html"> <img class="logo" src="assets/img/frutagro_logo.png" alt="logo"> </a>
 
       <button class="navbar-toggler navbar-toggler-white" type="button" data-toggle="collapse" data-target="#navbarText"
         aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -80,7 +110,7 @@
         <div class="my-2 my-lg-0">
           <ul class="list-inline main-nav-right">
             <li class="list-inline-item cart-btn">
-              <a href="#" data-toggle="offcanvas" class="btn btn-link border-none"><i class="mdi mdi-cart"></i> My Cart
+              <a href="#" data-toggle="offcanvas" class="btn btn-link border-none"><i class=" mdi mdi-cart fa fa-shopping-bag"></i> My Cart
                 <small class="cart-value">5</small></a>
             </li>
           </ul>
@@ -205,6 +235,7 @@
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="assets/js/prueba.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>

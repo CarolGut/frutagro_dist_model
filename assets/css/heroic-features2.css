@@ -355,7 +355,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff934b', end
     line-height: 17px;
     min-width: 18px;
     position: absolute;
-    top: 17px;
+    top: 11px;
 }
 .top-categories-search {
     left: 0;
@@ -1271,7 +1271,7 @@ label {
     }
     .main-nav-right .btn {
         font-size: 0;
-        padding: 21px 8px;
+        padding: 15px 8px;
     }
     .osahan-menu .my-2.my-lg-0 .main-nav-right {
         position: absolute;
@@ -1451,6 +1451,9 @@ label {
     .osahan-menu .navbar-brand {
         padding: 20px 15px;
     }
+    .meni {
+        justify-content: center !important;
+    }
 }
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) { 
@@ -1608,4 +1611,87 @@ label {
     .top-categories-search .form-control {
         min-width: auto;
     }
+}
+
+
+.currency a {
+	cursor: pointer;
+	margin: 0 5px;
+}
+
+@media (min-width: 335px) {
+    .currency a {
+        margin: 0px;
+    }
+}
+
+.currency:before {
+	top: 50%;
+	left: 0;
+	width: 1px;
+	height: 50%;
+	content: "";
+	position: absolute;
+	background-color: #e5e5e5;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.currency .dropdown-menu {
+    top: 100%;
+    right: 0;
+    position: absolute;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+    padding: 10px 5px;
+    width: 150px;
+    z-index: 9;
+    border-bottom: 2px solid #6b8649;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 6.65px 0.35px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 6.65px 0.35px rgba(0, 0, 0, 0.15);
+    }
+
+.currency .dropdown-menu li {
+	margin-left: 0;
+	padding: 0;
+}
+
+
+
+.currency .dropdown-menu li a:hover {
+	color: #7fbb35;
+	background-color: transparent;
+}
+
+.currency .dropdown-menu li:before {
+	display: none;
+}
+
+.currency:hover {
+	color: #7fbb35;
+}
+
+.currency:hover .dropdown-menu,
+.currency:hover .cart-list {
+	opacity: 1;
+	visibility: visible;
+	-webkit-transform: translateY(0);
+	-ms-transform: translateY(0);
+	transform: translateY(0);
+}
+
+.currency:first-child {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.currency:first-child:before {
+	display: none;
+}
+
+.logo {
+    height: 10px;
 }
