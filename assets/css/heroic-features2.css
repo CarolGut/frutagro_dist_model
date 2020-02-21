@@ -667,7 +667,7 @@ a:focus {
     display: inline-block;
     font-size: 11px;
     height: 22px;
-    line-height: 19px;
+    line-height: 21px;
     position: absolute;
     right: 20px;
     text-align: center;
@@ -2289,4 +2289,16 @@ only screen and (max-width: 767.98px) {
 	font-size: 13px;
 	line-height: 1.5;
 	color: #555555;
+}
+
+.owl-carousel {
+	display: inline-block !important;
+}
+
+.card-item {
+	margin: 4px;
+}
+
+.section-header {
+	border-bottom: 2px solid #4eda92;
 }
