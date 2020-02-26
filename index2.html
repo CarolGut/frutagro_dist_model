@@ -29,43 +29,45 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6 py-1">
-            <a href="#" class="mb-0 text-white">
-              Tasa del dia: <strong><span class="text-light"><i class="fa icon-venezuela-bolivar"></i> 89500 <span
-                    class="mdi mdi-tag-faces"></span></span> </strong> </a>
+            <span class="mb-0 text-white">
+              Tasa del dia: 
+              <span class="font-weight-bolder">
+                <i class="fa icon-venezuela-bolivar"></i> 89500 
+              </span>
+            </span>
           </div>
           <div class="col-md-6 text-right py-1">
             <div class="container">
-              <div class="row justify-content-end meni">
-                <div class="col-auto currency dropdown">
-                  <a class="nav-link p-0" data-toggle="dropdown" id="navbarDropdown" role="button" aria-haspopup="true"
-                    aria-expanded="false"><i class="fa icon-venezuela-bolivar"></i> VEN
-                    <i class="fa fa-angle-down"></i></a>
-                  <ul class="dropdown-menu curreny-list" role="menu">
+              <div class="row navbar-center justify-content-end text-white">
+                <div class="col-auto navbar-option dropdown">
+                  <a class="nav-link p-0" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa icon-venezuela-bolivar"></i> VEN
+                    <i class="fa fa-angle-down"></i>
+                  </a>
+                  <ul class="dropdown-menu" role="menu">
                     <li><a class="dropdown-item" href="#"><i class="fa icon-venezuela-bolivar"></i> VEN</a></li>
                     <li><a class="dropdown-item" href="#"><i class="fa fa-dollar-sign"></i> USD</a></a></li>
                   </ul>
                 </div>
-                <div class="col-auto currency dropdown">
+                <div class="col-auto navbar-option dropdown">
                   <a class="nav-link p-0" data-toggle="dropdown" id="navbarDropdown1" role="button" aria-haspopup="true"
                     aria-expanded="false"><img src="assets/img/icon/en.png" alt="">
                     Español
                     <i class="fa fa-angle-down"></i></a>
-                  <ul class="dropdown-menu curreny-list" role="menu">
+                  <ul class="dropdown-menu" role="menu">
                     <li><a class="dropdown-item" href="#"><img src="assets/img/icon/en.png" alt=""> Español</a></li>
                     <li><a class="dropdown-item" href="#"><img src="assets/img/icon/fr.png" alt=""> English</a></li>
                   </ul>
                 </div>
-                <div class="col-auto currency nav-item dropdown">
-                  <a class="nav-link p-0" data-toggle="dropdown" id="navbarDropdown2" aria-haspopup="true"
+
+                <div class="col-auto navbar-option dropdown">
+                  <a class="nav-link p-0" data-toggle="dropdown" id="navbarDropdown1" role="button" aria-haspopup="true"
                     aria-expanded="false"><i class="fas fa-user"></i>&nbsp;Mi cuenta
-                    <i class="fa fa-angle-down"></i>
-                  </a>
-                  <div class="dropdown-menu ">
-                    <a class="dropdown-item" href="my-account.html"><i class="fas fa-user"></i> &nbsp;Mi cuenta
-                      <a class="dropdown-item" href="login-register.html">&nbsp;login register</a>
-                      <a class="dropdown-item" href="wishlist.html">&nbsp;wishlist</a>
-                      <a class="dropdown-item" href="checkout.html">&nbsp;checkout</a>
-                  </div>
+                    <i class="fa fa-angle-down"></i></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a class="dropdown-item" href="#"><i class="fas fa-user"></i> &nbsp;Mi cuenta</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="fas fa-shopping-cart"></i> &nbsp;Mi carrito</a></li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -74,23 +76,21 @@
       </div>
     </div>
 
-    <nav class="navbar navbar-light navbar-expand-lg bg-dark bg-faded osahan-menu">
+    <nav class="navbar navbar-light navbar-expand-lg bg-primary-gradient bg-faded frutagro-menu">
       <div class="container">
-        <a class="navbar-brand pl-0" href="index.html"> <img class="logo" src="assets/img/frutagro_logo.png" alt="logo">
+        <a class="navbar-brand pl-0" href="index2.html"> <img class="logo" src="assets/img/frutagro_logo.png" alt="logo">
         </a>
-
         <button class="navbar-toggler navbar-toggler-white" type="button" data-toggle="collapse"
           data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="navbar-collapse" id="navbarNavDropdown ">
-          <div class="navbar-nav mr-auto mt-5 mt-lg-2 margin-auto top-categories-search-main">
+          <div class="navbar-nav mt-5 mt-lg-2 m-auto top-categories-search-main">
             <div class="top-categories-search">
               <div class="input-group">
-                <input class="form-control" placeholder="Ingrese el producto a buscar"
-                  aria-label="Search products in Your City" type="text">
+                <input class="form-control" placeholder="Ingrese el producto a buscar" type="text">
                 <span class="input-group-btn">
-                  <button class="btn btn-secondary" type="button"><i class="fa fa-search"></i> Buscar</button>
+                  <button class="btn btn-primary" type="button"><i class="fa fa-search"></i> Buscar</button>
                 </span>
               </div>
             </div>
@@ -99,8 +99,8 @@
             <ul class="list-inline main-nav-right">
               <li class="list-inline-item cart-btn">
                 <a href="#" data-toggle="offcanvas" class="btn btn-link border-none"><i
-                    class=" mdi mdi-cart fas fa-shopping-cart"></i> My Cart
-                  <small class="cart-value">5</small></a>
+                    class="mdi fas fa-shopping-cart"></i> Mi carrito
+                  <small class="cart-value bg-danger">5</small></a>
               </li>
             </ul>
           </div>
@@ -109,26 +109,26 @@
     </nav>
   </header>
 
-  <nav class="navbar navbar-expand-lg navbar-light osahan-menu-2 pad-none-mobile sticky-top border-bottom">
+  <nav class="navbar navbar-expand-lg navbar-light frutagro-menu-2 pad-none-mobile sticky-top border-bottom">
     <div class="container-fluid">
       <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 margin-auto">
-          <li class="nav-item currency1">
-            <a href="index.html" class="nav-link"><i class="fa fa-home"></i> Inicio</a>
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 m-auto">
+          <li class="nav-item navbar-user">
+            <a href="index2.html" class="nav-link"><i class="fa fa-home"></i> Inicio</a>
           </li>
-          <li class="nav-item currency1">
+          <li class="nav-item navbar-user">
             <a href="about.html" class="nav-link"><i class="fas fa-apple-alt"></i> Frutas</a>
           </li>
-          <li class="nav-item currency1">
+          <li class="nav-item navbar-user">
             <a class="nav-link" href="shop.html"><i class="fas fa-carrot"></i> Vegetales</a>
           </li>
-          <li class="nav-item currency1">
+          <li class="nav-item navbar-user">
             <a class="nav-link" href="shop.html"><i class="fas fa-users"></i> Nosotros</a>
           </li>
-          <li class="nav-item currency1">
+          <li class="nav-item navbar-user">
             <a class="nav-link" href="shop.html"><i class="far fa-address-card"></i> Contacto</a>
           </li>
-          <li class="nav-item currency1 dropdown">
+          <li class="nav-item navbar-user dropdown">
             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true"
               aria-expanded="false">
               <i class="fas fa-sign-in-alt"></i> Inicio de sessión
@@ -149,46 +149,42 @@
     </div>
   </nav>
 
-  <section class="hero-slider-wrapper mt-4 carousel-slider-main">
-    <div class="container">
-      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="hero-slider-item d-flex align-items-center bg-img"
-              style="background-image: url('assets/img/img-fruits.jpg');">
-              <div class="hero-slider-content">
-                <h1>Bag Full Of <br> Grocery Products</h1>
-                <h4>Frozen &amp; Chilled Food <br> Fresh Fruits &amp; Vegetables</h4>
-                <button type="button" class="btn btn-secondary btn-sm"><i class="mdi mdi-cart-outline"></i> Add To
-                  Cart</button>
-              </div>
+  <section class="hero-slider-wrapper carousel-slider-main">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="hero-slider-item d-flex align-items-center bg-img"
+            style="background-image: url('assets/img/32.jpg');">
+            <div class="hero-slider-content">
+              <h1>100%<br> Natural</h1>
+                <h4>Fresh Fruits &amp; Vegetables<br> Fresh Fruits &amp; Vegetables</h4>
+                  <button type="button" class="btn btn-primary btn-sm"><i class="mdi mdi-cart-outline"></i> Add To Cart</button>
             </div>
           </div>
-          <div class="carousel-item">
-            <div class="hero-slider-item d-flex align-items-center bg-img"
-              style="background-image: url('assets/img/img-vegetable.jpg');">
-              <div class="hero-slider-content">
-                <h1>Bag Full Of <br> Grocery Products</h1>
-                <h4>Frozen &amp; Chilled Food <br> Fresh Fruits &amp; Vegetables</h4>
-                <button type="button" class="btn btn-secondary btn-sm"><i class="mdi mdi-cart-outline"></i> Add To
-                  Cart</button>
-              </div>
+        </div>
+        <div class="carousel-item">
+          <div class="hero-slider-item d-flex align-items-center bg-img"
+            style="background-image: url('assets/img/7.jpg');">
+            <div class="hero-slider-content">
+              <h1>100%<br> Natural</h1>
+                <h4>Fresh Fruits &amp; Vegetables<br> Fresh Fruits &amp; Vegetables</h4>
+                  <button type="button" class="btn btn-primary btn-sm"><i class="mdi mdi-cart-outline"></i> Add To Cart</button>
             </div>
           </div>
-          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
           </a>
-          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
           </a>
-        </div>
       </div>
     </div>
   </section>
 
-  <section>
+  <section class="bg-white">
     <div class="banner-feature pt-4">
       <div class="container">
         <div class="row">
@@ -196,38 +192,38 @@
             <div class="banner-feature-wrapper">
               <div class="banner-feature-item">
                 <div class="banner-feature-icon">
-                  <img src="assets/img/icon/icon1.png" alt="">
+                  <i class="fas fa-3x fa-truck"></i>
                 </div>
                 <div class="banner-feature-post">
-                  <h6>Free Shipping</h6>
-                  <p>Free shipping on all US order or order above $200</p>
+                  <h6>Envio garantizado</h6>
+                  <p>Lorem Ipsum is simply dummy text of the printing</p>
                 </div>
               </div>
               <div class="banner-feature-item">
                 <div class="banner-feature-icon">
-                  <img src="assets/img/icon/icon2.png" alt="">
+                  <i class="far fa-3x fa-handshake"></i>
                 </div>
                 <div class="banner-feature-post">
-                  <h6>Support 24/7</h6>
-                  <p>Contact us 24 hours a day, 7 days a week</p>
+                  <h6>Satisfacción</h6>
+                  <p>Lorem Ipsum is simply dummy text of the printing</p>
                 </div>
               </div>
               <div class="banner-feature-item">
                 <div class="banner-feature-icon">
-                  <img src="assets/img/icon/icon3.png" alt="">
+                  <i class="fas fa-3x fa-people-carry danger"></i>
                 </div>
                 <div class="banner-feature-post">
-                  <h6>60-Day Returns</h6>
-                  <p>If you don’t love it, you have 60 days to return it.</p>
+                  <h6>Garantía</h6>
+                  <p>Lorem Ipsum is simply dummy text of the printing</p>
                 </div>
               </div>
               <div class="banner-feature-item">
                 <div class="banner-feature-icon">
-                  <img src="assets/img/icon/icon4.png" alt="">
+                  <i class="fas fa-3x fa-wallet"></i>
                 </div>
                 <div class="banner-feature-post">
-                  <h6>100% Payment Secure</h6>
-                  <p>We ensure secure payment with PEV</p>
+                  <h6>Pago 100% seguro</h6>
+                  <p>Lorem Ipsum is simply dummy text of the printing</p>
                 </div>
               </div>
             </div>
@@ -237,81 +233,31 @@
     </div>
   </section>
 
-  <section class="product-items-slider section-padding">
+  <section class="section-padding">
     <div class="container">
       <div class="section-header">
-        <h5 class="heading-design-h5">Top Savers Today <span class="badge badge-success">20% OFF</span>
-          <a class="float-right text-secondary" href="shop.html">View All</a>
+        <h5 class="heading-design-h5">Mejores ofertas en frutas
+          <span class="badge badge-success">20% de descuento</span>
         </h5>
       </div>
-      <div class="row justify-content-center my-4">
+      <div class="row justify-content-center mt-4 mb-2">
         <div class="col-sm-12 col-md-4 col-lg-3">
           <div class="card-item">
             <div class="card product h-100">
-              <a href="">
+              <a href="product.html">
                 <div class="product-header">
-                  <span class="badge badge-success">50% OFF</span>
-                  <img class="img-fluid" src="assets/img/product-3.jpg" alt="">
+                  <span class="badge badge-success">20%</span>
+                  <img class="img-fluid" src="assets/img/product-01-apple.jpg" alt="">
                   <!-- <img class="card-img-top" src="assets/img/product-3.jpg" alt=""> -->
-                  <span class="veg text-success mdi mdi-circle"><i class="fas fa-circle"></i></span>
+                  <span class="veg text-secondary mdi-circle"><i class="fas fa-circle"></i></span>
                 </div>
                 <div class="product-body">
-                  <h5>Product Title Here</h5>
-                  <h6><strong><span class="mdi mdi-approval fas fa-check-circle"></span>Available in</strong> - 500 gm
-                  </h6>
+                  <h5>Manzana Roja</h5>
+                  <h6>A partir de 500 gr</h6>
                 </div>
                 <div class="product-footer">
-                  <p class="offer-price mb-0">$450.99 <i class="mdi mdi-tag-outline fas fa-tags"></i><span
-                      class="regular-price">$800.99</span></p><button type="button" class="btn btn-secondary btn-sm"><i
-                      class="mdi mdi-cart-outline"></i><i class="fas fa-shopping-cart"></i> Add To Cart</button>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-12 col-md-4 col-lg-3">
-          <div class="card-item">
-            <div class="card product h-100">
-              <a href="">
-                <div class="product-header">
-                  <span class="badge badge-success">50% OFF</span>
-                  <img class="img-fluid" src="assets/img/product-3.jpg" alt="">
-                  <!-- <img class="card-img-top" src="assets/img/product-3.jpg" alt=""> -->
-                  <span class="veg text-success mdi mdi-circle"><i class="fas fa-circle"></i></span>
-                </div>
-                <div class="product-body">
-                  <h5>Product Title Here</h5>
-                  <h6><strong><span class="mdi mdi-approval fas fa-check-circle"></span>Available in</strong> - 500 gm
-                  </h6>
-                </div>
-                <div class="product-footer">
-                  <p class="offer-price mb-0">$450.99 <i class="mdi mdi-tag-outline fas fa-tags"></i><span
-                      class="regular-price">$800.99</span></p><button type="button" class="btn btn-secondary btn-sm"><i
-                      class="mdi mdi-cart-outline"></i><i class="fas fa-shopping-cart"></i> Add To Cart</button>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="ol-sm-12 col-md-4 col-lg-3">
-          <div class="card-item">
-            <div class="card product h-100">
-              <a href="">
-                <div class="product-header">
-                  <span class="badge badge-success">50% OFF</span>
-                  <img class="img-fluid" src="assets/img/product-3.jpg" alt="">
-                  <!-- <img class="card-img-top" src="assets/img/product-3.jpg" alt=""> -->
-                  <span class="veg text-success mdi mdi-circle"><i class="fas fa-circle"></i></span>
-                </div>
-                <div class="product-body">
-                  <h5>Product Title Here</h5>
-                  <h6><strong><span class="mdi mdi-approval fas fa-check-circle"></span>Available in</strong> - 500 gm
-                  </h6>
-                </div>
-                <div class="product-footer">
-                  <p class="offer-price mb-0">$450.99 <i class="mdi mdi-tag-outline fas fa-tags"></i><span
-                      class="regular-price">$800.99</span></p><button type="button" class="btn btn-secondary btn-sm"><i
-                      class="mdi mdi-cart-outline"></i><i class="fas fa-shopping-cart"></i> Add To Cart</button>
+                  <p class="offer-price mb-3">80.000 <i class="fas fa-tags"></i><span
+                      class="regular-price"> 100.000</span></p><button type="button" class="btn btn-primary btn-sm"><i class="fas fa-shopping-cart"></i> Añadir al carrito</button>
                 </div>
               </a>
             </div>
@@ -322,208 +268,243 @@
             <div class="card product h-100">
               <a href="">
                 <div class="product-header">
-                  <span class="badge badge-success">50% OFF</span>
-                  <img class="img-fluid" src="assets/img/product-3.jpg" alt="">
+                  <span class="badge badge-success">50%</span>
+                  <img class="img-fluid" src="assets/img/product-02-banana.jpg" alt="">
                   <!-- <img class="card-img-top" src="assets/img/product-3.jpg" alt=""> -->
-                  <span class="veg text-success mdi mdi-circle"><i class="fas fa-circle"></i></span>
+                  <span class="veg text-secondary mdi mdi-circle"><i class="fas fa-circle"></i></span>
                 </div>
                 <div class="product-body">
-                  <h5>Product Title Here</h5>
-                  <h6><strong><span class="mdi mdi-approval fas fa-check-circle"></span>Available in</strong> - 500 gm
-                  </h6>
+                  <h5>Cambur</h5>
+                  <h6>A partir de 500 gr</h6>
                 </div>
                 <div class="product-footer">
-                  <p class="offer-price mb-0">$450.99 <i class="mdi mdi-tag-outline fas fa-tags"></i><span
-                      class="regular-price">$800.99</span></p><button type="button" class="btn btn-secondary btn-sm"><i
-                      class="mdi mdi-cart-outline"></i><i class="fas fa-shopping-cart"></i> Add To Cart</button>
+                  <p class="offer-price mb-3">50.000 <i class="fas fa-tags"></i><span
+                      class="regular-price"> 100.000</span></p><button type="button" class="btn btn-primary btn-sm"><i class="fas fa-shopping-cart"></i> Añadir al carrito</button>
                 </div>
               </a>
             </div>
           </div>
         </div>
+        <div class="col-sm-12 col-md-4 col-lg-3">
+          <div class="card-item">
+            <div class="card product h-100">
+              <a href="">
+                <div class="product-header">
+                  <span class="badge badge-success">20%</span>
+                  <img class="img-fluid" src="assets/img/product-03-melon.jpg" alt="">
+                  <!-- <img class="card-img-top" src="assets/img/product-3.jpg" alt=""> -->
+                  <span class="veg text-secondary mdi mdi-circle"><i class="fas fa-circle"></i></span>
+                </div>
+                <div class="product-body">
+                  <h5>Melon</h5>
+                  <h6>A partir de 500 gr</h6>
+                </div>
+                <div class="product-footer">
+                  <p class="offer-price mb-3">80.000 <i class="fas fa-tags"></i><span
+                      class="regular-price"> 100.000</span></p><button type="button" class="btn btn-primary btn-sm"><i class="fas fa-shopping-cart"></i> Añadir al carrito</button>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-3">
+          <div class="card-item">
+            <div class="card product h-100">
+              <a href="">
+                <div class="product-header">
+                  <span class="badge badge-success">20%</span>
+                  <img class="img-fluid" src="assets/img/product-04-strawberry.jpg" alt="">
+                  <!-- <img class="card-img-top" src="assets/img/product-3.jpg" alt=""> -->
+                  <span class="veg text-secondary mdi mdi-circle"><i class="fas fa-circle"></i></span>
+                </div>
+                <div class="product-body">
+                  <h5>Fresas</h5>
+                  <h6>A partir de 500 gr</h6>
+                </div>
+                <div class="product-footer">
+                  <p class="offer-price mb-3">80.000 <i class="fas fa-tags"></i><span
+                      class="regular-price"> 100.000</span></p><button type="button" class="btn btn-primary btn-sm"><i class="fas fa-shopping-cart"></i> Añadir al carrito</button>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <a class="float-right text-tertiary h6" href="shop.html">Ver todos</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <section class="offer-product">
+    <div class="container">
+      <div class="row no-gutters">
+        <div class="col-md-6">
+          <a href="#"><img class="img-fluid" src="assets/img/img-fruits.jpg" alt=""></a>
+        </div>
+        <div class="col-md-6">
+          <a href="#"><img class="img-fluid" src="assets/img/img-vegetable.jpg" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <h5 class="heading-design-h5">Mejores ofertas en vegetales
+          <span class="badge badge-success">20% de descuento</span>
+        </h5>
+      </div>
+      <div class="row justify-content-center mt-4 mb-2">
+        <div class="col-sm-12 col-md-4 col-lg-3">
+          <div class="card-item">
+            <div class="card product h-100">
+              <a href="">
+                <div class="product-header">
+                  <span class="badge badge-success">50%</span>
+                  <img class="img-fluid" src="assets/img/product-05-lettuce.jpg" alt="">
+                  <!-- <img class="card-img-top" src="assets/img/product-3.jpg" alt=""> -->
+                  <span class="veg text-secondary mdi mdi-circle"><i class="fas fa-circle"></i></span>
+                </div>
+                <div class="product-body">
+                  <h5>Lechuga</h5>
+                  <h6>A partir de 500 gr</h6>
+                </div>
+                <div class="product-footer">
+                  <p class="offer-price mb-3">50.000 <i class="fas fa-tags"></i><span
+                      class="regular-price"> 100.000</span></p><button type="button" class="btn btn-primary btn-sm"><i class="fas fa-shopping-cart"></i> Añadir al carrito</button>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-3">
+          <div class="card-item">
+            <div class="card product h-100">
+              <a href="">
+                <div class="product-header">
+                  <span class="badge badge-success">20%</span>
+                  <img class="img-fluid" src="assets/img/product-06-tomato.jpg" alt="">
+                  <!-- <img class="card-img-top" src="assets/img/product-3.jpg" alt=""> -->
+                  <span class="veg text-secondary mdi mdi-circle"><i class="fas fa-circle"></i></span>
+                </div>
+                <div class="product-body">
+                  <h5>Tomate</h5>
+                  <h6>A partir de 500 gr</h6>
+                </div>
+                <div class="product-footer">
+                  <p class="offer-price mb-3">80.000 <i class="fas fa-tags"></i><span
+                      class="regular-price"> 100.000</span></p><button type="button" class="btn btn-primary btn-sm"><i class="fas fa-shopping-cart"></i> Añadir al carrito</button>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-3">
+          <div class="card-item">
+            <div class="card product h-100">
+              <a href="">
+                <div class="product-header">
+                  <span class="badge badge-success">20%</span>
+                  <img class="img-fluid" src="assets/img/product-07-onion.jpg" alt="">
+                  <!-- <img class="card-img-top" src="assets/img/product-3.jpg" alt=""> -->
+                  <span class="veg text-secondary mdi mdi-circle"><i class="fas fa-circle"></i></span>
+                </div>
+                <div class="product-body">
+                  <h5>Cebolla</h5>
+                  <h6>A partir de 500 gr</h6>
+                </div>
+                <div class="product-footer">
+                  <p class="offer-price mb-3">80.000 <i class="fas fa-tags"></i><span
+                      class="regular-price"> 100.000</span></p><button type="button" class="btn btn-primary btn-sm"><i class="fas fa-shopping-cart"></i> Añadir al carrito</button>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-3">
+          <div class="card-item">
+            <div class="card product h-100">
+              <a href="">
+                <div class="product-header">
+                  <span class="badge badge-success">20%</span>
+                  <img class="img-fluid" src="assets/img/product-08-potato.jpg" alt="">
+                  <!-- <img class="card-img-top" src="assets/img/product-3.jpg" alt=""> -->
+                  <span class="veg text-secondary mdi-circle"><i class="fas fa-circle"></i></span>
+                </div>
+                <div class="product-body">
+                  <h5>Papas</h5>
+                  <h6><span class="mdi mdi-approval"></span>A partir de - 500 gm
+                  </h6>
+                </div>
+                <div class="product-footer">
+                  <p class="offer-price mb-3">80.000 <i class="fas fa-tags"></i><span
+                      class="regular-price"> 100.000</span></p><button type="button" class="btn btn-primary btn-sm"><i class="fas fa-shopping-cart"></i> Añadir al carrito</button>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <a class="float-right text-tertiary h6" href="shop.html">Ver todos</a>
+        </div>
       </div>
     </div>
   </section>
 
 
-
-  <!-- Navigation -->
-  <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
-    <div class="container">
-      <a class="navbar-brand" href="#">Start Bootstrap</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav> -->
-
-  <!-- Page Content -->
-  <div class="container">
-
-    <!-- Jumbotron Header -->
-    <header class="jumbotron my-4">
-      <h1 class="display-3">A Warm Welcome!</h1>
-      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt
-        possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam
-        repellat.</p>
-      <a href="#" class="btn btn-primary btn-lg">Call to action!</a>
-    </header>
-
-    <!-- Page Features -->
-    <div class="row text-center">
-
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100">
-          <img class="card-img-top" src="http://placehold.it/500x325" alt="">
-          <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus
-              neque.</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary">Find Out More!</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100">
-          <img class="card-img-top" src="http://placehold.it/500x325" alt="">
-          <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente,
-              tempore debitis beatae culpa natus architecto.</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary">Find Out More!</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100">
-          <img class="card-img-top" src="http://placehold.it/500x325" alt="">
-          <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus
-              neque.</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary">Find Out More!</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100">
-          <img class="card-img-top" src="http://placehold.it/500x325" alt="">
-          <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente,
-              tempore debitis beatae culpa natus architecto.</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary">Find Out More!</a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-    <!-- /.row -->
-
-  </div>
-  <!-- /.container -->
-
   <!-- Footer -->
-  <footer class="py-5 bg-dark">
-    <section class="section-padding footer bg-white border-top">
+  <footer class="bg-white">
+    <section class="section-padding footer border-top">
       <div class="container">
         <div class="row">
-          <div class="col-lg-3 col-md-3">
-            <h4 class="mb-5 mt-0"><a class="logo" href="index.html"><img src="img/logo-footer.png" alt="Groci"></a></h4>
-            <p class="mb-0"><a class="text-dark" href="#"><i class="mdi mdi-phone"></i> +61 525 240 310</a></p>
-            <p class="mb-0"><a class="text-dark" href="#"><i class="mdi mdi-cellphone-iphone"></i> 12345 67890,
-                56847-98562</a></p>
-            <p class="mb-0"><a class="text-success" href="#"><i class="mdi mdi-email"></i> iamosahan@gmail.com</a></p>
-            <p class="mb-0"><a class="text-primary" href="#"><i class="mdi mdi-web"></i> www.askbootstrap.com</a></p>
+          <div class="col-sm-12 col-md-6 col-lg-3 mr-auto">
+            <h4 class="mb-5 mt-0">
+              <a class="logo" href="index2.html"><img src="assets/img/frutagro_logo.png" alt="Groci"></a></h4>
           </div>
-          <div class="col-lg-2 col-md-2">
-            <h6 class="mb-4">TOP CITIES </h6>
+
+          <div class="col-sm-6 col-md-3 col-lg-2">
+            <h6 class="mb-4">CATEGORIAS</h6>
             <ul>
-              <li><a href="#">New Delhi</a></li>
-              <li><a href="#">Bengaluru</a></li>
-              <li><a href="#">Hyderabad</a></li>
-              <li><a href="#">Kolkata</a></li>
-              <li><a href="#">Gurugram</a></li>
+              <li><a href="#">Frutas</a></li>
+              <li><a href="#">Vegetales</a></li>
               <ul>
               </ul>
             </ul>
           </div>
-          <div class="col-lg-2 col-md-2">
-            <h6 class="mb-4">CATEGORIES</h6>
+          <div class="col-sm-6 col-md-3 col-lg-2">
+            <h6 class="mb-4">NOSOTROS</h6>
             <ul>
-              <li><a href="#">Vegetables</a></li>
-              <li><a href="#">Grocery &amp; Staples</a></li>
-              <li><a href="#">Breakfast &amp; Dairy</a></li>
-              <li><a href="#">Soft Drinks</a></li>
-              <li><a href="#">Biscuits &amp; Cookies</a></li>
+              <li><a href="#">Visión</a></li>
+              <li><a href="#">Misión</a></li>
               <ul>
               </ul>
             </ul>
           </div>
-          <div class="col-lg-2 col-md-2">
-            <h6 class="mb-4">ABOUT US</h6>
-            <ul>
-              <li><a href="#">Company Information</a></li>
-              <li><a href="#">Careers</a></li>
-              <li><a href="#">Store Location</a></li>
-              <li><a href="#">Affillate Program</a></li>
-              <li><a href="#">Copyright</a></li>
-              <ul>
-              </ul>
-            </ul>
+
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <h6 class="mb-4">CONTACTO</h6>
+            <p class="mb-0"><a class="text-dark" href="#"><i class="fas fa-mobile-alt"></i> +58 414 123 4567</a></p>
+            <p class="mb-0"><a class="text-secondary" href="#"><i class="far fa-envelope"></i> loremipsumn@gmail.com</a>
+            </p>
           </div>
-          <div class="col-lg-3 col-md-3">
-            <h6 class="mb-4">Download App</h6>
-            <div class="app">
-              <a href="#"><img src="img/google.png" alt=""></a>
-              <a href="#"><img src="img/apple.png" alt=""></a>
-            </div>
-            <h6 class="mb-3 mt-4">GET IN TOUCH</h6>
+          <div class="col-sm-6 col-md-6 col-lg-auto">
+            <h6 class="mb-4">SIGUENOS EN</h6>
             <div class="footer-social">
-              <a class="btn-facebook" href="#"><i class="mdi mdi-facebook"></i></a>
-              <a class="btn-twitter" href="#"><i class="mdi mdi-twitter"></i></a>
-              <a class="btn-instagram" href="#"><i class="mdi mdi-instagram"></i></a>
-              <a class="btn-whatsapp" href="#"><i class="mdi mdi-whatsapp"></i></a>
-              <a class="btn-messenger" href="#"><i class="mdi mdi-facebook-messenger"></i></a>
-              <a class="btn-google" href="#"><i class="mdi mdi-google"></i></a>
+              <a class="btn-instagram" href="#"><i class="fab fa-lg fa-instagram"></i></a>
+              <a class="btn-whatsapp" href="#"><i class="fab fa-lg fa-whatsapp"></i></a>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+    <div class="footer-bottom py-3">
+      <p class="m-0 text-center text-white">Copyright © Distribuidora Frutagro 2020</p>
     </div>
     <!-- /.container -->
   </footer>
