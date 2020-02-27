@@ -23,32 +23,34 @@
 <body>
 
   <header>
-    <div class="navbar-top pt-2 pb-2">
+    <div class="navbar-top">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 py-1">
+          <div class="col-md-6 py-2">
             <span class="mb-0">
-              Tasa del dia: 
+              Tasa del dia:
               <span class="font-weight-bolder">
-                <i class="fa icon-venezuela-bolivar"></i> 89500 
+                <i class="fa icon-venezuela-bolivar"></i> 89500
               </span>
             </span>
           </div>
-          <div class="col-md-6 text-right py-1">
+          <div class="col-md-6 text-right py-0">
             <div class="container">
               <div class="row navbar-center justify-content-end">
-                <div class="col-auto navbar-option dropdown">
-                  <a class="nav-link p-0" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                <div class="navbar-option dropdown">
+                  <span class="nav-link" data-toggle="dropdown" role="button" aria-haspopup="true"
+                    aria-expanded="false">
                     <i class="fa icon-venezuela-bolivar"></i> VEN
                     <i class="fa fa-angle-down"></i>
-                  </a>
+                  </span>
                   <ul class="dropdown-menu" role="menu">
                     <li><a class="dropdown-item" href="#"><i class="fa icon-venezuela-bolivar"></i> VEN</a></li>
                     <li><a class="dropdown-item" href="#"><i class="fa fa-dollar-sign"></i> USD</a></a></li>
                   </ul>
                 </div>
-                <div class="col-auto navbar-option dropdown">
-                  <a class="nav-link p-0" data-toggle="dropdown" id="navbarDropdown1" role="button" aria-haspopup="true"
+
+                <div class="navbar-option dropdown">
+                  <a class="nav-link" data-toggle="dropdown" id="navbarDropdown1" role="button" aria-haspopup="true"
                     aria-expanded="false"><img src="assets/img/icon/en.png" alt="">
                     Español
                     <i class="fa fa-angle-down"></i></a>
@@ -58,8 +60,8 @@
                   </ul>
                 </div>
 
-                <div class="col-auto navbar-option dropdown">
-                  <a class="nav-link p-0" data-toggle="dropdown" id="navbarDropdown1" role="button" aria-haspopup="true"
+                <div class="navbar-option dropdown">
+                  <a class="nav-link" data-toggle="dropdown" id="navbarDropdown1" role="button" aria-haspopup="true"
                     aria-expanded="false"><i class="fas fa-user"></i>&nbsp;Mi cuenta
                     <i class="fa fa-angle-down"></i></a>
                   <ul class="dropdown-menu" role="menu">
@@ -88,7 +90,7 @@
               <div class="input-group">
                 <input class="form-control" placeholder="Ingrese el producto a buscar" type="text">
                 <span class="input-group-btn">
-                  <button class="btn btn-primary" type="button"><i class="fa fa-search"></i> Buscar</button>
+                  <button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button>
                 </span>
               </div>
             </div>
@@ -111,9 +113,10 @@
     <div class="container">
       <span class="nav-item navbar-brand navbar-user mobile-menu-title">Categorias</a>
       </span>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
@@ -135,9 +138,10 @@
         </ul>
 
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
-        </a>
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="#">Action</a>
             <a class="dropdown-item" href="#">Another action</a>
@@ -212,9 +216,11 @@
               <div class="card">
                 <div class="card-header" id="headingOne">
                   <h5 class="mb-0">
-                    <button class="btn btn-link collapsed d-flex justify-content-between align-items-center" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-           Tipos  <i class="fa fa-chevron-down"></i>
-           </button>
+                    <button class="btn btn-link collapsed d-flex justify-content-between align-items-center"
+                      data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                      aria-controls="collapseOne">
+                      Tipos <i class="fa fa-chevron-down"></i>
+                    </button>
                   </h5>
                 </div>
                 <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
@@ -222,7 +228,8 @@
                     <form class="form-inline mb-3">
                       <div class="form-group">
                         <input type="text" class="form-control" placeholder="Search By Category">
-                        <button type="submit" class="pl-2 pr-2 btn btn-secondary btn-lg"><i class="mdi mdi-file-find"></i></button>
+                        <button type="submit" class="pl-2 pr-2 btn btn-secondary btn-lg"><i
+                            class="mdi mdi-file-find"></i></button>
                       </div>
                     </form>
                     <div class="custom-control custom-checkbox">
@@ -231,19 +238,23 @@
                     </div>
                     <div class="custom-control custom-checkbox">
                       <input type="checkbox" class="custom-control-input" id="cb8">
-                      <label class="custom-control-label" for="cb8">Bayas<span class="badge badge-primary">5% OFF</span></label>
+                      <label class="custom-control-label" for="cb8">Bayas<span class="badge badge-primary">5%
+                          OFF</span></label>
                     </div>
                     <div class="custom-control custom-checkbox">
                       <input type="checkbox" class="custom-control-input" id="cb2">
-                      <label class="custom-control-label" for="cb2">Cítricos<span class="badge badge-secondary">NEW</span></label>
+                      <label class="custom-control-label" for="cb2">Cítricos<span
+                          class="badge badge-secondary">NEW</span></label>
                     </div>
                     <div class="custom-control custom-checkbox">
                       <input type="checkbox" class="custom-control-input" id="cb3">
-                      <label class="custom-control-label" for="cb3">Cucurbitáceas<span class="badge badge-danger">10% OFF</span></label>
+                      <label class="custom-control-label" for="cb3">Cucurbitáceas<span class="badge badge-danger">10%
+                          OFF</span></label>
                     </div>
                     <div class="custom-control custom-checkbox">
                       <input type="checkbox" class="custom-control-input" id="cb4">
-                      <label class="custom-control-label" for="cb4">Exóticas <span class="badge badge-info">50% OFF</span></label>
+                      <label class="custom-control-label" for="cb4">Exóticas <span class="badge badge-info">50%
+                          OFF</span></label>
                     </div>
                     <div class="custom-control custom-checkbox">
                       <input type="checkbox" class="custom-control-input" id="cb5">
@@ -256,9 +267,11 @@
               <div class="card my-4">
                 <div class="card-header" id="headingTwo">
                   <h5 class="mb-0">
-                    <button class="btn btn-link collapsed d-flex justify-content-between align-items-center" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-           Precio <i class="fa fa-chevron-down"></i></span>
-           </button>
+                    <button class="btn btn-link collapsed d-flex justify-content-between align-items-center"
+                      data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                      aria-controls="collapseTwo">
+                      Precio <i class="fa fa-chevron-down"></i></span>
+                    </button>
 
                   </h5>
                 </div>
@@ -266,7 +279,8 @@
                   <div class="card-body card-shop-filters">
                     <div class="custom-control custom-checkbox">
                       <input type="checkbox" class="custom-control-input" id="1">
-                      <label class="custom-control-label" for="1">$68 to $659 <span class="badge badge-warning">50% OFF</span></label>
+                      <label class="custom-control-label" for="1">$68 to $659 <span class="badge badge-warning">50%
+                          OFF</span></label>
                     </div>
                     <div class="custom-control custom-checkbox">
                       <input type="checkbox" class="custom-control-input" id="2">
@@ -288,234 +302,244 @@
           </div>
           <div class="left-ad mt-4">
             <img class="img-fluid" src="http://via.placeholder.com/254x557" alt="">
-    </div>
           </div>
+        </div>
 
-          <div class="col-md-9">
-            <img class="img-fruit mb-3" src="assets/img/27050611.jpg" alt="">
-            <div class="shop-head mt-3 mb-4 section-header">
-              <div class="row">
-                <div class="col-3">
-                  <h5 class="my-2">Frutas</h5>
-                </div>
-                <div class="col-9">
-                  <div class="container">
-                    <div class="row justify-content-end">
-                      <span class="order mr-2 my-auto text-dark">Ordenar por</span>
-                      <div class="btn-group float-right">
-                        <button type="button" class="nice-select bg-white dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Más relevantes &nbsp;&nbsp;&nbsp;
-                         </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#">Más relevantes</a>
-                          <a class="dropdown-item" href="#">Menor precio</a>
-                          <a class="dropdown-item" href="#">Mayor precio</a>
-                          <a class="dropdown-item" href="#">Descuentos</a>
-                          <a class="dropdown-item" href="#">Nombre (A - Z)</a>
-                          <a class="dropdown-item" href="#">Nombre (Z - A)</a>
-                        </div>
+        <div class="col-md-9">
+          <img class="img-fruit mb-3" src="assets/img/27050611.jpg" alt="">
+          <div class="shop-head mt-3 mb-4 section-header">
+            <div class="row">
+              <div class="col-3">
+                <h5 class="my-2">Frutas</h5>
+              </div>
+              <div class="col-9">
+                <div class="container">
+                  <div class="row justify-content-end">
+                    <span class="order mr-2 my-auto text-dark">Ordenar por</span>
+                    <div class="btn-group float-right">
+                      <button type="button" class="nice-select bg-white dropdown-toggle" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Más relevantes &nbsp;&nbsp;&nbsp;
+                      </button>
+                      <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="#">Más relevantes</a>
+                        <a class="dropdown-item" href="#">Menor precio</a>
+                        <a class="dropdown-item" href="#">Mayor precio</a>
+                        <a class="dropdown-item" href="#">Descuentos</a>
+                        <a class="dropdown-item" href="#">Nombre (A - Z)</a>
+                        <a class="dropdown-item" href="#">Nombre (Z - A)</a>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-
             </div>
-            <div class="row">
-              <div class="col-md-4 pb-3">
-                <div class="product card product h-100">
-                  <a href="single.html">
-                       <div class="product-header">
-                          <span class="badge badge-success">20% OFF</span>
-                          <img class="img-fluid" src="assets/img/product-01-apple.jpg" alt="">
-                          <span class="veg text-secondary mdi-circle"><i class="fas fa-circle"></i></span>
-                       </div>
-                       <div class="product-body">
-                        <h5>Manzana Roja</h5>
-                        <h6>A partir de 500 gr</h6>
-                       </div>
-                       <div class="product-footer">
-                        <p class="offer-price mb-3">80.000 <i class="fas fa-tags"></i><span
-                          class="regular-price"> 100.000</span></p><button type="button" class="btn btn-primary btn-sm"><i class="fas fa-shopping-cart"></i> Añadir al carrito</button>
-                       </div>
-                    </a>
-                </div>
+
+          </div>
+          <div class="row">
+            <div class="col-md-4 pb-3">
+              <div class="product card product h-100">
+                <a href="single.html">
+                  <div class="product-header">
+                    <span class="badge badge-success">20% OFF</span>
+                    <img class="img-fluid" src="assets/img/product-01-apple.jpg" alt="">
+                    <span class="veg text-secondary mdi-circle"><i class="fas fa-circle"></i></span>
+                  </div>
+                  <div class="product-body">
+                    <h5>Manzana Roja</h5>
+                    <h6>A partir de 500 gr</h6>
+                  </div>
+                  <div class="product-footer">
+                    <p class="offer-price mb-3">80.000 <i class="fas fa-tags"></i><span class="regular-price">
+                        100.000</span></p><button type="button" class="btn btn-primary btn-sm"><i
+                        class="fas fa-shopping-cart"></i> Añadir al carrito</button>
+                  </div>
+                </a>
               </div>
-              <div class="col-md-4 pb-3">
-                <div class="product card product h-100">
-                  <a href="single.html">
-                       <div class="product-header">
-                          <span class="badge badge-success">20% OFF</span>
-                          <img class="img-fluid" src="assets/img/product-01-apple.jpg" alt="">
-                          <span class="veg text-secondary mdi-circle"><i class="fas fa-circle"></i></span>
-                       </div>
-                       <div class="product-body">
-                        <h5>Manzana Roja</h5>
-                        <h6>A partir de 500 gr</h6>
-                       </div>
-                       <div class="product-footer">
-                        <p class="offer-price mb-3">80.000 <i class="fas fa-tags"></i><span
-                          class="regular-price"> 100.000</span></p><button type="button" class="btn btn-primary btn-sm"><i class="fas fa-shopping-cart"></i> Añadir al carrito</button>
-                       </div>
-                    </a>
-                </div>
+            </div>
+            <div class="col-md-4 pb-3">
+              <div class="product card product h-100">
+                <a href="single.html">
+                  <div class="product-header">
+                    <span class="badge badge-success">20% OFF</span>
+                    <img class="img-fluid" src="assets/img/product-01-apple.jpg" alt="">
+                    <span class="veg text-secondary mdi-circle"><i class="fas fa-circle"></i></span>
+                  </div>
+                  <div class="product-body">
+                    <h5>Manzana Roja</h5>
+                    <h6>A partir de 500 gr</h6>
+                  </div>
+                  <div class="product-footer">
+                    <p class="offer-price mb-3">80.000 <i class="fas fa-tags"></i><span class="regular-price">
+                        100.000</span></p><button type="button" class="btn btn-primary btn-sm"><i
+                        class="fas fa-shopping-cart"></i> Añadir al carrito</button>
+                  </div>
+                </a>
               </div>
-              <div class="col-md-4 pb-3">
-                <div class="product card product h-100">
-                  <a href="single.html">
-                       <div class="product-header">
-                          <span class="badge badge-success">20% OFF</span>
-                          <img class="img-fluid" src="assets/img/product-01-apple.jpg" alt="">
-                          <span class="veg text-secondary mdi-circle"><i class="fas fa-circle"></i></span>
-                       </div>
-                       <div class="product-body">
-                        <h5>Manzana Roja</h5>
-                        <h6>A partir de 500 gr</h6>
-                       </div>
-                       <div class="product-footer">
-                        <p class="offer-price mb-3">80.000 <i class="fas fa-tags"></i><span
-                          class="regular-price"> 100.000</span></p><button type="button" class="btn btn-primary btn-sm"><i class="fas fa-shopping-cart"></i> Añadir al carrito</button>
-                       </div>
-                    </a>
-                </div>
+            </div>
+            <div class="col-md-4 pb-3">
+              <div class="product card product h-100">
+                <a href="single.html">
+                  <div class="product-header">
+                    <span class="badge badge-success">20% OFF</span>
+                    <img class="img-fluid" src="assets/img/product-01-apple.jpg" alt="">
+                    <span class="veg text-secondary mdi-circle"><i class="fas fa-circle"></i></span>
+                  </div>
+                  <div class="product-body">
+                    <h5>Manzana Roja</h5>
+                    <h6>A partir de 500 gr</h6>
+                  </div>
+                  <div class="product-footer">
+                    <p class="offer-price mb-3">80.000 <i class="fas fa-tags"></i><span class="regular-price">
+                        100.000</span></p><button type="button" class="btn btn-primary btn-sm"><i
+                        class="fas fa-shopping-cart"></i> Añadir al carrito</button>
+                  </div>
+                </a>
               </div>
-              <div class="col-md-4 pb-3">
-                <div class="product card product h-100">
-                  <a href="single.html">
-                       <div class="product-header">
-                          <span class="badge badge-success">20% OFF</span>
-                          <img class="img-fluid" src="assets/img/product-01-apple.jpg" alt="">
-                          <span class="veg text-secondary mdi-circle"><i class="fas fa-circle"></i></span>
-                       </div>
-                       <div class="product-body">
-                        <h5>Manzana Roja</h5>
-                        <h6>A partir de 500 gr</h6>
-                       </div>
-                       <div class="product-footer">
-                        <p class="offer-price mb-3">80.000 <i class="fas fa-tags"></i><span
-                          class="regular-price"> 100.000</span></p><button type="button" class="btn btn-primary btn-sm"><i class="fas fa-shopping-cart"></i> Añadir al carrito</button>
-                       </div>
-                    </a>
-                </div>
+            </div>
+            <div class="col-md-4 pb-3">
+              <div class="product card product h-100">
+                <a href="single.html">
+                  <div class="product-header">
+                    <span class="badge badge-success">20% OFF</span>
+                    <img class="img-fluid" src="assets/img/product-01-apple.jpg" alt="">
+                    <span class="veg text-secondary mdi-circle"><i class="fas fa-circle"></i></span>
+                  </div>
+                  <div class="product-body">
+                    <h5>Manzana Roja</h5>
+                    <h6>A partir de 500 gr</h6>
+                  </div>
+                  <div class="product-footer">
+                    <p class="offer-price mb-3">80.000 <i class="fas fa-tags"></i><span class="regular-price">
+                        100.000</span></p><button type="button" class="btn btn-primary btn-sm"><i
+                        class="fas fa-shopping-cart"></i> Añadir al carrito</button>
+                  </div>
+                </a>
               </div>
-              <div class="col-md-4 pb-3">
-                <div class="product card product h-100">
-                  <a href="single.html">
-                       <div class="product-header">
-                          <span class="badge badge-success">20% OFF</span>
-                          <img class="img-fluid" src="assets/img/product-01-apple.jpg" alt="">
-                          <span class="veg text-secondary mdi-circle"><i class="fas fa-circle"></i></span>
-                       </div>
-                       <div class="product-body">
-                        <h5>Manzana Roja</h5>
-                        <h6>A partir de 500 gr</h6>
-                       </div>
-                       <div class="product-footer">
-                        <p class="offer-price mb-3">80.000 <i class="fas fa-tags"></i><span
-                          class="regular-price"> 100.000</span></p><button type="button" class="btn btn-primary btn-sm"><i class="fas fa-shopping-cart"></i> Añadir al carrito</button>
-                       </div>
-                    </a>
-                </div>
+            </div>
+            <div class="col-md-4 pb-3">
+              <div class="product card product h-100">
+                <a href="single.html">
+                  <div class="product-header">
+                    <span class="badge badge-success">20% OFF</span>
+                    <img class="img-fluid" src="assets/img/product-01-apple.jpg" alt="">
+                    <span class="veg text-secondary mdi-circle"><i class="fas fa-circle"></i></span>
+                  </div>
+                  <div class="product-body">
+                    <h5>Manzana Roja</h5>
+                    <h6>A partir de 500 gr</h6>
+                  </div>
+                  <div class="product-footer">
+                    <p class="offer-price mb-3">80.000 <i class="fas fa-tags"></i><span class="regular-price">
+                        100.000</span></p><button type="button" class="btn btn-primary btn-sm"><i
+                        class="fas fa-shopping-cart"></i> Añadir al carrito</button>
+                  </div>
+                </a>
               </div>
-              <div class="col-md-4 pb-3">
-                <div class="product card product h-100">
-                  <a href="single.html">
-                       <div class="product-header">
-                          <span class="badge badge-success">20% OFF</span>
-                          <img class="img-fluid" src="assets/img/product-01-apple.jpg" alt="">
-                          <span class="veg text-secondary mdi-circle"><i class="fas fa-circle"></i></span>
-                       </div>
-                       <div class="product-body">
-                        <h5>Manzana Roja</h5>
-                        <h6>A partir de 500 gr</h6>
-                       </div>
-                       <div class="product-footer">
-                        <p class="offer-price mb-3">80.000 <i class="fas fa-tags"></i><span
-                          class="regular-price"> 100.000</span></p><button type="button" class="btn btn-primary btn-sm"><i class="fas fa-shopping-cart"></i> Añadir al carrito</button>
-                       </div>
-                    </a>
-                </div>
+            </div>
+            <div class="col-md-4 pb-3">
+              <div class="product card product h-100">
+                <a href="single.html">
+                  <div class="product-header">
+                    <span class="badge badge-success">20% OFF</span>
+                    <img class="img-fluid" src="assets/img/product-01-apple.jpg" alt="">
+                    <span class="veg text-secondary mdi-circle"><i class="fas fa-circle"></i></span>
+                  </div>
+                  <div class="product-body">
+                    <h5>Manzana Roja</h5>
+                    <h6>A partir de 500 gr</h6>
+                  </div>
+                  <div class="product-footer">
+                    <p class="offer-price mb-3">80.000 <i class="fas fa-tags"></i><span class="regular-price">
+                        100.000</span></p><button type="button" class="btn btn-primary btn-sm"><i
+                        class="fas fa-shopping-cart"></i> Añadir al carrito</button>
+                  </div>
+                </a>
               </div>
-              <div class="col-md-4 pb-3">
-                <div class="product card product h-100">
-                  <a href="single.html">
-                       <div class="product-header">
-                          <span class="badge badge-success">20% OFF</span>
-                          <img class="img-fluid" src="assets/img/product-01-apple.jpg" alt="">
-                          <span class="veg text-secondary mdi-circle"><i class="fas fa-circle"></i></span>
-                       </div>
-                       <div class="product-body">
-                        <h5>Manzana Roja</h5>
-                        <h6>A partir de 500 gr</h6>
-                       </div>
-                       <div class="product-footer">
-                        <p class="offer-price mb-3">80.000 <i class="fas fa-tags"></i><span
-                          class="regular-price"> 100.000</span></p><button type="button" class="btn btn-primary btn-sm"><i class="fas fa-shopping-cart"></i> Añadir al carrito</button>
-                       </div>
-                    </a>
-                </div>
+            </div>
+            <div class="col-md-4 pb-3">
+              <div class="product card product h-100">
+                <a href="single.html">
+                  <div class="product-header">
+                    <span class="badge badge-success">20% OFF</span>
+                    <img class="img-fluid" src="assets/img/product-01-apple.jpg" alt="">
+                    <span class="veg text-secondary mdi-circle"><i class="fas fa-circle"></i></span>
+                  </div>
+                  <div class="product-body">
+                    <h5>Manzana Roja</h5>
+                    <h6>A partir de 500 gr</h6>
+                  </div>
+                  <div class="product-footer">
+                    <p class="offer-price mb-3">80.000 <i class="fas fa-tags"></i><span class="regular-price">
+                        100.000</span></p><button type="button" class="btn btn-primary btn-sm"><i
+                        class="fas fa-shopping-cart"></i> Añadir al carrito</button>
+                  </div>
+                </a>
               </div>
-              <div class="col-md-4 pb-3">
-                <div class="product card product h-100">
-                  <a href="single.html">
-                       <div class="product-header">
-                          <span class="badge badge-success">20% OFF</span>
-                          <img class="img-fluid" src="assets/img/product-01-apple.jpg" alt="">
-                          <span class="veg text-secondary mdi-circle"><i class="fas fa-circle"></i></span>
-                       </div>
-                       <div class="product-body">
-                        <h5>Manzana Roja</h5>
-                        <h6>A partir de 500 gr</h6>
-                       </div>
-                       <div class="product-footer">
-                        <p class="offer-price mb-3">80.000 <i class="fas fa-tags"></i><span
-                          class="regular-price"> 100.000</span></p><button type="button" class="btn btn-primary btn-sm"><i class="fas fa-shopping-cart"></i> Añadir al carrito</button>
-                       </div>
-                    </a>
-                </div>
+            </div>
+            <div class="col-md-4 pb-3">
+              <div class="product card product h-100">
+                <a href="single.html">
+                  <div class="product-header">
+                    <span class="badge badge-success">20% OFF</span>
+                    <img class="img-fluid" src="assets/img/product-01-apple.jpg" alt="">
+                    <span class="veg text-secondary mdi-circle"><i class="fas fa-circle"></i></span>
+                  </div>
+                  <div class="product-body">
+                    <h5>Manzana Roja</h5>
+                    <h6>A partir de 500 gr</h6>
+                  </div>
+                  <div class="product-footer">
+                    <p class="offer-price mb-3">80.000 <i class="fas fa-tags"></i><span class="regular-price">
+                        100.000</span></p><button type="button" class="btn btn-primary btn-sm"><i
+                        class="fas fa-shopping-cart"></i> Añadir al carrito</button>
+                  </div>
+                </a>
               </div>
-              <div class="col-md-4 pb-3">
-                <div class="product card product h-100">
-                  <a href="single.html">
-                       <div class="product-header">
-                          <span class="badge badge-success">20% OFF</span>
-                          <img class="img-fluid" src="assets/img/product-01-apple.jpg" alt="">
-                          <span class="veg text-secondary mdi-circle"><i class="fas fa-circle"></i></span>
-                       </div>
-                       <div class="product-body">
-                        <h5>Manzana Roja</h5>
-                        <h6>A partir de 500 gr</h6>
-                       </div>
-                       <div class="product-footer">
-                        <p class="offer-price mb-3">80.000 <i class="fas fa-tags"></i><span
-                          class="regular-price"> 100.000</span></p><button type="button" class="btn btn-primary btn-sm"><i class="fas fa-shopping-cart"></i> Añadir al carrito</button>
-                       </div>
-                    </a>
-                </div>
+            </div>
+            <div class="col-md-4 pb-3">
+              <div class="product card product h-100">
+                <a href="single.html">
+                  <div class="product-header">
+                    <span class="badge badge-success">20% OFF</span>
+                    <img class="img-fluid" src="assets/img/product-01-apple.jpg" alt="">
+                    <span class="veg text-secondary mdi-circle"><i class="fas fa-circle"></i></span>
+                  </div>
+                  <div class="product-body">
+                    <h5>Manzana Roja</h5>
+                    <h6>A partir de 500 gr</h6>
+                  </div>
+                  <div class="product-footer">
+                    <p class="offer-price mb-3">80.000 <i class="fas fa-tags"></i><span class="regular-price">
+                        100.000</span></p><button type="button" class="btn btn-primary btn-sm"><i
+                        class="fas fa-shopping-cart"></i> Añadir al carrito</button>
+                  </div>
+                </a>
               </div>
+            </div>
 
 
-              <nav>
-                <ul class="pagination justify-content-center">
-                  <li class="page-item disabled">
-                    <span class="page-link">Previous</span>
-                  </li>
-                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item active">
-                    <span class="page-link">
+            <nav>
+              <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                  <span class="page-link">Previous</span>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active">
+                  <span class="page-link">
                     2
                     <span class="sr-only">(current)</span>
-                    </span>
-                  </li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item">
-                    <a class="page-link" href="#">Next</a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
+                  </span>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Next</a>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
+      </div>
   </section>
 
 
