@@ -27,7 +27,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6 py-1">
-            <span class="mb-0 text-white">
+            <span class="mb-0">
               Tasa del dia: 
               <span class="font-weight-bolder">
                 <i class="fa icon-venezuela-bolivar"></i> 89500 
@@ -36,7 +36,7 @@
           </div>
           <div class="col-md-6 text-right py-1">
             <div class="container">
-              <div class="row navbar-center justify-content-end text-white">
+              <div class="row navbar-center justify-content-end">
                 <div class="col-auto navbar-option dropdown">
                   <a class="nav-link p-0" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                     <i class="fa icon-venezuela-bolivar"></i> VEN
@@ -74,7 +74,7 @@
       </div>
     </div>
 
-    <nav class="navbar navbar-light navbar-expand-lg bg-primary-gradient bg-faded frutagro-menu">
+    <nav class="navbar navbar-light navbar-expand-lg bg-white bg-faded frutagro-menu">
       <div class="container">
         <a class="navbar-brand pl-0" href="index.html"> <img class="logo" src="assets/img/frutagro_logo.png" alt="logo">
         </a>
@@ -107,10 +107,53 @@
     </nav>
   </header>
 
-  <nav class="navbar navbar-expand-lg navbar-light frutagro-menu-2 pad-none-mobile sticky-top border-bottom">
-    <div class="container-fluid">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light frutagro-menu-2 pad-none-mobile sticky-top">
+    <div class="container">
+      <span class="nav-item navbar-brand navbar-user mobile-menu-title">Categorias</a>
+      </span>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item navbar-user active">
+            <a href="index2.html" class="nav-link"><i class="fa fa-home"></i> Inicio</a>
+          </li>
+          <li class="nav-item navbar-user">
+            <a href="about.html" class="nav-link"><i class="fas fa-apple-alt"></i> Frutas</a>
+          </li>
+          <li class="nav-item navbar-user">
+            <a class="nav-link" href="shop.html"><i class="fas fa-carrot"></i> Vegetales</a>
+          </li>
+          <li class="nav-item navbar-user">
+            <a class="nav-link" href="shop.html"><i class="fas fa-users"></i> Nosotros</a>
+          </li>
+          <li class="nav-item navbar-user">
+            <a class="nav-link" href="shop.html"><i class="far fa-address-card"></i> Contacto</a>
+          </li>
+        </ul>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- <nav class="navbar navbar-expand-lg navbar-light frutagro-menu-2 pad-none-mobile sticky-top">
+    <div class="container">
       <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 m-auto">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li class="nav-item navbar-user">
             <a href="index2.html" class="nav-link"><i class="fa fa-home"></i> Inicio</a>
           </li>
@@ -145,7 +188,7 @@
         </ul>
       </div>
     </div>
-  </nav>
+  </nav> -->
 
   <!-- <section class="section-padding bg-primary-gradient inner-header">
     <div class="container">

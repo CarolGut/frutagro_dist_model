@@ -6,7 +6,7 @@ body {
     font-size: 13px;
     font-family: 'Maven Pro', sans-serif;
     line-height: 25px;
-    color: #888;
+    color: #40493b;
 }
 
 h1,
@@ -407,17 +407,7 @@ a:focus {
 /* Top Menu */
 .navbar-top,
 .footer-bottom {
-    border-color: transparent !important;
-    background: #171b20;
-    /* Old browsers */
-    background: -moz-linear-gradient(-45deg, #171b20 1%, #343a40 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, #171b20 1%, #343a40 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, #171b20 1%, #343a40 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#171b20', endColorstr='#343a40', GradientType=1);
-    /* IE6-9 fallback on horizontal gradient */
+    background: #f4f4f4;
 }
 
 .frutagro-menu {
@@ -492,13 +482,15 @@ a:focus {
 }
 
 .top-categories-search {
-    left: 280px;
+    left: 350px;
     margin: auto;
-    box-shadow: 0 2px 8px 0 rgba(117, 117, 117, 0.46);
+    box-shadow: 0 2px 8px 0 rgba(255, 97, 98, 0.46);
     position: absolute;
     right: 0;
     top: 41px;
-    width: 480px;
+    width: 510px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px !important;
 }
 
 .top-categories-search .form-control {
@@ -551,13 +543,13 @@ a:focus {
 
 /* Link Menu */
 .frutagro-menu-2 {
-    background: #fff none repeat scroll 0 0 !important;
+    background:  #2d6616 none repeat scroll 0 0 !important;
     border-radius: 0;
     padding: 0;
 }
 
 .frutagro-menu-2 .nav-link {
-    color: #666 !important;
+    color:#f6fbf2!important;
     font-size: 14px;
     padding: 13px 25px !important;
 }
@@ -584,13 +576,9 @@ a:focus {
 }
 
 .frutagro-menu-2 .nav-item:hover {
-    background: #f4f4f4 none repeat scroll 0 0;
-    color: #7fbb35 !important;
+    background: #2f4858 none repeat scroll 0 0;;
 }
 
-.frutagro-menu-2 .nav-item:hover a {
-    color: #7fbb35 !important;
-}
 
 /* Category Slider */
 .card {
