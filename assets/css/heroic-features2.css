@@ -122,10 +122,18 @@ a:focus {
 }
 
 .btn-primary {
-    background: #2f4858;
+    background: linear-gradient(135deg, #152479 0%,#2f4858 100%);
+    transition: all 0.2s ease-in-out;
+
+
 }
 .btn-primary:hover {
-    background: #2d6616;
+    background: linear-gradient(135deg, #2f4858 0%,#152479 100%);
+}
+
+.btn-secondary {
+    background: #f4f4f4 !important;
+    color: #40493b !important;
 }
 
 .bg-success,
