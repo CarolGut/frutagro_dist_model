@@ -26,13 +26,9 @@
     <div class="navbar-top">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 py-2">
-            <span class="mb-0">
-              Tasa del dia:
-              <span class="font-weight-bolder">
-                <i class="fa icon-venezuela-bolivar"></i> 89500
-              </span>
-            </span>
+          <div class="col-md-6 align-self-center">
+            <span class="mb-0 h6">Tasa del dia:</span>
+            <span class="font-weight-bolder h4 text-danger"> Bs.S 89500</span>
           </div>
           <div class="col-md-6 text-right py-0">
             <div class="container">
@@ -40,29 +36,31 @@
                 <div class="navbar-option dropdown">
                   <span class="nav-link" data-toggle="dropdown" role="button" aria-haspopup="true"
                     aria-expanded="false">
-                    <i class="fa icon-venezuela-bolivar"></i> VEN
+                    <strong>Bs.S</strong> VEN
                     <i class="fa fa-angle-down"></i>
                   </span>
                   <ul class="dropdown-menu" role="menu">
-                    <li><a class="dropdown-item" href="#"><i class="fa icon-venezuela-bolivar"></i> VEN</a></li>
+                    <li><a class="dropdown-item" href="#"><strong>Bs.S</strong> VEN</a></li>
                     <li><a class="dropdown-item" href="#"><i class="fa fa-dollar-sign"></i> USD</a></a></li>
                   </ul>
                 </div>
 
                 <div class="navbar-option dropdown">
                   <a class="nav-link" data-toggle="dropdown" id="navbarDropdown1" role="button" aria-haspopup="true"
-                    aria-expanded="false"><img src="assets/img/icon/en.png" alt="">
+                    aria-expanded="false"><img class="country" src="assets/img/es.png" alt="">
                     Español
                     <i class="fa fa-angle-down"></i></a>
                   <ul class="dropdown-menu" role="menu">
-                    <li><a class="dropdown-item" href="#"><img src="assets/img/icon/en.png" alt=""> Español</a></li>
-                    <li><a class="dropdown-item" href="#"><img src="assets/img/icon/fr.png" alt=""> English</a></li>
+                    <li><a class="dropdown-item" href="#"><img class="country" src="assets/img/es.png" alt="">
+                        Español</a></li>
+                    <li><a class="dropdown-item" href="#"><img class="country" src="assets/img/en.png" alt="">
+                        English</a></li>
                   </ul>
                 </div>
 
                 <div class="navbar-option dropdown">
                   <a class="nav-link" data-toggle="dropdown" id="navbarDropdown1" role="button" aria-haspopup="true"
-                    aria-expanded="false"><i class="fas fa-user"></i>&nbsp;Mi cuenta
+                    aria-expanded="false"><i class="fas fa-sign-in-alt"></i>&nbsp;Iniciar sesión
                     <i class="fa fa-angle-down"></i></a>
                   <ul class="dropdown-menu" role="menu">
                     <li><a class="dropdown-item" href="#"><i class="fas fa-user"></i> &nbsp;Mi cuenta</a></li>
@@ -116,11 +114,11 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item navbar-user active">
+          <li class="nav-item navbar-user">
             <a href="index2.html" class="nav-link"><i class="fa fa-home"></i> Inicio</a>
           </li>
-          <li class="nav-item navbar-user">
-            <a href="about.html" class="nav-link"><i class="fas fa-apple-alt"></i> Frutas</a>
+          <li class="nav-item navbar-user active">
+            <a href="fruits.html" class="nav-link"><i class="fas fa-apple-alt"></i> Frutas</a>
           </li>
           <li class="nav-item navbar-user">
             <a class="nav-link" href="shop.html"><i class="fas fa-carrot"></i> Vegetales</a>
@@ -338,7 +336,7 @@
             <div class="row">
               <div class="col-md-4 pb-3">
                 <div class="product card product h-100">
-                  <a href="single.html">
+                  <a href="product.html">
                   <div class="product-header">
                     <span class="badge badge-success">20% menos</span>
                     <img class="img-fluid" src="assets/img/product-01-apple.jpg" alt="">
@@ -508,25 +506,29 @@
                 </div>
               </div>
 
+              <div class="col-12">
+                <nav class="my-5 d-flex justify-content-center" aria-label="...">
+                  <ul class="pagination">
+                    <li class="page-item disabled">
+                      <span class="page-link">Previous</span>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item " aria-current="page">
+                      <span class="page-link">
+                        2
+                        <span class="sr-only">(current)</span>
+                      </span>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">Next</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
 
-              <nav>
-                <ul class="pagination justify-content-center">
-                  <li class="page-item disabled">
-                    <span class="page-link">Previous</span>
-                  </li>
-                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item active">
-                    <span class="page-link">
-                    2
-                    <span class="sr-only">(current)</span>
-                    </span>
-                  </li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item">
-                    <a class="page-link" href="#">Next</a>
-                  </li>
-                </ul>
-              </nav>
+
+              
             </div>
           </div>
         </div>

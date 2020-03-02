@@ -2,7 +2,7 @@
 
 /* Body */
 body {
-    background-color: #F9FFE2;
+    background-color: #f9f9f9;
     font-size: 13px;
     font-family: 'Maven Pro', sans-serif;
     line-height: 25px;
@@ -81,19 +81,10 @@ a:focus {
     color: #0cc5b7;
 }
 
-.page-item.active .page-link {
+.nav-item.active .nav-link {
     border-color: transparent !important;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0cc5b7+0,2bd891+100 */
-    background: #0cc5b7;
-    /* Old browsers */
-    background: -moz-linear-gradient(-45deg, #0cc5b7 0%, #2bd891 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, #0cc5b7 0%, #2bd891 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, #0cc5b7 0%, #2bd891 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0cc5b7', endColorstr='#2bd891', GradientType=1);
-    /* IE6-9 fallback on horizontal gradient */
+    background: #2f4858;
+
 }
 
 /* Background */
@@ -151,7 +142,7 @@ a:focus {
 
 
 .text-secondary {
-    color: #7fbb35 !important;
+    color: #2d6616 !important
 }
 
 .text-tertiary {
@@ -161,11 +152,13 @@ a:focus {
 .badge {
     border-radius: 2px;
     font-weight: 400;
+    padding: 4px 10px !important;
+    font-size: 13px;
 }
 
 .heading-design-h5 {
     font-size: 18px;
-    margin-bottom: 14px;
+    margin-bottom: 6px;
 }
 
 .heading-design-h5 a {
@@ -603,6 +596,7 @@ a:focus {
 /* Category Slider */
 .card {
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.06);
+    border: 1px solid #dbdbdb;
 }
 
 .page-info {
@@ -838,7 +832,7 @@ a:focus {
     box-shadow: 2px 2px 3px 1px#a4a4a4;
     display: inline-block;
     height: 40px;
-    line-height: 41px;
+    line-height: 38px;
     text-align: center;
     width: 40px;
     font-size: 19px;
@@ -2200,6 +2194,13 @@ label {
     height: 500px;
 }
 
+.hero-slider-content .btn-primary{
+    border-radius: 49px !important;
+    font-size: 12px;
+    padding: 6px 12px;
+    margin: 10px 0 0;
+}
+
 img {
     max-width: 100%;
     -webkit-transition: 0.4s;
@@ -2214,7 +2215,7 @@ img {
 }
 
 .hero-slider-content {
-    padding: 0 125px;
+    padding: 0 170px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991.98px),
@@ -2361,7 +2362,7 @@ only screen and (max-width: 767.98px) {
     -webkit-flex-basis: 70px;
     -ms-flex-preferred-size: 70px;
     flex-basis: 70px;
-    color: #7fbb35;
+    color: #2d6616;
 }
 
 @media only screen and (max-width: 767.98px) {
@@ -2510,5 +2511,31 @@ only screen and (max-width: 767.98px) {
 .navbar-dark .navbar-toggler {
     color: rgba(255,255,255,.5);
     border-color:    rgba(255,255,255,.1);
-
 }
+
+.country {
+    width: 24px;
+}
+
+.page-item.active .page-link {
+    z-index: 1;
+    color:#40493b;
+    text-shadow: 0 0 #40493b;
+    background-color:#ededed;
+    border-color:#ccc;
+}
+
+.page-link {
+    color: #14216e;
+    text-shadow: 0 0 #14216e;
+}
+
+.page-link:hover {
+    z-index: 2;
+    color: #2d6616;
+    text-shadow: 0 0 #2d6616;
+    text-decoration: none;
+    background-color:#e9ecef;
+    border-color: #dee2e6;
+}
+
