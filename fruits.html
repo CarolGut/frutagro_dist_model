@@ -80,10 +80,6 @@
       <div class="container">
         <a class="navbar-brand pl-0" href="index.html"> <img class="logo" src="assets/img/frutagro_logo.png" alt="logo">
         </a>
-        <button class="navbar-toggler navbar-toggler-white" type="button" data-toggle="collapse"
-          data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
         <div class="navbar-collapse" id="navbarNavDropdown ">
           <div class="navbar-nav mt-5 mt-lg-2 m-auto top-categories-search-main">
             <div class="top-categories-search">
@@ -99,8 +95,8 @@
             <ul class="list-inline main-nav-right">
               <li class="list-inline-item cart-btn">
                 <a href="#" data-toggle="offcanvas" class="btn btn-link border-none"><i
-                    class="mdi fas fa-shopping-cart"></i> Mi carrito
-                  <small class="cart-value bg-danger">5</small></a>
+                    class="mdi fas fa-shopping-cart mr-2"></i> Mi carrito
+                  <small class="cart-value bg-danger text-white">5</small></a>
               </li>
             </ul>
           </div>
@@ -111,7 +107,7 @@
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light frutagro-menu-2 pad-none-mobile sticky-top">
     <div class="container">
-      <span class="nav-item navbar-brand navbar-user mobile-menu-title">Categorias</a>
+      <span class="nav-item navbar-brand navbar-user mobile-menu-title ml-4 text-white font-weight-bold text-uppercase">Categorias
       </span>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -137,7 +133,14 @@
           </li>
         </ul>
 
-        <li class="nav-item dropdown">
+        <span class="nav-item">
+          <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false"><i class="fas fa-sign-in-alt"></i> 
+            Iniciar sesion
+          </a>
+        </span>
+
+        <!-- <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
             Dropdown
@@ -148,7 +151,7 @@
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">Something else here</a>
           </div>
-        </li>
+        </li> -->
 
       </div>
     </div>
@@ -229,7 +232,7 @@
                       <div class="form-group">
                         <input type="text" class="form-control" placeholder="Search By Category">
                         <button type="submit" class="pl-2 pr-2 btn btn-secondary btn-lg"><i
-                            class="mdi mdi-file-find"></i></button>
+                            class="mdi fa fa-search"></i></button>
                       </div>
                     </form>
                     <div class="custom-control custom-checkbox">
@@ -238,23 +241,19 @@
                     </div>
                     <div class="custom-control custom-checkbox">
                       <input type="checkbox" class="custom-control-input" id="cb8">
-                      <label class="custom-control-label" for="cb8">Bayas<span class="badge badge-primary">5%
-                          OFF</span></label>
+                      <label class="custom-control-label" for="cb8">Bayas</label>
                     </div>
                     <div class="custom-control custom-checkbox">
                       <input type="checkbox" class="custom-control-input" id="cb2">
-                      <label class="custom-control-label" for="cb2">Cítricos<span
-                          class="badge badge-secondary">NEW</span></label>
+                      <label class="custom-control-label" for="cb2">Cítricos</label>
                     </div>
                     <div class="custom-control custom-checkbox">
                       <input type="checkbox" class="custom-control-input" id="cb3">
-                      <label class="custom-control-label" for="cb3">Cucurbitáceas<span class="badge badge-danger">10%
-                          OFF</span></label>
+                      <label class="custom-control-label" for="cb3">Cucurbitáceas</label>
                     </div>
                     <div class="custom-control custom-checkbox">
                       <input type="checkbox" class="custom-control-input" id="cb4">
-                      <label class="custom-control-label" for="cb4">Exóticas <span class="badge badge-info">50%
-                          OFF</span></label>
+                      <label class="custom-control-label" for="cb4">Exóticas </label>
                     </div>
                     <div class="custom-control custom-checkbox">
                       <input type="checkbox" class="custom-control-input" id="cb5">
@@ -280,7 +279,7 @@
                     <div class="custom-control custom-checkbox">
                       <input type="checkbox" class="custom-control-input" id="1">
                       <label class="custom-control-label" for="1">$68 to $659 <span class="badge badge-warning">50%
-                          OFF</span></label>
+                          menos</span></label>
                     </div>
                     <div class="custom-control custom-checkbox">
                       <input type="checkbox" class="custom-control-input" id="2">
@@ -303,45 +302,45 @@
           <div class="left-ad mt-4">
             <img class="img-fluid" src="http://via.placeholder.com/254x557" alt="">
           </div>
-        </div>
+          </div>
 
-        <div class="col-md-9">
-          <img class="img-fruit mb-3" src="assets/img/27050611.jpg" alt="">
-          <div class="shop-head mt-3 mb-4 section-header">
-            <div class="row">
-              <div class="col-3">
-                <h5 class="my-2">Frutas</h5>
-              </div>
-              <div class="col-9">
-                <div class="container">
-                  <div class="row justify-content-end">
-                    <span class="order mr-2 my-auto text-dark">Ordenar por</span>
-                    <div class="btn-group float-right">
-                      <button type="button" class="nice-select bg-white dropdown-toggle" data-toggle="dropdown"
+          <div class="col-md-9">
+            <img class="img-fruit mb-3" src="assets/img/27050611.jpg" alt="">
+            <div class="shop-head mt-3 mb-4 section-header">
+              <div class="row">
+                <div class="col-3">
+                  <h5 class="my-2">Frutas</h5>
+                </div>
+                <div class="col-9">
+                  <div class="container">
+                    <div class="row justify-content-end">
+                      <span class="order mr-2 my-auto text-dark">Ordenar por</span>
+                      <div class="btn-group float-right">
+                        <button type="button" class="nice-select bg-white dropdown-toggle" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">
                         Más relevantes &nbsp;&nbsp;&nbsp;
                       </button>
-                      <div class="dropdown-menu dropdown-menu-right">
-                        <a class="dropdown-item" href="#">Más relevantes</a>
-                        <a class="dropdown-item" href="#">Menor precio</a>
-                        <a class="dropdown-item" href="#">Mayor precio</a>
-                        <a class="dropdown-item" href="#">Descuentos</a>
-                        <a class="dropdown-item" href="#">Nombre (A - Z)</a>
-                        <a class="dropdown-item" href="#">Nombre (Z - A)</a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                          <a class="dropdown-item" href="#">Más relevantes</a>
+                          <a class="dropdown-item" href="#">Menor precio</a>
+                          <a class="dropdown-item" href="#">Mayor precio</a>
+                          <a class="dropdown-item" href="#">Descuentos</a>
+                          <a class="dropdown-item" href="#">Nombre (A - Z)</a>
+                          <a class="dropdown-item" href="#">Nombre (Z - A)</a>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-          </div>
-          <div class="row">
-            <div class="col-md-4 pb-3">
-              <div class="product card product h-100">
-                <a href="single.html">
+            </div>
+            <div class="row">
+              <div class="col-md-4 pb-3">
+                <div class="product card product h-100">
+                  <a href="single.html">
                   <div class="product-header">
-                    <span class="badge badge-success">20% OFF</span>
+                    <span class="badge badge-success">20% menos</span>
                     <img class="img-fluid" src="assets/img/product-01-apple.jpg" alt="">
                   </div>
                   <div class="product-body">
@@ -354,13 +353,13 @@
                         class="fas fa-shopping-cart"></i> Añadir al carrito</button>
                   </div>
                 </a>
+                </div>
               </div>
-            </div>
-            <div class="col-md-4 pb-3">
-              <div class="product card product h-100">
-                <a href="single.html">
+              <div class="col-md-4 pb-3">
+                <div class="product card product h-100">
+                  <a href="single.html">
                   <div class="product-header">
-                    <span class="badge badge-success">20% OFF</span>
+                    <span class="badge badge-success">20% menos</span>
                     <img class="img-fluid" src="assets/img/product-01-apple.jpg" alt="">
                   </div>
                   <div class="product-body">
@@ -373,13 +372,13 @@
                         class="fas fa-shopping-cart"></i> Añadir al carrito</button>
                   </div>
                 </a>
+                </div>
               </div>
-            </div>
-            <div class="col-md-4 pb-3">
-              <div class="product card product h-100">
-                <a href="single.html">
+              <div class="col-md-4 pb-3">
+                <div class="product card product h-100">
+                  <a href="single.html">
                   <div class="product-header">
-                    <span class="badge badge-success">20% OFF</span>
+                    <span class="badge badge-success">20% menos</span>
                     <img class="img-fluid" src="assets/img/product-01-apple.jpg" alt="">
                   </div>
                   <div class="product-body">
@@ -392,13 +391,13 @@
                         class="fas fa-shopping-cart"></i> Añadir al carrito</button>
                   </div>
                 </a>
+                </div>
               </div>
-            </div>
-            <div class="col-md-4 pb-3">
-              <div class="product card product h-100">
-                <a href="single.html">
+              <div class="col-md-4 pb-3">
+                <div class="product card product h-100">
+                  <a href="single.html">
                   <div class="product-header">
-                    <span class="badge badge-success">20% OFF</span>
+                    <span class="badge badge-success">20% menos</span>
                     <img class="img-fluid" src="assets/img/product-01-apple.jpg" alt="">
                   </div>
                   <div class="product-body">
@@ -411,13 +410,13 @@
                         class="fas fa-shopping-cart"></i> Añadir al carrito</button>
                   </div>
                 </a>
+                </div>
               </div>
-            </div>
-            <div class="col-md-4 pb-3">
-              <div class="product card product h-100">
-                <a href="single.html">
+              <div class="col-md-4 pb-3">
+                <div class="product card product h-100">
+                  <a href="single.html">
                   <div class="product-header">
-                    <span class="badge badge-success">20% OFF</span>
+                    <span class="badge badge-success">20% menos</span>
                     <img class="img-fluid" src="assets/img/product-01-apple.jpg" alt="">
                   </div>
                   <div class="product-body">
@@ -430,13 +429,13 @@
                         class="fas fa-shopping-cart"></i> Añadir al carrito</button>
                   </div>
                 </a>
+                </div>
               </div>
-            </div>
-            <div class="col-md-4 pb-3">
-              <div class="product card product h-100">
-                <a href="single.html">
+              <div class="col-md-4 pb-3">
+                <div class="product card product h-100">
+                  <a href="single.html">
                   <div class="product-header">
-                    <span class="badge badge-success">20% OFF</span>
+                    <span class="badge badge-success">20% menos</span>
                     <img class="img-fluid" src="assets/img/product-01-apple.jpg" alt="">
                   </div>
                   <div class="product-body">
@@ -449,13 +448,13 @@
                         class="fas fa-shopping-cart"></i> Añadir al carrito</button>
                   </div>
                 </a>
+                </div>
               </div>
-            </div>
-            <div class="col-md-4 pb-3">
-              <div class="product card product h-100">
-                <a href="single.html">
+              <div class="col-md-4 pb-3">
+                <div class="product card product h-100">
+                  <a href="single.html">
                   <div class="product-header">
-                    <span class="badge badge-success">20% OFF</span>
+                    <span class="badge badge-success">20% menos</span>
                     <img class="img-fluid" src="assets/img/product-01-apple.jpg" alt="">
                   </div>
                   <div class="product-body">
@@ -468,13 +467,13 @@
                         class="fas fa-shopping-cart"></i> Añadir al carrito</button>
                   </div>
                 </a>
+                </div>
               </div>
-            </div>
-            <div class="col-md-4 pb-3">
-              <div class="product card product h-100">
-                <a href="single.html">
+              <div class="col-md-4 pb-3">
+                <div class="product card product h-100">
+                  <a href="single.html">
                   <div class="product-header">
-                    <span class="badge badge-success">20% OFF</span>
+                    <span class="badge badge-success">20% menos</span>
                     <img class="img-fluid" src="assets/img/product-01-apple.jpg" alt="">
                   </div>
                   <div class="product-body">
@@ -487,13 +486,13 @@
                         class="fas fa-shopping-cart"></i> Añadir al carrito</button>
                   </div>
                 </a>
+                </div>
               </div>
-            </div>
-            <div class="col-md-4 pb-3">
-              <div class="product card product h-100">
-                <a href="single.html">
+              <div class="col-md-4 pb-3">
+                <div class="product card product h-100">
+                  <a href="single.html">
                   <div class="product-header">
-                    <span class="badge badge-success">20% OFF</span>
+                    <span class="badge badge-success">20% menos</span>
                     <img class="img-fluid" src="assets/img/product-01-apple.jpg" alt="">
                   </div>
                   <div class="product-body">
@@ -506,31 +505,31 @@
                         class="fas fa-shopping-cart"></i> Añadir al carrito</button>
                   </div>
                 </a>
+                </div>
               </div>
-            </div>
 
 
-            <nav>
-              <ul class="pagination justify-content-center">
-                <li class="page-item disabled">
-                  <span class="page-link">Previous</span>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item active">
-                  <span class="page-link">
+              <nav>
+                <ul class="pagination justify-content-center">
+                  <li class="page-item disabled">
+                    <span class="page-link">Previous</span>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item active">
+                    <span class="page-link">
                     2
                     <span class="sr-only">(current)</span>
-                  </span>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item">
-                  <a class="page-link" href="#">Next</a>
-                </li>
-              </ul>
-            </nav>
+                    </span>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
           </div>
         </div>
-      </div>
   </section>
 
 
@@ -574,7 +573,7 @@
           <div class="col-sm-6 col-md-6 col-lg-auto">
             <h6 class="mb-4">SIGUENOS EN</h6>
             <div class="footer-social">
-              <a class="btn-instagram" href="#"><i class="fab fa-lg fa-instagram"></i></a>
+              <a class="btn-instagram mr-1" href="#"><i class="fab fa-lg fa-instagram"></i></a>
               <a class="btn-whatsapp" href="#"><i class="fab fa-lg fa-whatsapp"></i></a>
             </div>
           </div>

@@ -2,7 +2,7 @@
 
 /* Body */
 body {
-    background-color: #fdfdfd;
+    background-color: #F9FFE2;
     font-size: 13px;
     font-family: 'Maven Pro', sans-serif;
     line-height: 25px;
@@ -45,7 +45,7 @@ img {
 
 a {
     text-decoration: none !important;
-    color: #888;
+    color: #40493b;
     transition-duration: 0.4s;
 }
 
@@ -126,7 +126,7 @@ a:focus {
     transition: all 0.3s ease 0s;
     color:#ffffff !important;
     border: 1px solid #577181;
-    box-shadow: 2px 2px 3px 1px#a4a4a4;
+    box-shadow: 2px 2px 2px 0px#a4a4a4;
 }
 
 .btn-primary:hover {    
@@ -314,10 +314,10 @@ a:focus {
 
 .shop-detail-left {
     background: #fff none repeat scroll 0 0;
-    border: 2px solid #eeeeee;
+    border: 1px solid #cecece;
     border-radius: 12px;
     padding: 32px;
-    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.06);
+    box-shadow: 1px 1px 2px 0px rgb(210, 210, 210);
     height: 400px;
     display: flex;
     align-items: center;
@@ -325,9 +325,9 @@ a:focus {
 
 .shop-detail-right {
     background: #fff none repeat scroll 0 0;
-    border: 2px solid #eeeeee;
+    border: 1px solid #cecece;
     padding: 32px;
-    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.06);
+    box-shadow: 1px 1px 2px 0px rgb(210, 210, 210);
 }
 
 
@@ -431,7 +431,7 @@ a:focus {
 
 .main-nav-right .btn {
     border-radius: 0 !important;
-    color: #fff;
+    color: #40493b;
     margin: 0 0 0 -4px;
     padding: 9px 0;
 }
@@ -452,18 +452,24 @@ a:focus {
 }
 
 .cart-btn .mdi {
-    background: #fff none repeat scroll 0 0;
+    background: #2f4858 none repeat scroll 0 0;
     border-radius: 50px;
-    box-shadow: 0 2px 8px 0 rgba(255, 97, 98, 0.46);
-    color: #000;
+    box-shadow: 2px 2px 3px 1px #a4a4a4;
+    color: rgb(255, 255, 255);
     display: inline-block;
-    font-size: 18px;
-    height: 36px;
-    line-height: 35px;
+    font-size: 20px;
+    height: 42px;
+    line-height: 45px;
     margin-right: 6px;
     vertical-align: -3px;
-    width: 36px;
+    width: 42px;
+    transition: all 0.3s ease 0s;
 }
+
+.cart-btn .mdi:hover {
+    background:#193546;
+}
+
 
 .cart-btn .btn {
     font-weight: 500;
@@ -585,8 +591,12 @@ a:focus {
     padding-right: 22px !important;
 }
 
+.frutagro-menu-2 .nav-item {
+    transition: all 0.3s ease 0s;
+}
+
 .frutagro-menu-2 .nav-item:hover {
-    background: #2f4858 none repeat scroll 0 0;;
+    background: #2f4858 none repeat scroll 0 0;
 }
 
 
@@ -686,7 +696,7 @@ a:focus {
 
 .product {
     background: #fff none repeat scroll 0 0;
-    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.06);
+    box-shadow: 1px 1px 2px 0px rgb(210, 210, 210);
     border-radius: 2px;
     text-align: center;
     padding: 20px;
@@ -819,21 +829,25 @@ a:focus {
 }
 
 .footer-social a {
-    background: #fff none repeat scroll 0 0;
+    background: #2f4858 none repeat scroll 0 0;
     border: 1px solid;
     border-radius: 25px;
-    color: #ccc;
+    transition: all 0.3s ease 0s;
+    color:#ffffff !important;
+    border: 1px solid#577181;
+    box-shadow: 2px 2px 3px 1px#a4a4a4;
     display: inline-block;
-    height: 30px;
-    line-height: 27px;
+    height: 40px;
+    line-height: 41px;
     text-align: center;
-    width: 30px;
+    width: 40px;
+    font-size: 19px;
 }
 
 .footer-social a:hover {
-    background: #ccc none repeat scroll 0 0;
-    border: 1px solid #ccc;
-    color: #fff;
+    background:#193546;
+    border: 1px solid#2f4858;
+    color:#ffffff !important;
 }
 
 .footer-bottom p {
@@ -1079,9 +1093,10 @@ body.toggled::after {
 
 .shop-detail-right {
     background: #fff none repeat scroll 0 0;
-    border: 1px solid #eeeeee;
+    border: 1px solid #cecece;
     border-radius: 12px;
     padding: 32px;
+    box-shadow: 1px 1px 2px 0px rgb(210, 210, 210);
 }
 
 .shop-detail-slider #sync2 .synced img,
@@ -1132,7 +1147,7 @@ body.toggled::after {
 .shop-detail-right .regular-price {
     font-size: 15px;
     margin: 0 0 8px;
-    color: #666 !important;
+    color: #9d9d9d !important
 }
 
 .shop-detail-right .offer-price {
@@ -1566,8 +1581,9 @@ label {
     }
 
     .navbar-toggler {
-        background: #fff none repeat scroll 0 0 !important;
-        border: medium none;
+        background: transparent none repeat scroll 0 0 !important;
+        color: rgba(255,255,255,.5);
+        border: 1px solid rgba(255,255,255,.1) !important;
         border-radius: 2px;
         margin: 0 16px 0 0;
         padding: 6px 9px;
@@ -1584,7 +1600,7 @@ label {
 
     .frutagro-menu .my-2.my-lg-0 .main-nav-right {
         position: absolute;
-        right: 72px;
+        right: 14px;
         top: 0;
         padding: 13px 0px;
     }
@@ -1675,6 +1691,13 @@ label {
     .hero-slider-item {
         height: 400px !important;
     }
+    .frutagro-menu-2 {
+        padding: 5px 0;
+    }
+
+    .navbar-user::before {
+        background-color: transparent !important;
+    }
 
 }
 
@@ -1741,7 +1764,7 @@ label {
     }
 
     .navbar-toggler {
-        background: #fff none repeat scroll 0 0 !important;
+        background: transparent none repeat scroll 0 0 !important;
         border: medium none;
         border-radius: 2px;
         margin: 0 16px 0 0;
@@ -1753,13 +1776,12 @@ label {
     }
 
     .main-nav-right .btn {
-        font-size: 0;
         padding: 21px 15px;
     }
 
     .frutagro-menu .my-2.my-lg-0 .main-nav-right {
         position: absolute;
-        right: 76px;
+        right: 17px;
         top: 0;
         padding: 20px 0px;
     }
@@ -1836,6 +1858,14 @@ label {
         left: 39px;
         top: 16px;
     }
+
+    .frutagro-menu-2 {
+        padding: 5px 0;
+    }
+
+    .navbar-user::before {
+        background-color: transparent !important;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -1881,7 +1911,7 @@ label {
     }
 
     .navbar-toggler {
-        background: #fff none repeat scroll 0 0 !important;
+        background: transparent none repeat scroll 0 0 !important;
         border: medium none;
         border-radius: 2px;
         margin: 0 16px 0 0;
@@ -1968,6 +1998,14 @@ label {
         left: 39px;
         top: 16px;
     }
+
+    .frutagro-menu-2 {
+        padding: 5px 0;
+    }
+
+    .navbar-user::before {
+        background-color: transparent !important;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -1988,7 +2026,6 @@ label {
     }
 
     .main-nav-right .btn {
-        font-size: 0;
         padding: 21px 15px;
     }
 
@@ -2078,6 +2115,7 @@ label {
 
 .navbar-option {
     cursor: pointer;
+    transition: all 0.3s ease 0s;
 }
 
 
@@ -2461,4 +2499,16 @@ only screen and (max-width: 767.98px) {
     transition: all 0.2s ease-in-out;
     box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.06);
     color: #666666;
+}
+
+.input-group-btn .btn-primary {
+    border: 1px solid #2f4858;
+    box-shadow: none;
+    border-left: none;
+}
+
+.navbar-dark .navbar-toggler {
+    color: rgba(255,255,255,.5);
+    border-color:    rgba(255,255,255,.1);
+
 }

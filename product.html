@@ -22,33 +22,36 @@
 
 <body>
 
+
   <header>
-    <div class="navbar-top pt-2 pb-2">
+    <div class="navbar-top">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 py-1">
-            <span class="mb-0 text-white">
-              Tasa del dia: 
+          <div class="col-md-6 py-2">
+            <span class="mb-0">
+              Tasa del dia:
               <span class="font-weight-bolder">
-                <i class="fa icon-venezuela-bolivar"></i> 89500 
+                <i class="fa icon-venezuela-bolivar"></i> 89500
               </span>
             </span>
           </div>
-          <div class="col-md-6 text-right py-1">
+          <div class="col-md-6 text-right py-0">
             <div class="container">
-              <div class="row navbar-center justify-content-end text-white">
-                <div class="col-auto navbar-option dropdown">
-                  <a class="nav-link p-0" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              <div class="row navbar-center justify-content-end">
+                <div class="navbar-option dropdown">
+                  <span class="nav-link" data-toggle="dropdown" role="button" aria-haspopup="true"
+                    aria-expanded="false">
                     <i class="fa icon-venezuela-bolivar"></i> VEN
                     <i class="fa fa-angle-down"></i>
-                  </a>
+                  </span>
                   <ul class="dropdown-menu" role="menu">
                     <li><a class="dropdown-item" href="#"><i class="fa icon-venezuela-bolivar"></i> VEN</a></li>
                     <li><a class="dropdown-item" href="#"><i class="fa fa-dollar-sign"></i> USD</a></a></li>
                   </ul>
                 </div>
-                <div class="col-auto navbar-option dropdown">
-                  <a class="nav-link p-0" data-toggle="dropdown" id="navbarDropdown1" role="button" aria-haspopup="true"
+
+                <div class="navbar-option dropdown">
+                  <a class="nav-link" data-toggle="dropdown" id="navbarDropdown1" role="button" aria-haspopup="true"
                     aria-expanded="false"><img src="assets/img/icon/en.png" alt="">
                     Español
                     <i class="fa fa-angle-down"></i></a>
@@ -58,8 +61,8 @@
                   </ul>
                 </div>
 
-                <div class="col-auto navbar-option dropdown">
-                  <a class="nav-link p-0" data-toggle="dropdown" id="navbarDropdown1" role="button" aria-haspopup="true"
+                <div class="navbar-option dropdown">
+                  <a class="nav-link" data-toggle="dropdown" id="navbarDropdown1" role="button" aria-haspopup="true"
                     aria-expanded="false"><i class="fas fa-user"></i>&nbsp;Mi cuenta
                     <i class="fa fa-angle-down"></i></a>
                   <ul class="dropdown-menu" role="menu">
@@ -74,21 +77,17 @@
       </div>
     </div>
 
-    <nav class="navbar navbar-light navbar-expand-lg bg-primary-gradient bg-faded frutagro-menu">
+    <nav class="navbar navbar-light navbar-expand-lg bg-white bg-faded frutagro-menu">
       <div class="container">
         <a class="navbar-brand pl-0" href="index.html"> <img class="logo" src="assets/img/frutagro_logo.png" alt="logo">
         </a>
-        <button class="navbar-toggler navbar-toggler-white" type="button" data-toggle="collapse"
-          data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
         <div class="navbar-collapse" id="navbarNavDropdown ">
           <div class="navbar-nav mt-5 mt-lg-2 m-auto top-categories-search-main">
             <div class="top-categories-search">
               <div class="input-group">
                 <input class="form-control" placeholder="Ingrese el producto a buscar" type="text">
                 <span class="input-group-btn">
-                  <button class="btn btn-primary" type="button"><i class="fa fa-search"></i> Buscar</button>
+                  <button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button>
                 </span>
               </div>
             </div>
@@ -97,8 +96,8 @@
             <ul class="list-inline main-nav-right">
               <li class="list-inline-item cart-btn">
                 <a href="#" data-toggle="offcanvas" class="btn btn-link border-none"><i
-                    class="mdi fas fa-shopping-cart"></i> Mi carrito
-                  <small class="cart-value bg-danger">5</small></a>
+                    class="mdi fas fa-shopping-cart mr-2"></i> Mi carrito
+                  <small class="cart-value bg-danger text-white">5</small></a>
               </li>
             </ul>
           </div>
@@ -107,15 +106,22 @@
     </nav>
   </header>
 
-  <nav class="navbar navbar-expand-lg navbar-light frutagro-menu-2 pad-none-mobile sticky-top border-bottom">
-    <div class="container-fluid">
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 m-auto">
-          <li class="nav-item navbar-user">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light frutagro-menu-2 pad-none-mobile sticky-top">
+    <div class="container">
+      <span class="nav-item navbar-brand navbar-user mobile-menu-title ml-4 text-white font-weight-bold text-uppercase">Categorias
+      </span>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item navbar-user active">
             <a href="index2.html" class="nav-link"><i class="fa fa-home"></i> Inicio</a>
           </li>
           <li class="nav-item navbar-user">
-            <a href="fruits.html" class="nav-link"><i class="fas fa-apple-alt"></i> Frutas</a>
+            <a href="about.html" class="nav-link"><i class="fas fa-apple-alt"></i> Frutas</a>
           </li>
           <li class="nav-item navbar-user">
             <a class="nav-link" href="shop.html"><i class="fas fa-carrot"></i> Vegetales</a>
@@ -126,23 +132,28 @@
           <li class="nav-item navbar-user">
             <a class="nav-link" href="shop.html"><i class="far fa-address-card"></i> Contacto</a>
           </li>
-          <li class="nav-item navbar-user dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true"
-              aria-expanded="false">
-              <i class="fas fa-sign-in-alt"></i> Inicio de sessión
-            </a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="shop.html"><i class="mdi mdi-chevron-right" aria-hidden="true"></i> Shop
-                Grid</a>
-              <a class="dropdown-item" href="single.html"><i class="mdi mdi-chevron-right" aria-hidden="true"></i>
-                Single Product</a>
-              <a class="dropdown-item" href="cart.html"><i class="mdi mdi-chevron-right" aria-hidden="true"></i>
-                Shopping Cart</a>
-              <a class="dropdown-item" href="checkout.html"><i class="mdi mdi-chevron-right" aria-hidden="true"></i>
-                Checkout</a>
-            </div>
-          </li>
         </ul>
+
+        <span class="nav-item">
+          <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false"><i class="fas fa-sign-in-alt"></i> 
+            Iniciar sesion
+          </a>
+        </span>
+
+        <!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li> -->
+
       </div>
     </div>
   </nav>
@@ -222,7 +233,7 @@
     <div class="container">
       <div class="section-header">
         <h5 class="heading-design-h5">Mejores ofertas en frutas
-          <span class="badge badge-success">20% de descuento</span>
+          <span class="badge badge-success">20% menos de descuento</span>
         </h5>
       </div>
       <div class="row justify-content-center mt-4 mb-2">
@@ -231,10 +242,9 @@
             <div class="card product h-100">
               <a href="product.html">
                 <div class="product-header">
-                  <span class="badge badge-success">20%</span>
+                  <span class="badge badge-success">20% menos</span>
                   <img class="img-fluid" src="assets/img/product-01-apple.jpg" alt="">
                   <!-- <img class="card-img-top" src="assets/img/product-3.jpg" alt=""> -->
-                  <span class="veg text-secondary mdi-circle"><i class="fas fa-circle"></i></span>
                 </div>
                 <div class="product-body">
                   <h5>Manzana Roja</h5>
@@ -253,10 +263,9 @@
             <div class="card product h-100">
               <a href="">
                 <div class="product-header">
-                  <span class="badge badge-success">50%</span>
+                  <span class="badge badge-success">50% menos</span>
                   <img class="img-fluid" src="assets/img/product-02-banana.jpg" alt="">
                   <!-- <img class="card-img-top" src="assets/img/product-3.jpg" alt=""> -->
-                  <span class="veg text-secondary mdi mdi-circle"><i class="fas fa-circle"></i></span>
                 </div>
                 <div class="product-body">
                   <h5>Cambur</h5>
@@ -275,10 +284,9 @@
             <div class="card product h-100">
               <a href="">
                 <div class="product-header">
-                  <span class="badge badge-success">20%</span>
+                  <span class="badge badge-success">20% menos</span>
                   <img class="img-fluid" src="assets/img/product-03-melon.jpg" alt="">
                   <!-- <img class="card-img-top" src="assets/img/product-3.jpg" alt=""> -->
-                  <span class="veg text-secondary mdi mdi-circle"><i class="fas fa-circle"></i></span>
                 </div>
                 <div class="product-body">
                   <h5>Melon</h5>
@@ -297,10 +305,9 @@
             <div class="card product h-100">
               <a href="">
                 <div class="product-header">
-                  <span class="badge badge-success">20%</span>
+                  <span class="badge badge-success">20% menos</span>
                   <img class="img-fluid" src="assets/img/product-04-strawberry.jpg" alt="">
                   <!-- <img class="card-img-top" src="assets/img/product-3.jpg" alt=""> -->
-                  <span class="veg text-secondary mdi mdi-circle"><i class="fas fa-circle"></i></span>
                 </div>
                 <div class="product-body">
                   <h5>Fresas</h5>
