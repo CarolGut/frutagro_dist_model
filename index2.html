@@ -30,7 +30,7 @@
         <div class="row">
           <div class="col-md-6 align-self-center">
             <span class="mb-0 h6">Tasa del dia:</span>
-            <span class="font-weight-bolder h4 text-danger"> Bs.S 89500</span>
+            <span class="font-weight-bolder h4 text-danger"> Bs. 89500</span>
           </div>
           <div class="col-md-6 text-right py-0">
             <div class="container">
@@ -38,11 +38,11 @@
                 <div class="navbar-option dropdown">
                   <span class="nav-link" data-toggle="dropdown" role="button" aria-haspopup="true"
                     aria-expanded="false">
-                    <strong>Bs.S</strong> VEN
+                    <strong>Bs. </strong> VEN
                     <i class="fa fa-angle-down"></i>
                   </span>
                   <ul class="dropdown-menu" role="menu">
-                    <li><a class="dropdown-item" href="#"><strong>Bs.S</strong> VEN</a></li>
+                    <li><a class="dropdown-item" href="#"><strong>Bs. </strong> VEN</a></li>
                     <li><a class="dropdown-item" href="#"><i class="fa fa-dollar-sign"></i> USD</a></a></li>
                   </ul>
                 </div>
@@ -93,10 +93,13 @@
           </div>
           <div class="my-2 my-lg-0">
             <ul class="list-inline main-nav-right">
-              <li class="list-inline-item cart-btn">
-                <a href="#" data-toggle="offcanvas" class="btn btn-link border-none"><i
-                    class="mdi fas fa-shopping-cart mr-2"></i> Mi carrito
-                  <small class="cart-value bg-danger text-white">5</small></a>
+              <li class="list-inline-item cart-btn pr-2">
+                <button type="button" class="btn border-none btn-cart" class="btn border-none btn-cart"
+                  data-toggle="modal" data-target="#exampleModalScrollable">
+                  <i class="mdi fas fa-shopping-cart mr-2"></i>
+                  Mi carrito
+                  <small class="cart-value bg-danger text-white">5</small>
+                </button>
               </li>
             </ul>
           </div>
@@ -232,7 +235,7 @@
                   <i class="fas fa-3x fa-wallet"></i>
                 </div>
                 <div class="banner-feature-post">
-                  <h6>Pago 100% menos seguro</h6>
+                  <h6>Descuento para miembros</h6>
                   <p>Lorem Ipsum is simply dummy text of the printing</p>
                 </div>
               </div>
@@ -247,7 +250,7 @@
     <div class="container">
       <div class="section-header">
         <h5 class="heading-design-h5">Mejores ofertas en frutas
-          <span class="badge badge-success float-right">20% menos de descuento</span>
+          <span class="badge badge-success float-right">20% de descuento</span>
         </h5>
       </div>
       <div class="row justify-content-center mt-4 mb-2">
@@ -365,7 +368,7 @@
     <div class="container">
       <div class="section-header">
         <h5 class="heading-design-h5">Mejores ofertas en vegetales
-          <span class="badge badge-success float-right">20% menos de descuento</span>
+          <span class="badge badge-success float-right">20% de descuento</span>
         </h5>
       </div>
       <div class="row justify-content-center mt-4 mb-2">
@@ -466,6 +469,122 @@
       </div>
     </div>
   </section>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="cart-list-product">
+            <div class="row">
+              <div class="col-3">
+                <img class="img-fluid" src="assets/img/product-01-apple.jpg" alt="">
+              </div>
+              <div class="col-2">
+                <h5><a href="#">Product Title Here</a></h5>
+              </div>
+              <div class="col-2">
+                <span class="cart-qty">Qty: 1</span>
+              </div>
+              <div class="col-4">
+                <span class="offer-price mb-0 h6 cart-qty">Bs. 50000</span>
+              </div>
+              <div class="col-1">
+                <a class="float-right remove-cart" href="#"><i class="fas fa-times"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="cart-list-product">
+            <div class="row">
+              <div class="col-3">
+                <img class="img-fluid" src="assets/img/product-01-apple.jpg" alt="">
+              </div>
+              <div class="col-2">
+                <h5><a href="#">Product Title Here</a></h5>
+              </div>
+              <div class="col-2">
+                <span class="cart-qty">Qty: 1</span>
+              </div>
+              <div class="col-4">
+                <span class="offer-price mb-0 h6 cart-qty">Bs. 50000</span>
+              </div>
+              <div class="col-1">
+                <a class="float-right remove-cart" href="#"><i class="fas fa-times"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="cart-list-product">
+            <div class="row">
+              <div class="col-3">
+                <img class="img-fluid" src="assets/img/product-01-apple.jpg" alt="">
+              </div>
+              <div class="col-2">
+                <h5><a href="#">Product Title Here</a></h5>
+              </div>
+              <div class="col-2">
+                <span class="cart-qty">Qty: 1</span>
+              </div>
+              <div class="col-4">
+                <span class="offer-price mb-0 h6 cart-qty">Bs. 50000</span>
+              </div>
+              <div class="col-1">
+                <a class="float-right remove-cart" href="#"><i class="fas fa-times"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="cart-list-product">
+            <div class="row">
+              <div class="col-3">
+                <img class="img-fluid" src="assets/img/product-01-apple.jpg" alt="">
+              </div>
+              <div class="col-2">
+                <h5><a href="#">Product Title Here</a></h5>
+              </div>
+              <div class="col-2">
+                <span class="cart-qty">Qty: 1</span>
+              </div>
+              <div class="col-4">
+                <span class="offer-price mb-0 h6 cart-qty">Bs. 50000</span>
+              </div>
+              <div class="col-1">
+                <a class="float-right remove-cart" href="#"><i class="fas fa-times"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="cart-list-product">
+            <div class="row">
+              <div class="col-3">
+                <img class="img-fluid" src="assets/img/product-01-apple.jpg" alt="">
+              </div>
+              <div class="col-2">
+                <h5><a href="#">Product Title Here</a></h5>
+              </div>
+              <div class="col-2">
+                <span class="cart-qty">Qty: 1</span>
+              </div>
+              <div class="col-4">
+                <span class="offer-price mb-0 h6 cart-qty">Bs. 50000</span>
+              </div>
+              <div class="col-1">
+                <a class="float-right remove-cart" href="#"><i class="fas fa-times"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
   <!-- Footer -->

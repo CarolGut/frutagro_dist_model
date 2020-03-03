@@ -307,10 +307,6 @@ a:focus {
 
 .shop-detail-left {
     background: #fff none repeat scroll 0 0;
-    border: 1px solid #cecece;
-    border-radius: 12px;
-    padding: 32px;
-    box-shadow: 1px 1px 2px 0px rgb(210, 210, 210);
     height: 400px;
     display: flex;
     align-items: center;
@@ -426,7 +422,6 @@ a:focus {
     border-radius: 0 !important;
     color: #40493b;
     margin: 0 0 0 -4px;
-    padding: 9px 0;
 }
 
 .main-nav-right li {
@@ -1088,7 +1083,7 @@ body.toggled::after {
 .shop-detail-right {
     background: #fff none repeat scroll 0 0;
     border: 1px solid #cecece;
-    border-radius: 12px;
+    border-radius: 4px;
     padding: 32px;
     box-shadow: 1px 1px 2px 0px rgb(210, 210, 210);
 }
@@ -1506,7 +1501,7 @@ label {
     margin: 0 0 0 8px;
 }
 
-.star-rating i {
+.star-stock i {
     font-size: 15px;
     letter-spacing: -6px;
 }
@@ -2554,12 +2549,9 @@ only screen and (max-width: 767.98px) {
 
 .product-details-area {
     margin-top: 0;
-
-    padding: 0px 0px 20px 22px;
 }
 
 .product-name h1 {
-    font-size: 38px;
     margin: 0 0 18px;
     text-align: left;
     line-height: normal;
@@ -2575,15 +2567,11 @@ only screen and (max-width: 767.98px) {
 
 .product-details-area .price-box {
     display: block;
-    margin: 0 0 10px;
-    padding: 0 0 5px;
     border-bottom: 1px solid 
     #e5e5e5;
 }
 
-.price-box {
-    margin: 8px 0 2px;
-}
+
 
 .product-details-area .special-price {
     display: inline-block;
@@ -2613,13 +2601,12 @@ only screen and (max-width: 767.98px) {
 
 .product-details-area .price {
     font-size: 28px;
-    color: 
-    #F02640;
+    color: rgb(212, 29, 53);
     font-weight: bold;
 }
 .special-price .price {
     font-size: 16px;
-    color: #fe0100;
+    color: rgb(212, 29, 53);
     font-weight: bold;
 }
 .price {
@@ -2658,7 +2645,7 @@ only screen and (max-width: 767.98px) {
 }
 .product-details-area .price {
     font-size: 28px;
-    color: #F02640;
+    color: #2D6616;
     font-weight: bold;
 }
 .old-price .price {
@@ -2674,19 +2661,15 @@ only screen and (max-width: 767.98px) {
     white-space: nowrap !important;
 }
 
-.product-details-area .ratings {
+.product-details-area .stocks {
     padding: 5px 0 0;
     margin: auto;
     border-bottom: 1px
     #e5e5e5 solid;
 }
 
-.product-details-area .ratings .rating {
-    margin-bottom: 15px;
-    display: inline-block;
-    margin-right: 10px;
-}
-.rating {
+
+.stock {
     color: #40493b;
     font-size: 12px;
 }
@@ -2737,14 +2720,8 @@ border-bottom: 1px
     margin-bottom: 15px;
 }
 
-.product-details-area .ratings .rating {
-    margin-bottom: 15px;
-    display: inline-block;
-    margin-right: 10px;
-    
-}
 
-.product-details-area .ratings .rating  span{
+.product-details-area .stocks .stock  h5 {
     font-size: 15px;
     
 }
@@ -2752,8 +2729,6 @@ border-bottom: 1px
 .short-description1 {
     font-size: 13px;
     padding-top: 12px;
-    border-top: 1px solid 
-    #e5e5e5;
     margin-bottom: 15px;
 }
 
@@ -2764,4 +2739,34 @@ border-bottom: 1px
     #000000;
     margin-bottom: 5px;
     font-weight: bold;
+}
+
+.sale-label {
+
+    background: #17a2b8 none repeat scroll 0 0;
+    border-radius: 2px;
+    color: #fdfdfd;
+    letter-spacing: 1px;
+    padding: 4px 10px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: 20px;
+    width: 8rem;
+    font-size: 12px;
+    font-weight: 500;
+    margin-left: 22px;
+}
+
+.btn-cart:hover .fa-shopping-cart{
+    background: #193546;
+} 
+
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+.modal-header {
+    background: #f4f4f4;
 }
