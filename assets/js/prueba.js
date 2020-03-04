@@ -40,5 +40,18 @@ $(document).ready(function () {
 			scrollTop: 0
 		}, 1000);
 	});
-	
+
+	$('[data-toggle="offcanvas"]').on('click', function () {
+		$('body').toggleClass('toggled');
+		$('.frutagro-menu-2').removeClass('sticky-top')
+	});
+
+	$('.cart-sidebar-header a').on('click', function () {
+		setTimeout(function () {
+			$('.frutagro-menu-2').addClass('sticky-top');
+		}, 500);
+
+
+	});
+
 });
