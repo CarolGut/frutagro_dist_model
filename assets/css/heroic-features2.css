@@ -2817,3 +2817,86 @@ only screen and (max-width: 767.98px) {
     -webkit-box-shadow: 0 0 6.65px 0.35px rgba(0, 0, 0, 0.15);
     box-shadow: 0 0 6.65px 0.35px rgba(0, 0, 0, 0.15);
 }
+
+
+
+#cart .dropdown-menu-cart {
+	width: 330px;
+	padding:10px;
+	border: 1px solid #666666;
+	overflow:hidden;
+    top: 100%;
+    background: #666666;
+    margin-top: 0;
+    border-radius: 7px;
+}
+.cart-mini .dropdown-menu-cart  strong{ font-weight: 600; color: #ffffff; }
+
+.cart-mini .dropdown-menu-cart li:first-child {
+    max-height: 300px;
+    overflow-y: auto;
+	overflow-x: hidden;
+}
+#cart .dropdown-menu-cart li + li {
+    border-top: 1px solid #e5e5e5;
+    padding: 5px 0 0;
+}
+
+#cart .button-container {  
+    width: auto;
+	float:right;
+}
+#cart .dropdown-menu-cart table {
+	margin-bottom: 10px;
+	border:none;
+}
+
+#cart .dropdown-menu-cart table td{ border:none; background:none; padding:5px 4px; }
+
+
+
+#cart .dropdown-menu-cart li p {	
+	margin:20px auto;
+	color:#ffffff;
+}
+
+
+
+#cart .text-right .addtocart,#cart .text-right .checkout{
+	width: auto;
+	border: none;
+	display: inline-block;
+	float: left;
+    color: #fff;
+	padding: 8px 16px;
+	font-weight: normal;
+	text-align: center;
+	font-size:12px;
+}
+#cart .dropdown-menu-cart .img-thumbnail{width:auto; max-width:none; border: 0;}
+
+#cart .text-right .addtocart strong,
+#cart .text-right .checkout strong{ color: #fff; font-weight: 400; font-size: 14px;}
+
+#cart .text-right .addtocart{margin:0 5px 0 0; background:#7fba00;}
+
+
+@media (max-width: 767px) {
+	#cart .dropdown-menu-cart {right: 0px; width: 270px;}
+}
+
+@media only screen and (max-width: 479px) {
+	#cart .dropdown-menu-cart table {display: inline-block;}
+	.flex-direction-nav a:before {font-size:27px !important;}
+	.dropdown-menu-cart.pull-right {width: 100%;}
+	#cart .dropdown-menu-cart li > div {min-width:100%;}	
+	
+}
+@media only screen and (max-width: 319px){
+	#cart .text-right .addtocart{margin:0 0 5px;}
+	#cart .text-right .checkout{margin:0;}
+}
+
+tbody {
+    font-size: 12px !important;
+}
