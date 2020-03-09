@@ -3125,16 +3125,68 @@ tbody {
     width: 82px;
 }
 
-.cart-table .table thead tr th {
-    border-color: #7fbb35;
-    border-bottom-color: rgb(127, 187, 53);
-    border-bottom: 0 solid
-    transparent;
-    color:#fff;
-    font-size: 14px;
-    font-weight: 600;
-    padding: 15px 20px;
-    text-align: center;
-    text-transform: uppercase;
+.shopping-cart {
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
 }
 
+.shopping-cart thead tr {
+    height: 50px;
+    background: #dbdbdb;
+    text-align: center;
+    color: #40493b;
+    font-size: 14px;
+}
+.shopping-cart .table-img img{
+    border: 1px solid #efefef;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.06);
+    height: 85px;
+    object-fit: scale-down;
+    width: 82px;
+    padding: .25rem;
+    background-color: #fff;
+    max-width: 100%;
+}
+
+.shopping-cart td{
+    vertical-align: baseline;
+}
+.shopping-cart tbody tr:nth-child(2n) {
+    background-color: #fefefd;
+}
+
+.swiper-viewport {
+    border: 20px solid #f4f4f4;
+}
+
+.btn-delete {
+    background-color: #e13131;
+    color: #fff;
+    width: 34px;
+    height: 34px;
+    padding: 0;
+}
+
+.btn-delete:hover {
+    background: #bb1929;
+    color: #ffffff;
+}
+
+.btn-update {
+    background-color: #2f4858;
+    color: #fff;
+    width: 34px;
+    height: 34px;
+    padding: 0;
+}
+
+.shopping-cart .input-group .form-control {
+    width: 10px;
+    text-align: center;
+}
