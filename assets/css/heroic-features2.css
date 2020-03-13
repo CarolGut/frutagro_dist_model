@@ -9,43 +9,43 @@
 
 }
   
-/* @font-face {
-    font-family: 'Montserrat', sans-serif;
+@font-face {
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
     src: url('../font/Montserrat/Montserrat-Regular.ttf');
 }
-  
+
 @font-face {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     src: url('../font/Montserrat/Montserrat-Medium.ttf');
 }
   
 @font-face {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
     src: url('../font/Montserrat/Montserrat-SemiBold.ttf');
 }
 
 @font-face {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
     src: url('../font/Montserrat/Montserrat-Bold.ttf');
 }
 
 @font-face {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 800;
     src: url('../font/Montserrat/Montserrat-ExtraBold.ttf');
 }
 
 @font-face {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 900;
     src: url('../font/Montserrat/Montserrat-Black.ttf');
@@ -53,63 +53,54 @@
 
 /* Open Sans*/
 
-/* @font-face {
-    font-family: 'Open Sans', sans-serif;
+@font-face {
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 300;
     src: url('../font/Open_Sans/OpenSans-Light.ttf');
 }
   
 @font-face {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     src: url('../font/Open_Sans/OpenSans-Regular.ttf');
 }
   
 @font-face {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
     src: url('../font/Open_Sans/OpenSans-SemiBold.ttf');
 }
   
 @font-face {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
     src: url('../font/Open_Sans/OpenSans-Bold.ttf');
 }
 
 @font-face {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 800;
     src: url('../font/Open_Sans/OpenSans-ExtraBold.ttf');
-} */
+}
 
 /* Body */
 body {
     background-color: #f9f9f9;
     font-size: 13px;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
     line-height: 25px;
     color: #40493b;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: #333;
-}
-
 p {
-    font-size: 13px;
     line-height: 22px;
-    color: #888;
+    color: #888888;
 }
 
 img {
@@ -133,7 +124,6 @@ img {
 
 a {
     text-decoration: none !important;
-    color: #40493b;
     transition-duration: 0.4s;
 }
 
@@ -156,78 +146,50 @@ a:focus {
     padding: 40px 0;
 }
 
-.dataTables_wrapper.container-fluid.dt-bootstrap4.no-footer {
-    margin-top: 15px;
-    padding: 0;
-}
-
-.help-block li {
-    color: red;
-}
-
+/* Buttons */
 .page-link {
     color: #0cc5b7;
 }
 
-.nav-item.active .nav-link {
-    border-color: transparent !important;
-    background: #2f4858;
-
-}
 
 /* Background */
 
-.bg-primary-gradient {
-    background: #7fbb35;
-    /* Old browsers */
-    background: -moz-linear-gradient(35deg, #d5ffcc 0%, #2bd877 100%);
-    ;
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(35deg, #d5ffcc 0%, #2bd877 100%);
-    ;
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(35deg, #d5ffcc 0%, #2bd877 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d5ffcc', endColorstr='#2bd877', GradientType=1);
-    /* IE6-9 fallback on horizontal gradient */
-}
+.bg-primary     { background: #2d6616 !important; }
+.bg-secondary   { background: #2f4858 !important; }
+.bg-tertiary    { background: #152479 !important; }
+
+.bg-danger      { background: #dc3545 !important; }
+.bg-info        { background: #17a2b8 !important; }
+.bg-success     { background: #7fbb35 !important; }
+
+.bg-wild-sand   { background: #f4f4f4 !important; }
+.bg-gallery     { background: #ededed !important; }
 
 /* Buttons */
 
 .btn {
     border: medium none;
-    border-radius: 2px !important;
+    border-radius: 2px;
     font-size: 13px;
+    transition: all 0.3s ease 0s;
 }
 
 .btn-primary {
     background: #2f4858;
-    transition: all 0.3s ease 0s;
-    color: #ffffff !important;
     border: 1px solid #577181;
     box-shadow: 2px 2px 2px 0px#a4a4a4;
+    color: #ffffff;
 }
 
 .btn-primary:hover {
     background: #193546;
     border: 1px solid#2f4858;
-    color: #ffffff !important;
-
+    color: #ffffff;
 }
 
 .btn-secondary {
-    background: #f4f4f4 !important;
-    color: #40493b !important;
+    background: #ededed;
 }
-
-.bg-success,
-.btn-success,
-.btn-outline-success:hover,
-.badge-success {
-    border-color: transparent !important;
-    background: #7fbb35;
-}
-
 
 .text-secondary {
     color: #2d6616 !important
