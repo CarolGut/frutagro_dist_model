@@ -14,55 +14,55 @@
   <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
 
   <!-- Custom styles for this template -->
+  <link rel="stylesheet" href="assets/css/heroic-features.css">
   <link rel="stylesheet" href="assets/css/heroic-features2.css">
   <link rel="stylesheet" href="assets/icons/css/all.css">
   <link rel="stylesheet" href="assets/personal-icon-v1.0/personal-all.css">
-  <link rel="stylesheet" href="assets/css/carousel/owl.carousel.min.css">
-  <link rel="stylesheet" href="assets/css/carousel/owl.theme.default.min.css">
-
 </head>
 
 <body>
 
   <header>
-    <div class="navbar-top">
+    <div class="navbar-top-primary bg-wild-sand">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 align-self-center">
-            <span class="mb-0 h6">Tasa del dia:</span>
-            <span class="font-weight-bolder h4 text-danger"> Bs. 89500</span>
+          <div class="col-md-5 d-flex align-items-baseline rate-day align-self-center">
+            <span class="mb-0 h6">Tasa del dia:&nbsp;</span>
+            <h1 class="mb-0 h4 font-weight-bolder text-danger">Bs. 89500</h1>
           </div>
-          <div class="col-md-6 text-right py-0">
+          <div class="col-md-7">
             <div class="container">
-              <div class="row navbar-center justify-content-end">
-                <div class="navbar-option dropdown">
+              <div class="row navbar-top-center justify-content-end">
+                <div class="dropdown navbar-option">
                   <span class="nav-link" data-toggle="dropdown" role="button" aria-haspopup="true"
                     aria-expanded="false">
                     <strong>Bs. </strong> VEN
                     <i class="fa fa-angle-down"></i>
                   </span>
                   <ul class="dropdown-menu" role="menu">
-                    <li><a class="dropdown-item" href="#"><strong>Bs. </strong> VEN</a></li>
+                    <li><a class="dropdown-item active" href="#"><strong>Bs. </strong> VEN</a></li>
                     <li><a class="dropdown-item" href="#"><i class="fa fa-dollar-sign"></i> USD</a></a></li>
                   </ul>
                 </div>
 
-                <div class="navbar-option dropdown">
-                  <a class="nav-link" data-toggle="dropdown" id="navbarDropdown1" role="button" aria-haspopup="true"
-                    aria-expanded="false"><img class="country" src="assets/img/es.png" alt="">
+                <div class="dropdown navbar-option">
+                  <span class="nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    <img class="country" src="assets/img/es.png" alt=logo-español">
                     Español
-                    <i class="fa fa-angle-down"></i></a>
+                    <i class="fa fa-angle-down"></i></span>
                   <ul class="dropdown-menu" role="menu">
-                    <li><a class="dropdown-item" href="#"><img class="country" src="assets/img/es.png" alt="">
+                    <li><a class="dropdown-item" href="#">
+                      <img class="country" src="assets/img/es.png" alt="logo-español">
                         Español</a></li>
-                    <li><a class="dropdown-item" href="#"><img class="country" src="assets/img/en.png" alt="">
+                    <li><a class="dropdown-item" href="#">
+                      <img class="country" src="assets/img/en.png" alt=logo-ingles"">
                         English</a></li>
                   </ul>
                 </div>
 
-                <div class="navbar-option dropdown">
-                  <a class="nav-link" data-toggle="dropdown" id="navbarDropdown1" role="button" aria-haspopup="true"
-                    aria-expanded="false"><i class="fas fa-sign-in-alt"></i>&nbsp;Iniciar sesión
+                <div class="dropdown navbar-option">
+                  <a class="nav-link pr-1" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-sign-in-alt"></i>&nbsp;Iniciar sesión
                     <i class="fa fa-angle-down"></i></a>
                   <ul class="dropdown-menu" role="menu">
                     <li><a class="dropdown-item" href="#"><i class="fas fa-user"></i> &nbsp;Mi cuenta</a></li>
@@ -76,142 +76,87 @@
       </div>
     </div>
 
-    <nav class="navbar navbar-light navbar-expand-lg bg-white bg-faded frutagro-menu">
+    <nav class="navbar-top-secondary p-0 navbar navbar-expand-lg bg-white">
       <div class="container">
-        <a class="navbar-brand pl-0" href="index.html"> <img class="logo" src="assets/img/frutagro_logo.png" alt="logo">
+        <a class="navbar-brand" href="index2.html">
+          <img class="logo-frutagro" src="assets/img/frutagro_logo.png" alt="logo-frutagro">
         </a>
-        <div class="navbar-collapse" id="navbarNavDropdown ">
-          <div class="navbar-nav mt-5 mt-lg-2 m-auto top-categories-search-main">
-            <div class="top-categories-search">
+        <div class="navbar-collapse">
+          <div class="main-product-search mt-5 mt-lg-2 m-auto navbar-nav">
+            <div class="products-search">
               <div class="input-group">
                 <input class="form-control" placeholder="Ingrese el producto a buscar" type="text">
-                <span class="input-group-btn">
-                  <button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button>
-                </span>
+                <button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button>
               </div>
             </div>
           </div>
-          <div class="my-2 my-lg-0 header-configure-area">
+          <div class="header-configure-area my-2 my-lg-0">
             <ul class="list-inline main-nav-right">
-              <li id="cart" class="cart-mini mini-cart-wrap list-inline-item cart-btn pr-2">
-                <button type="button" class="btn border-none btn-cart mb-2" data-toggle="modal" data-target="#exampleModalScrollable">
+              <li id="cart" class="dropdown navbar-option mini-cart mini-cart-wrap list-inline-item">
+                <button type="button" class="nav-link btn border-none btn-cart"  data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                   <i class="mdi fas fa-shopping-cart mr-2"></i>
                   Mi carrito
                   <small class="cart-value bg-danger text-white">5</small>
                 </button>
-
-                <ul class="cart-list dropdown-menu-cart pull-right cart-menu p-0">
+                <ul class="cart-list dropdown-menu dropdown-menu-cart pull-right cart-menu p-0">
                   <li>
-                    <table class="table table-striped">
-
+                    <table class="table table-striped table-cart-product">
                       <tbody class="cart-sidebar-body">
-
                         <tr class="row cart-list-product">
-                          <td class="col-auto text-center"> <a href="#"><img src="assets/img/product-01-apple.jpg"
-                                alt="Laborum Eveniet" title="Laborum Eveniet" class=""></a> </td>
-                          <td class="col-sm-2 text-center align-middle font-weight-bolder px-2"><a
-                              href="product.html">Manzanas Rojas</a> </td>
+                          <td class="col-auto text-center">
+                            <a href="#"><img src="assets/img/product-01-apple.jpg"
+                                alt="Manzanas Rojas" title="Manzanas Rojas">
+                              </a>
+                          </td>
+                          <td class="col-sm-2 text-center align-middle px-2">
+                            <a href="product.html">Manzanas Rojas</a>
+                          </td>
                           <td class="col-sm-2 text-right align-middle">x 1000</td>
                           <td class="col-sm-3 text-right align-middle">Bs. 80000</td>
-                          <td class="col-sm-1 text-right p-0"><button type="button" onclick="cart.remove('324');"
-                              title="Remove" class="btn btn-xs pt-0 py-2"><i class="fas fa-times"></i></button>
+                          <td class="col-sm-1 text-right p-0">
+                            <button type="button" onclick="cart.remove('324');"
+                              title="Remove" class="btn btn-xs pt-0 py-2">
+                              <i class="fas fa-times"></i>
+                            </button>
                           </td>
                           </td>
                         </tr>
-                        <tr class="row cart-list-product">
-                          <td class="col-auto text-center"> <a href="#"><img src="assets/img/product-01-apple.jpg"
-                                alt="Laborum Eveniet" title="Laborum Eveniet" class=""></a> </td>
-                          <td class="col-sm-2 text-center align-middle font-weight-bolder px-2"><a
-                              href="product.html">Manzanas Rojas</a> </td>
-                          <td class="col-sm-2 text-right align-middle">x 1000</td>
-                          <td class="col-sm-3 text-right align-middle">Bs. 80000</td>
-                          <td class="col-sm-1 text-right p-0"><button type="button" onclick="cart.remove('324');"
-                              title="Remove" class="btn btn-xs pt-0 py-2"><i class="fas fa-times"></i></button>
-                          </td>
-                          </td>
-                        </tr>
-                        <tr class="row cart-list-product">
-                          <td class="col-auto text-center"> <a href="#"><img src="assets/img/product-01-apple.jpg"
-                                alt="Laborum Eveniet" title="Laborum Eveniet" class=""></a> </td>
-                          <td class="col-sm-2 text-center align-middle font-weight-bolder px-2"><a
-                              href="product.html">Manzanas Rojas</a> </td>
-                          <td class="col-sm-2 text-right align-middle">x 1000</td>
-                          <td class="col-sm-3 text-right align-middle">Bs. 80000</td>
-                          <td class="col-sm-1 text-right p-0"><button type="button" onclick="cart.remove('324');"
-                              title="Remove" class="btn btn-xs pt-0 py-2"><i class="fas fa-times"></i></button>
-                          </td>
-                          </td>
-                        </tr>
-
                       </tbody>
                     </table>
                   </li>
                   <li class="d-flex justify-content-end px-3 py-2">
                     <div class="mr-2">
-                      <table class="table table-bordered table-total">
+                      <table class="table-total table table-bordered">
                         <tbody>
-                          <tr>
-                            <td class="text-right"> Sub-Total</td>
-                            <td class="text-right font-weight-bold text-muted">Bs. 190000</td>
+                          <tr class="text-right">
+                            <td>Sub-Total</td>
+                            <td class="font-weight-bold text-muted">Bs. 190000</td>
                           </tr>
-                          <tr>
-                            <td class="text-right">IVA (16.00%)</td>
-                            <td class="text-right font-weight-bold text-danger">Bs. 30400</td>
+                          <tr class="text-right">
+                            <td>IVA (16.00%)</td>
+                            <td class="font-weight-bold text-danger">Bs. 30400</td>
                           </tr>
-                          <tr>
-                            <td class="text-right">Descuento (20%)</td>
-                            <td class="text-right font-weight-bold text-secondary">Bs. 44080</td>
+                          <tr class="text-right">
+                            <td>Descuento (20%)</td>
+                            <td class="font-weight-bold text-secondary">Bs. 44080</td>
                           </tr>
-                          <tr class="font-weight-bold">
-                            <td class="text-right h4">Total</td>
-                            <td class="text-right h4">Bs. 176320</td>
+                          <tr class="text-right h4">
+                            <td>Total</td>
+                            <td>Bs. 176320</td>
                           </tr>
                         </tbody>
                       </table>
                       <div class="text-right button-container mt-3 mb-2"><a
                           href="cart.html"
-                          class="addtocart btn btn-primary mr-4 btn-sm"><strong> Ver carrito</strong></a><a
-                          href="https://codezeel.com/opencart/OPC01/OPC010013/index.php?route=checkout/checkout"
-                          class="checkout btn btn-primary"><strong> Ir a Caja</strong></a></div>
+                          class="addtocart btn btn-secondary btn-sm mr-4">Ver carrito</a><a
+                          href="checkout.html"
+                          class="checkout btn btn-primary btn-sm">Ir a Caja</a></div>
                     </div>
                   </li>
+                  <li class="d-flex justify-content-center bg-white">
+                    <span class="m-5 h6">¡Su carrito está vacío!</span>
+                  </li>
                 </ul>
-
-                <!-- <div class="header-configure-area">
-                  <ul class="nav justify-content-end">
-                    <li id="cart" class="mini-cart-wrap">
-
-
-                      <ul class="cart-list">
-                        <li>
-                          <div class="cart-img">
-                            <a href="product-details.html"><img src="assets/img/cart/cart-1.jpg" alt=""></a>
-                          </div>
-                          <div class="cart-info">
-                            <h4 style="margin-top: 8px;"><a href="product-details.html">simple product</a></h4>
-                            <span class="cart-qty"
-                              style="/*! display: block ruby; */padding-left: 0px;padding-right: 102px;">X 10 </span>
-                            <span>$60.00</span>
-                          </div>
-                          <div class="del-icon">
-                            <i class="fa fa-times"></i>
-                          </div>
-                        </li>
-                        <li class="mini-cart-price">
-                          <span class="subtotal">subtotal : </span>
-                          <span class="subtotal-price ml-auto" style="padding-right: 21px;">$110.00</span>
-                        </li>
-                        <li>
-                          <div class="mini-cart-button">
-                            <a class="check-btn" href="cart.html">View Cart</a>
-                            <a class="check-btn" href="checkout.html">checkout</a>
-                          </div>
-                        </li>
-                      </ul>
-
-                    </li>
-                  </ul>
-                </div> -->
               </li>
             </ul>
           </div>
@@ -220,85 +165,73 @@
     </nav>
   </header>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light frutagro-menu-2 pad-none-mobile sticky-top">
+  <nav class="navbar navbar-top-tertiary navbar-expand-lg navbar-dark frutagro-menu-2 pad-none-mobile">
     <div class="container">
-      <span
-        class="nav-item navbar-brand navbar-user mobile-menu-title ml-4 text-white font-weight-bold text-uppercase">Categorias
+      <span class="navbar-brand mobile-menu-title text-white font-weight-bold text-uppercase">
+        Categorias
       </span>
+
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item navbar-user active">
+        <ul class="navbar-nav mt-2 mt-lg-0 mr-auto">
+          <li class="nav-item line-vertical active">
             <a href="index2.html" class="nav-link"><i class="fa fa-home"></i> Inicio</a>
           </li>
-          <li class="nav-item navbar-user">
+          <li class="nav-item line-vertical">
             <a href="fruits.html" class="nav-link"><i class="fas fa-apple-alt"></i> Frutas</a>
           </li>
-          <li class="nav-item navbar-user">
-            <a class="nav-link" href="shop.html"><i class="fas fa-carrot"></i> Vegetales</a>
+          <li class="nav-item line-vertical">
+            <a href="#" class="nav-link"><i class="fas fa-carrot"></i> Vegetales</a>
           </li>
-          <li class="nav-item navbar-user">
-            <a class="nav-link" href="shop.html"><i class="fas fa-users"></i> Nosotros</a>
+          <li class="nav-item line-vertical">
+            <a href="#" class="nav-link"><i class="fas fa-users"></i> Nosotros</a>
           </li>
-          <li class="nav-item navbar-user">
-            <a class="nav-link" href="shop.html"><i class="far fa-address-card"></i> Contacto</a>
+          <li class="nav-item line-vertical">
+            <a href="#" class="nav-link"><i class="far fa-address-card"></i> Contacto</a>
           </li>
         </ul>
 
         <span class="nav-item">
-          <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false"><i class="fas fa-sign-in-alt"></i>
+          <a href="#" class="nav-link" role="button" ><i class="fas fa-sign-in-alt"></i>
             Iniciar sesion
           </a>
         </span>
 
-        <!-- <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Dropdown
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li> -->
 
       </div>
     </div>
   </nav>
 
-  <section class="hero-slider-wrapper carousel-slider-main">
+
+  <!-- <section class="frutagro-slider-wrapper">
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <div class="hero-slider-item d-flex align-items-center bg-img"
+          <div class="frutagro-slider-item d-flex align-items-center bg-img"
             style="background-image: url('assets/img/32.jpg');">
-            <div class="hero-slider-content">
-              <h1>100% menos<br> Natural</h1>
+            <div class="frutagro-slider-content">
+              <h1>100% más<br> Natural</h1>
                 <h4>Fresh Fruits &amp; Vegetables<br> Fresh Fruits &amp; Vegetables</h4>
-                  <button type="button" class="btn btn-primary btn-sm"><i class="mdi mdi-cart-outline"></i> Visitar</button>
+                  <button type="button" class="btn btn-primary"> Ver productos</button>
             </div>
           </div>
         </div>
         <div class="carousel-item">
-          <div class="hero-slider-item d-flex align-items-center bg-img"
+          <div class="frutagro-slider-item d-flex align-items-center bg-img"
             style="background-image: url('assets/img/7.jpg');">
-            <div class="hero-slider-content">
-              <h1>100% menos<br> Natural</h1>
+            <div class="frutagro-slider-content">
+              <h1>100% más<br> Natural</h1>
                 <h4>Fresh Fruits &amp; Vegetables<br> Fresh Fruits &amp; Vegetables</h4>
-                  <button type="button" class="btn btn-primary btn-sm"><i class="mdi mdi-cart-outline"></i> Add To
-                Cart</button>
+                  <button type="button" class="btn btn-primary">Ver productos</button>
             </div>
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="carousel-control-prev-icon fas fa-angle-lef" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
         <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
@@ -307,49 +240,47 @@
         </a>
       </div>
     </div>
-  </section>
+  </section> -->
 
-  <section class="bg-white">
-    <div class="banner-feature pt-4">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="banner-feature-wrapper">
-              <div class="banner-feature-item">
-                <div class="banner-feature-icon">
-                  <i class="fas fa-3x fa-truck"></i>
-                </div>
-                <div class="banner-feature-post">
-                  <h6>Envio garantizado</h6>
-                  <p>Lorem Ipsum is simply dummy text of the printing</p>
-                </div>
+  <section class="frutagro-banner pt-4 bg-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="frutagro-banner-wrapper">
+            <div class="frutagro-banner-item">
+              <div class="frutagro-banner-icon">
+                <i class="fas fa-3x fa-truck"></i>
               </div>
-              <div class="banner-feature-item">
-                <div class="banner-feature-icon">
-                  <i class="far fa-3x fa-handshake"></i>
-                </div>
-                <div class="banner-feature-post">
-                  <h6>Satisfacción</h6>
-                  <p>Lorem Ipsum is simply dummy text of the printing</p>
-                </div>
+              <div class="frutagro-banner-post">
+                <h6>Envio garantizado</h6>
+                <p>Lorem Ipsum is simply dummy text of the printing</p>
               </div>
-              <div class="banner-feature-item">
-                <div class="banner-feature-icon">
-                  <i class="fas fa-3x fa-people-carry danger"></i>
-                </div>
-                <div class="banner-feature-post">
-                  <h6>Garantía</h6>
-                  <p>Lorem Ipsum is simply dummy text of the printing</p>
-                </div>
+            </div>
+            <div class="frutagro-banner-item">
+              <div class="frutagro-banner-icon">
+                <i class="far fa-3x fa-handshake"></i>
               </div>
-              <div class="banner-feature-item">
-                <div class="banner-feature-icon">
-                  <i class="fas fa-3x fa-wallet"></i>
-                </div>
-                <div class="banner-feature-post">
-                  <h6>Descuento para miembros</h6>
-                  <p>Lorem Ipsum is simply dummy text of the printing</p>
-                </div>
+              <div class="frutagro-banner-post">
+                <h6>Satisfacción</h6>
+                <p>Lorem Ipsum is simply dummy text of the printing</p>
+              </div>
+            </div>
+            <div class="frutagro-banner-item">
+              <div class="frutagro-banner-icon">
+                <i class="fas fa-3x fa-people-carry danger"></i>
+              </div>
+              <div class="frutagro-banner-post">
+                <h6>Garantía</h6>
+                <p>Lorem Ipsum is simply dummy text of the printing</p>
+              </div>
+            </div>
+            <div class="frutagro-banner-item">
+              <div class="frutagro-banner-icon">
+                <i class="fas fa-3x fa-wallet"></i>
+              </div>
+              <div class="frutagro-banner-post">
+                <h6>Descuento para miembros</h6>
+                <p>Lorem Ipsum is simply dummy text of the printing</p>
               </div>
             </div>
           </div>
@@ -360,14 +291,14 @@
 
   <section class="section-padding">
     <div class="container">
-      <div class="section-header">
+      <div class="frutagro-best-deals">
         <h5 class="heading-design-h5">Mejores ofertas en frutas
-          <span class="badge bg-success float-right">20% de descuento</span>
+          <span class="badge bg-success float-right text-white">20% de descuento</span>
         </h5>
       </div>
       <div class="row justify-content-center mt-4 mb-2">
-        <div class="col-sm-12 col-md-4 col-lg-3">
-          <div class="card-item">
+        <div class="col-md-6 col-lg-3">
+          <div class="frutagro-card">
             <div class="card product h-100">
               <a href="product.html">
                 <div class="product-header">
@@ -388,8 +319,8 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-12 col-md-4 col-lg-3">
-          <div class="card-item">
+        <div class="col-md-6 col-lg-3">
+          <div class="frutagro-card">
             <div class="card product h-100">
               <a href="">
                 <div class="product-header">
@@ -410,8 +341,8 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-12 col-md-4 col-lg-3">
-          <div class="card-item">
+        <div class="col-md-6 col-lg-3">
+          <div class="frutagro-card">
             <div class="card product h-100">
               <a href="">
                 <div class="product-header">
@@ -432,8 +363,8 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-12 col-md-4 col-lg-3">
-          <div class="card-item">
+        <div class="col-md-6 col-lg-3">
+          <div class="frutagro-card">
             <div class="card product h-100">
               <a href="">
                 <div class="product-header">
@@ -478,14 +409,14 @@
 
   <section class="section-padding">
     <div class="container">
-      <div class="section-header">
+      <div class="frutagro-best-deals">
         <h5 class="heading-design-h5">Mejores ofertas en vegetales
           <span class="badge bg-success float-right">20% de descuento</span>
         </h5>
       </div>
       <div class="row justify-content-center mt-4 mb-2">
         <div class="col-sm-12 col-md-4 col-lg-3">
-          <div class="card-item">
+          <div class="frutagro-card">
             <div class="card product h-100">
               <a href="">
                 <div class="product-header">
@@ -507,7 +438,7 @@
           </div>
         </div>
         <div class="col-sm-12 col-md-4 col-lg-3">
-          <div class="card-item">
+          <div class="frutagro-card">
             <div class="card product h-100">
               <a href="">
                 <div class="product-header">
@@ -529,7 +460,7 @@
           </div>
         </div>
         <div class="col-sm-12 col-md-4 col-lg-3">
-          <div class="card-item">
+          <div class="frutagro-card">
             <div class="card product h-100">
               <a href="">
                 <div class="product-header">
@@ -551,7 +482,7 @@
           </div>
         </div>
         <div class="col-sm-12 col-md-4 col-lg-3">
-          <div class="card-item">
+          <div class="frutagro-card">
             <div class="card product h-100">
               <a href="">
                 <div class="product-header">
@@ -582,204 +513,14 @@
     </div>
   </section>
 
-  <!-- Modal -->
-  <!-- <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog"
-    aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="cart-list-product">
-            <div class="row">
-              <div class="col-3">
-                <img class="img-fluid" src="assets/img/product-01-apple.jpg" alt="">
-              </div>
-              <div class="col-2">
-                <h5><a href="#">Product Title Here</a></h5>
-              </div>
-              <div class="col-2">
-                <span class="cart-qty">Qty: 1</span>
-              </div>
-              <div class="col-4">
-                <span class="offer-price mb-0 h6 cart-qty">Bs. 50000</span>
-              </div>
-              <div class="col-1">
-                <a class="float-right remove-cart" href="#"><i class="fas fa-times"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="cart-list-product">
-            <div class="row">
-              <div class="col-3">
-                <img class="img-fluid" src="assets/img/product-01-apple.jpg" alt="">
-              </div>
-              <div class="col-2">
-                <h5><a href="#">Product Title Here</a></h5>
-              </div>
-              <div class="col-2">
-                <span class="cart-qty">Qty: 1</span>
-              </div>
-              <div class="col-4">
-                <span class="offer-price mb-0 h6 cart-qty">Bs. 50000</span>
-              </div>
-              <div class="col-1">
-                <a class="float-right remove-cart" href="#"><i class="fas fa-times"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="cart-list-product">
-            <div class="row">
-              <div class="col-3">
-                <img class="img-fluid" src="assets/img/product-01-apple.jpg" alt="">
-              </div>
-              <div class="col-2">
-                <h5><a href="#">Product Title Here</a></h5>
-              </div>
-              <div class="col-2">
-                <span class="cart-qty">Qty: 1</span>
-              </div>
-              <div class="col-4">
-                <span class="offer-price mb-0 h6 cart-qty">Bs. 50000</span>
-              </div>
-              <div class="col-1">
-                <a class="float-right remove-cart" href="#"><i class="fas fa-times"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="cart-list-product">
-            <div class="row">
-              <div class="col-3">
-                <img class="img-fluid" src="assets/img/product-01-apple.jpg" alt="">
-              </div>
-              <div class="col-2">
-                <h5><a href="#">Product Title Here</a></h5>
-              </div>
-              <div class="col-2">
-                <span class="cart-qty">Qty: 1</span>
-              </div>
-              <div class="col-4">
-                <span class="offer-price mb-0 h6 cart-qty">Bs. 50000</span>
-              </div>
-              <div class="col-1">
-                <a class="float-right remove-cart" href="#"><i class="fas fa-times"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="cart-list-product">
-            <div class="row">
-              <div class="col-3">
-                <img class="img-fluid" src="assets/img/product-01-apple.jpg" alt="">
-              </div>
-              <div class="col-2">
-                <h5><a href="#">Product Title Here</a></h5>
-              </div>
-              <div class="col-2">
-                <span class="cart-qty">Qty: 1</span>
-              </div>
-              <div class="col-4">
-                <span class="offer-price mb-0 h6 cart-qty">Bs. 50000</span>
-              </div>
-              <div class="col-1">
-                <a class="float-right remove-cart" href="#"><i class="fas fa-times"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <li class="list-inline-item cart-btn">
-    <a href="#" data-toggle="offcanvas" class="btn btn-link border-none"><i class="mdi mdi-cart"></i> My Cart <small
-        class="cart-value">5</small></a>
-  </li>
-  <div class="cart-sidebar">
-    <div class="cart-sidebar-header">
-      <h5>
-        My Cart <span class="text-success">(5 item)</span> <a data-toggle="offcanvas" class="float-right" href="#"><i
-            class="mdi mdi-close"></i>
-        </a>
-      </h5>
-    </div>
-    <div class="cart-sidebar-body">
-      <div class="cart-list-product">
-        <a class="float-right remove-cart" href="#"><i class="mdi mdi-close"></i></a>
-        <img class="img-fluid" src="img/item/11.jpg" alt="">
-        <span class="badge bg-success">50% OFF</span>
-        <h5><a href="#">Product Title Here</a></h5>
-        <h6><strong><span class="mdi mdi-approval"></span> Available in</strong> - 500 gm</h6>
-        <p class="offer-price mb-0">$450.99 <i class="mdi mdi-tag-outline"></i>
-          <span class="regular-price">$800.99</span></p>
-      </div>
-      <div class="cart-list-product">
-        <a class="float-right remove-cart" href="#"><i class="mdi mdi-close"></i></a>
-        <img class="img-fluid" src="img/item/7.jpg" alt="">
-        <span class="badge bg-success">50% OFF</span>
-        <h5><a href="#">Product Title Here</a></h5>
-        <h6><strong><span class="mdi mdi-approval"></span> Available in</strong> - 500 gm</h6>
-        <p class="offer-price mb-0">$450.99 <i class="mdi mdi-tag-outline"></i>
-          <span class="regular-price">$800.99</span></p>
-      </div>
-      <div class="cart-list-product">
-        <a class="float-right remove-cart" href="#"><i class="mdi mdi-close"></i></a>
-        <img class="img-fluid" src="img/item/9.jpg" alt="">
-        <span class="badge bg-success">50% OFF</span>
-        <h5><a href="#">Product Title Here</a></h5>
-        <h6><strong><span class="mdi mdi-approval"></span> Available in</strong> - 500 gm</h6>
-        <p class="offer-price mb-0">$450.99 <i class="mdi mdi-tag-outline"></i>
-          <span class="regular-price">$800.99</span></p>
-      </div>
-      <div class="cart-list-product">
-        <a class="float-right remove-cart" href="#"><i class="mdi mdi-close"></i></a>
-        <img class="img-fluid" src="img/item/1.jpg" alt="">
-        <span class="badge bg-success">50% OFF</span>
-        <h5><a href="#">Product Title Here</a></h5>
-        <h6><strong><span class="mdi mdi-approval"></span> Available in</strong> - 500 gm</h6>
-        <p class="offer-price mb-0">$450.99 <i class="mdi mdi-tag-outline"></i>
-          <span class="regular-price">$800.99</span></p>
-      </div>
-      <div class="cart-list-product">
-        <a class="float-right remove-cart" href="#"><i class="mdi mdi-close"></i></a>
-        <img class="img-fluid" src="img/item/2.jpg" alt="">
-        <span class="badge bg-success">50% OFF</span>
-        <h5><a href="#">Product Title Here</a></h5>
-        <h6><strong><span class="mdi mdi-approval"></span> Available in</strong> - 500 gm</h6>
-        <p class="offer-price mb-0">$450.99 <i class="mdi mdi-tag-outline"></i>
-          <span class="regular-price">$800.99</span></p>
-      </div>
-    </div>
-    <div class="cart-sidebar-footer">
-      <div class="cart-store-details">
-        <p>Sub Total <strong class="float-right">$900.69</strong></p>
-        <p>Delivery Charges <strong class="float-right text-danger">+ $29.69</strong></p>
-        <h6>Your total savings <strong class="float-right text-danger">$55 (42.31%)</strong></h6>
-      </div>
-      <a href="checkout.html"><button class="btn btn-secondary btn-lg btn-block text-left" type="button"><span
-            class="float-left"><i class="mdi mdi-cart-outline"></i> Proceed to Checkout </span><span
-            class="float-right"><strong>$1200.69</strong> <span
-              class="mdi mdi-chevron-right"></span></span></button></a>
-    </div>
-  </div> -->
-
-
   <!-- Footer -->
   <footer class="bg-white">
-    <section class="section-padding footer border-top">
+    <section class="section-padding footer border-top-galery">
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-6 col-lg-3 mr-auto">
             <h4 class="mb-5 mt-0">
-              <a class="logo" href="index2.html"><img src="assets/img/frutagro_logo.png" alt="Groci"></a></h4>
+              <a class="logo-frutagro" href="index2.html"><img src="assets/img/frutagro_logo.png" alt="Groci"></a></h4>
           </div>
 
           <div class="col-sm-6 col-md-3 col-lg-2">
