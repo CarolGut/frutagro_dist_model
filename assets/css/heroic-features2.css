@@ -6,7 +6,6 @@
     font-weight: 300;
     src: url('../font/Montserrat/Montserrat-Light.ttf');
     font-display: optional !important;
-
 }
 
 @font-face {
@@ -90,7 +89,7 @@
 
 /* Body */
 body {
-    background-color: #f9f9f9;
+    background: #f9f9f9;
     font-size: 13px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -149,6 +148,10 @@ a:focus {
     outline-offset: 0;
 }
 
+input::placeholder {
+    color: rgba(64, 73, 59, 0.4) !important;
+}
+
 ::placeholder {
     color: rgba(47, 72, 88, 0.5) !important;
 }
@@ -191,7 +194,6 @@ a:focus {
     background: rgba(237, 237, 237, 1) !important;
 }
 
-
 /* Text */
 
 .text-primary {
@@ -200,6 +202,11 @@ a:focus {
 
 .text-secondary {
     color: rgba(45, 102, 22, 1) !important;
+}
+
+.text-secondary:hover,
+a.text-secondary:hover {
+    color: rgba(45, 92, 22, 1) !important;
 }
 
 .text-tertiary {
@@ -221,7 +228,6 @@ a:focus {
 .text-success {
     color: #7fbb35 !important;
 }
-
 
 /* Buttons */
 
@@ -245,6 +251,21 @@ a:focus {
     color: rgba(255, 255, 255, 1);
 }
 
+.btn-primary:focus {
+    box-shadow: none;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus {
+    box-shadow: 0 0 0 .2rem rgba(164, 164, 164, .1);
+}
+
+.btn-primary:not(:disabled):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle {
+    color: rgba(255, 255, 255, 1);
+    background: rgba(47, 72, 65, 1);
+    border-color: rgba(47, 72, 88, 1);
+}
+
 .btn-secondary {
     background: rgba(45, 102, 22, 1);
     border: 1px solid rgba(45, 102, 22, 0.5);
@@ -257,6 +278,17 @@ a:focus {
     border: 1px solid rgba(45, 102, 22, 0.5);
     box-shadow: 2px 2px 2px 0px rgba(164, 164, 164, 1);
     color: rgba(255, 255, 255, 1);
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active:focus {
+    box-shadow: 0 0 0 .1rem rgba(164, 164, 164, .1);
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle {
+    color: rgba(255, 255, 255, 1);
+    background: rgba(45, 87, 22, 1);
+    border-color: rgba(45, 102, 22, 1);
 }
 
 /* Border */
@@ -278,18 +310,27 @@ a:focus {
 }
 
 .badge {
-  border-radius: 2px;
-  font-weight: 400;
-  padding: 4px 10px !important;
-  font-size: 13px;
+    border-radius: 2px;
+    font-weight: 400;
+    padding: 4px 10px !important;
+    font-size: 13px;
 }
 
 .heading-design-h5 {
-  font-size: 18px;
-  margin-bottom: 6px;
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+
+.form-control:focus {
+    box-shadow: 0 0 0 .2rem rgba(164, 164, 164, 0.1);
 }
 
 /*----------  Navbar top primary ----------*/
+
+.logo-country {
+    width: 24px;
+}
 
 .navbar-option {
     cursor: pointer;
@@ -297,7 +338,7 @@ a:focus {
 }
 
 .navbar-option:hover {
-    color: rgb(255, 0, 0);
+    color: rgba(45, 102, 22, 1);
 }
 
 .navbar-option:before {
@@ -307,7 +348,7 @@ a:focus {
     height: 50%;
     content: "";
     position: absolute;
-    background-color: rgba(164, 164, 164, 0.15);
+    background: rgba(164, 164, 164, 0.15);
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -319,6 +360,7 @@ a:focus {
     box-shadow: 0 0 6.65px 0.35px rgba(164, 164, 164, 0.4);
     -webkit-box-shadow: 0 0 6.65px 0.35px rgba(164, 164, 164, 0.4);
     margin: 0;
+    z-index: 9999;
 }
 
 .dropdown-menu .dropdown-item {
@@ -329,9 +371,15 @@ a:focus {
 
 .dropdown-item.active,
 .dropdown-item:active {
-    background-color: rgba(244, 244, 244, 0.2) !important;
+    background: rgba(244, 244, 244, 0.2) !important;
     color: rgba(45, 102, 22, 1) !important;
     text-decoration: none;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    font-weight: 500;
+    color: rgba(45, 102, 22, 1);
+    background: transparent;
 }
 
 .navbar-option .dropdown-menu {
@@ -350,7 +398,7 @@ a:focus {
 
 .navbar-option .dropdown-menu li a:hover {
     color: rgba(45, 102, 22, 1);
-    background-color: transparent;
+    background: transparent;
 }
 
 .navbar-option .dropdown-menu li:before {
@@ -370,7 +418,6 @@ a:focus {
 .line-vertical:first-child:before {
     display: none;
 }
-
 
 /*----------  Navbar top secondary ----------*/
 
@@ -405,7 +452,7 @@ a:focus {
 .products-search .btn-primary:not(:disabled):not(.disabled).active,
 .products-search .btn-primary:not(:disabled):not(.disabled):active {
     color: #fff;
-    background-color: rgba(47, 72, 68, 1);
+    background: rgba(47, 72, 68, 1);
     border-color: transparent !important;
 }
 
@@ -443,7 +490,7 @@ a:focus {
     background: rgba(47, 72, 88, 1);
     border-radius: 50px;
     box-shadow: 2px 2px 3px 1px rgba(164, 164, 164, 0.1);
-    color: rgb(255, 255, 255);
+    color: rgba(255, 255, 255, 1);
     display: inline-block;
     font-size: 20px;
     width: 46px;
@@ -453,6 +500,10 @@ a:focus {
 
 .btn-cart:hover .fa-shopping-cart {
     background: rgba(47, 72, 68, 1);
+}
+
+.btn-cart:focus {
+    box-shadow: none;
 }
 
 .mini-cart .cart-value {
@@ -473,7 +524,7 @@ a:focus {
     max-height: 300px;
     overflow-y: auto;
     overflow-x: hidden;
-    background-color: rgba(244, 244, 244, 1) !important;
+    background: rgba(244, 244, 244, 1) !important;
 }
 
 .mini-cart-wrap ul.dropdown-menu {
@@ -507,7 +558,6 @@ a:focus {
     margin-left: 0;
     margin-bottom: 20px;
 }
-
 
 .mini-cart-wrap ul.cart-list li:last-child {
     margin-top: -10px;
@@ -545,6 +595,11 @@ a:focus {
 .table-cart-product .cart-sidebar-body {
     background: rgba(244, 244, 244, 1);
     overflow: inherit;
+    font-size: 13px !important;
+}
+
+.table-total tbody {
+    font-size: 13px !important;
 }
 
 .dropdown-menu-cart .table-total td {
@@ -564,6 +619,16 @@ a:focus {
     font-size: 14px;
 }
 
+.button-container .checkout:hover {
+    background: rgba(47, 72, 68, 1) !important;
+    color: rgba(255, 255, 255, 1) !important;
+}
+
+.button-container .addtocart:hover {
+    background: rgba(45, 92, 22, 1) !important;
+    color: rgba(255, 255, 255, 1) !important;
+}
+
 .cart-list-product {
     background: rgba(255, 255, 255, 1) !important;
     border-radius: 5px;
@@ -573,7 +638,6 @@ a:focus {
     position: relative;
     display: block;
 }
-
 
 .cart-list-product img {
     background: rgba(255, 255, 255, 1);
@@ -603,7 +667,7 @@ a:focus {
 /*---------- Navbar top tertiary ----------*/
 
 .navbar-top-tertiary {
-    background-color: rgba(45, 102, 22, 1);
+    background: rgba(45, 102, 22, 1);
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -660,16 +724,13 @@ a:focus {
     height: 50%;
     content: "";
     position: absolute;
-    background-color: #e5e5e5;
+    background: #e5e5e5;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
 
-
-
 /*---------- Carousel ----------*/
-
 
 .frutagro-slider-wrapper .bg-img {
     background-size: cover;
@@ -701,7 +762,6 @@ a:focus {
     padding-bottom: 32px;
 }
 
-
 .frutagro-slider-content .btn-primary {
     border-radius: 49px !important;
     font-size: 15px;
@@ -712,22 +772,20 @@ a:focus {
 .carousel-control-next,
 .carousel-control-prev {
     width: 9%;
-    background-color: rgba(244, 244, 244, 1);
+    background: rgba(244, 244, 244, 1);
     color: #a8a8a8;
 }
 
-
 .carousel-control-prev-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%232f4858' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e");
-
 }
 
 .carousel-control-next-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%232f4858' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e");
-
 }
 
 /*---------- Frutagro Banner ----------*/
+
 .frutagro-banner {
     box-shadow: 0 2px 8px 0 rgba(164, 164, 164, .5);
 }
@@ -789,7 +847,292 @@ a:focus {
 }
 
 .frutagro-card {
-  margin: 4px;
+    margin: 4px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    border: 1px solid rgba(102, 102, 102, 0.25);
+}
+
+.frutagro-card-item {
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 1px 1px 2px 0px rgba(164, 164, 164, .5);
+    border-radius: 2px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.card-header {
+    background: #EDEDED;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.frutagro-card-header {
+    text-align: center;
+}
+
+.frutagro-card-header .badge {
+    font-size: 12px;
+    font-weight: 500;
+    left: 20px;
+    position: absolute;
+    top: 20px;
+    z-index: 9;
+    color: rgba(244, 244, 244, 1);
+}
+
+.frutagro-card-header img {
+    height: 185px;
+    margin: 20px 0 9px;
+    object-fit: scale-down;
+    transform: scale(1);
+    transition-duration: 0.4s;
+}
+
+.frutagro-card-header:hover img {
+    transform: scale(1.09);
+}
+
+.frutagro-card-body h5 {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.frutagro-card-body h6 {
+    color: rgba(164, 164, 164, 1);
+    font-size: 12px;
+    margin: 5px 0 14px;
+}
+
+.frutagro-card-footer .btn {
+    border-radius: 49px !important;
+    font-size: 12px;
+    padding: 6px 12px;
+    margin: 10px 0 0;
+}
+
+.regular-price {
+    color: rgba(164, 164, 164, .8);
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 15px;
+    text-decoration: line-through;
+}
+
+.offer-price {
+    color: rgba(45, 102, 22, 1);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 16px;
+}
+
+/*---------- Footer ----------*/
+
+.footer {
+    border-bottom: 1px solid rgba(237, 237, 237, 1);
+    border-top: 1px solid rgba(237, 237, 237, 1) !important;
+}
+
+.footer-bottom {
+    background: rgba(0, 0, 0, 1);
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.footer-bottom span {
+    line-height: 16px;
+}
+
+h6.footer-item {
+    font-weight: 600;
+}
+
+.footer-social a {
+    background: rgba(47, 72, 88, 1);
+    border-radius: 25px;
+    transition: all 0.3s ease 0s;
+    color: rgba(255, 255, 255, 1) !important;
+    border: 1px solid rgba(47, 72, 88, 0.5);
+    box-shadow: 2px 2px 3px 1px rgba(164, 164, 164, 0.5);
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 40px;
+    font-size: 19px;
+    margin-right: 5px;
+}
+
+.footer-social a:hover {
+    background: rgba(47, 72, 65, 1);
+    border: 1px solid rgba(47, 72, 88, 1);
+    color: #ffffff !important;
+}
+
+/*---------- Shop Filters ----------*/
+
+.card-filters {
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.06);
+    border: 1px solid #dbdbdb;
+}
+
+.shop-filters .card-filters {
+    margin: -2px 0 0;
+}
+
+.card-filters .card-header .btn {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 15px;
+    font-weight: 700;
+    padding: 7px 0;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.shop-filters .card-body {
+    padding: 4px;
+    background: rgba(255, 255, 255, 1);
+}
+
+.card-shop-filters {
+    padding: 18px !important;
+}
+
+.card-shop-filters .custom-control {
+    margin: 8px 0;
+}
+
+.card-shop-filters .custom-control .custom-control-label {
+    width: 100%;
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    border-color: rgba(45, 102, 22, 0.5);
+    background: rgba(45, 102, 22, 1);
+}
+
+.card-shop-filters .input-group .form-control {
+    border: 1px solid rgba(164, 164, 164, .5);
+    font-size: 13px;
+    border-radius: 2px;
+}
+
+.card-shop-filters .input-group .form-control:focus {
+    box-shadow: 0 0 0 .1rem rgba(164, 164, 164, 0.1);
+    border: 1px solid rgba(164, 164, 164, 0.5);
+}
+
+.card-shop-filters .input-group .input-group-append .btn {
+    box-shadow: none;
+}
+
+/*---------- Shop Filters ----------*/
+
+.order {
+    font-weight: 500;
+}
+
+.select-filter {
+    border-radius: 2px;
+    border: solid 1px rgba(237, 237, 237, 1);
+    clear: both;
+    font-size: 13px;
+    height: 30px;
+    padding: 0 10px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.06);
+    color: rgba(64, 73, 59, .8);
+    background: rgba(255, 255, 255, 1);
+}
+
+.frutagro-best-deals .dropdown-menu {
+    min-width: 9rem;
+    box-shadow: 1px 2px 3px 1px rgba(164, 164, 164, 0.1);
+    border-bottom: 2px solid rgba(45, 102, 22, 1);
+}
+
+.page-link {
+    color: rgba(21, 36, 121, 1);
+    text-shadow: 0 0 rgba(21, 36, 121, 1);
+    border: 1px solid rgba(164, 164, 164, .3);
+}
+
+.page-link:hover {
+    z-index: 2;
+    color: rgba(244, 244, 244, 1);
+    text-shadow: 0 0 rgba(45, 102, 22, 1);
+    text-decoration: none;
+    background-color: rgba(45, 102, 22, 1);
+    border-color: transparent;
+}
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: rgba(244, 244, 244, 1);
+    text-shadow: 0 0 rgba(45, 102, 22, 1);
+    text-decoration: none;
+    background-color: rgba(45, 102, 22, 1);
+    border-color: transparent;
+}
+
+.page-item.disabled .page-link {
+    color: rgba(164, 164, 164, .7) !important;
+    text-shadow: none;
+    pointer-events: none;
+    cursor: auto;
+    background-color: #fff;
+    border: 1px solid rgba(164, 164, 164, .3);
+}
+
+.page-item.active .page-link:hover {
+    z-index: 1;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(45, 92, 22, 1);
+    border-color: rgba(45, 92, 22, .41);
+}
+
+.page-link:focus {
+    box-shadow: 0 0 0 .2rem rgba(164, 164, 164, 0.1);
+}
+
+.scroll-top {
+    bottom: 50px;
+    cursor: pointer;    
+    height: 40px;    
+    position: fixed;    
+    right: 15px;    
+    text-align: center;    
+    width: 40px;    
+    z-index: 9999;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 50%;
+    font-size: 0px;
+    padding: 3px 12px;
+}
+
+.scroll-top.not-visible {
+  bottom: -50px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.scroll-top i {
+  margin-top: 5px;
+  font-size: 23px;
 }
 
 /* Mobile Media */
@@ -869,10 +1212,17 @@ a:focus {
         flex-basis: 100%;
     }
 
+    .frutagro-best-deals .discount-tag {
+        font-size: 0;
+    }
+
     .frutagro-card {
         margin: 4px;
         margin-bottom: 25px;
-    
+    }
+
+    .scroll-top {  
+        right: 40px;    
     }
 }
 
@@ -964,7 +1314,7 @@ a:focus {
     }
 
     .line-vertical::before {
-        background-color: transparent !important;
+        background: transparent !important;
     }
 
     .frutagro-slider-item {
@@ -999,6 +1349,7 @@ a:focus {
         flex-basis: 100%;
         padding-bottom: 15px;
     }
+
     .frutagro-banner-item {
         -webkit-flex-basis: 100%;
         -ms-flex-preferred-size: 100%;
@@ -1015,6 +1366,19 @@ a:focus {
         -webkit-flex-basis: 100%;
         -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+    }
+
+    .frutagro-best-deals .discount-tag {
+        font-size: 0;
+    }
+
+    .frutagro-card {
+        margin: 4px;
+        margin-bottom: 25px;
+    }
+
+    .footer-social a {
+        margin-bottom: 3px;
     }
 }
 
@@ -1094,7 +1458,7 @@ a:focus {
     }
 
     .line-vertical::before {
-        background-color: transparent !important;
+        background: transparent !important;
     }
 
     .frutagro-slider-content {
@@ -1142,6 +1506,15 @@ a:focus {
         -webkit-flex-basis: 100%;
         -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+    }
+
+    .frutagro-card {
+        margin: 4px;
+        margin-bottom: 25px;
+    }
+
+    .footer-social a {
+        margin-bottom: 3px;
     }
 }
 
@@ -1198,7 +1571,7 @@ a:focus {
     }
 
     .line-vertical::before {
-        background-color: transparent !important;
+        background: transparent !important;
     }
 
     .frutagro-slider-content {
@@ -1222,7 +1595,6 @@ a:focus {
         margin: 5px 0 0;
     }
 
-    
     .frutagro-banner-wrapper {
         padding-bottom: 10px;
     }
@@ -1234,6 +1606,15 @@ a:focus {
         max-width: 50%;
         margin-bottom: 30px;
         padding: 0 10px;
+    }
+
+    .frutagro-card {
+        margin: 4px;
+        margin-bottom: 25px;
+    }
+
+    .footer-social a {
+        margin-bottom: 3px;
     }
 }
 

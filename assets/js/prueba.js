@@ -29,7 +29,7 @@ $(document).ready(function () {
 	});
 
 	$(window).on('scroll', function () {
-		if ($(this).scrollTop() > 600) {
+		if ($(this).scrollTop() > 1100) {
 			$('.scroll-top').removeClass('not-visible d-none');
 		} else {
 			$('.scroll-top').addClass('not-visible');

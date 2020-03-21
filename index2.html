@@ -47,15 +47,15 @@
 
                 <div class="dropdown navbar-option">
                   <span class="nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                    <img class="country" src="assets/img/es.png" alt=logo-español">
+                    <img class="logo-country" src="assets/img/es.png" alt=logo-español">
                     Español
                     <i class="fa fa-angle-down"></i></span>
                   <ul class="dropdown-menu" role="menu">
                     <li><a class="dropdown-item" href="#">
-                      <img class="country" src="assets/img/es.png" alt="logo-español">
+                      <img class="logo-country" src="assets/img/es.png" alt="logo-español">
                         Español</a></li>
                     <li><a class="dropdown-item" href="#">
-                      <img class="country" src="assets/img/en.png" alt=logo-ingles"">
+                      <img class="logo-country" src="assets/img/en.png" alt=logo-ingles"">
                         English</a></li>
                   </ul>
                 </div>
@@ -201,13 +201,29 @@
           </a>
         </span>
 
+        <!-- <li class="nav-item navbar-user dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            <i class="fas fa-sign-in-alt"></i> Inicio de sessión
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="shop.html"><i class="mdi mdi-chevron-right" aria-hidden="true"></i> Shop
+              Grid</a>
+            <a class="dropdown-item" href="single.html"><i class="mdi mdi-chevron-right" aria-hidden="true"></i>
+              Single Product</a>
+            <a class="dropdown-item" href="cart.html"><i class="mdi mdi-chevron-right" aria-hidden="true"></i>
+              Shopping Cart</a>
+            <a class="dropdown-item" href="checkout.html"><i class="mdi mdi-chevron-right" aria-hidden="true"></i>
+              Checkout</a>
+          </div>
+        </li> -->
 
       </div>
     </div>
   </nav>
 
 
-  <!-- <section class="frutagro-slider-wrapper">
+  <section class="frutagro-slider-wrapper">
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -240,7 +256,7 @@
         </a>
       </div>
     </div>
-  </section> -->
+  </section>
 
   <section class="frutagro-banner pt-4 bg-white">
     <div class="container">
@@ -293,108 +309,118 @@
     <div class="container">
       <div class="frutagro-best-deals">
         <h5 class="heading-design-h5">Mejores ofertas en frutas
-          <span class="badge bg-success float-right text-white">20% de descuento</span>
+          <span class="badge bg-success float-right text-white">20% 
+            <span class="discount-tag">de descuento</span>
+          </span>
         </h5>
       </div>
       <div class="row justify-content-center mt-4 mb-2">
         <div class="col-md-6 col-lg-3">
           <div class="frutagro-card">
-            <div class="card product h-100">
+            <div class="card frutagro-card-item h-100">
               <a href="product.html">
-                <div class="product-header">
+                <div class="frutagro-card-header">
                   <span class="badge bg-success">20% menos</span>
                   <img class="img-fluid" src="assets/img/product-01-apple.jpg" alt="">
-                  <!-- <img class="card-img-top" src="assets/img/product-3.jpg" alt=""> -->
                 </div>
-                <div class="product-body">
+                <div class="frutagro-card-body">
                   <h5>Manzana Roja</h5>
                   <h6>A partir de 500 gr</h6>
-                </div>
-                <div class="product-footer">
-                  <p class="offer-price mb-3">80.000 <i class="fas fa-tags"></i><span class="regular-price">
-                      100.000</span></p><button type="button" class="btn btn-primary btn-sm"><i
-                      class="fas fa-shopping-cart"></i> Añadir al carrito</button>
+                  <h4 class="offer-price mb-3">80.000 
+                    <i class="fas fa-tags"></i>
+                    <span class="regular-price">100.000</span>
+                  </h4>
                 </div>
               </a>
+              <div class="frutagro-card-footer">
+                <button type="button" class="btn btn-primary btn-sm"><i
+                  class="fas fa-shopping-cart"></i> Añadir al carrito</button>
+              </div>
             </div>
           </div>
         </div>
         <div class="col-md-6 col-lg-3">
           <div class="frutagro-card">
-            <div class="card product h-100">
-              <a href="">
-                <div class="product-header">
+            <div class="card frutagro-card-item h-100">
+              <a href="product.html">
+                <div class="frutagro-card-header">
                   <span class="badge bg-success">50% menos</span>
                   <img class="img-fluid" src="assets/img/product-02-banana.jpg" alt="">
-                  <!-- <img class="card-img-top" src="assets/img/product-3.jpg" alt=""> -->
                 </div>
-                <div class="product-body">
+                <div class="frutagro-card-body">
                   <h5>Cambur</h5>
                   <h6>A partir de 500 gr</h6>
-                </div>
-                <div class="product-footer">
-                  <p class="offer-price mb-3">50.000 <i class="fas fa-tags"></i><span class="regular-price">
-                      100.000</span></p><button type="button" class="btn btn-primary btn-sm"><i
-                      class="fas fa-shopping-cart"></i> Añadir al carrito</button>
+                  <h4 class="offer-price mb-3">50.000 
+                    <i class="fas fa-tags"></i>
+                    <span class="regular-price">100.000</span>
+                  </h4>
                 </div>
               </a>
+              <div class="frutagro-card-footer">
+                <button type="button" class="btn btn-primary btn-sm"><i
+                  class="fas fa-shopping-cart"></i> Añadir al carrito</button>
+              </div>
             </div>
           </div>
         </div>
         <div class="col-md-6 col-lg-3">
           <div class="frutagro-card">
-            <div class="card product h-100">
-              <a href="">
-                <div class="product-header">
+            <div class="card frutagro-card-item h-100">
+              <a href="product.html">
+                <div class="frutagro-card-header">
                   <span class="badge bg-success">20% menos</span>
                   <img class="img-fluid" src="assets/img/product-03-melon.jpg" alt="">
-                  <!-- <img class="card-img-top" src="assets/img/product-3.jpg" alt=""> -->
                 </div>
-                <div class="product-body">
+                <div class="frutagro-card-body">
                   <h5>Melon</h5>
                   <h6>A partir de 500 gr</h6>
-                </div>
-                <div class="product-footer">
-                  <p class="offer-price mb-3">80.000 <i class="fas fa-tags"></i><span class="regular-price">
-                      100.000</span></p><button type="button" class="btn btn-primary btn-sm"><i
-                      class="fas fa-shopping-cart"></i> Añadir al carrito</button>
+                  <h4 class="offer-price mb-3">80.000 
+                    <i class="fas fa-tags"></i>
+                    <span class="regular-price">100.000</span>
+                  </h4>
                 </div>
               </a>
+              <div class="frutagro-card-footer">
+                <button type="button" class="btn btn-primary btn-sm"><i
+                  class="fas fa-shopping-cart"></i> Añadir al carrito</button>
+              </div>
             </div>
           </div>
         </div>
         <div class="col-md-6 col-lg-3">
           <div class="frutagro-card">
-            <div class="card product h-100">
-              <a href="">
-                <div class="product-header">
+            <div class="card frutagro-card-item h-100">
+              <a href="product.html">
+                <div class="frutagro-card-header">
                   <span class="badge bg-success">20% menos</span>
                   <img class="img-fluid" src="assets/img/product-04-strawberry.jpg" alt="">
-                  <!-- <img class="card-img-top" src="assets/img/product-3.jpg" alt=""> -->
                 </div>
-                <div class="product-body">
+                <div class="frutagro-card-body">
                   <h5>Fresas</h5>
                   <h6>A partir de 500 gr</h6>
-                </div>
-                <div class="product-footer">
-                  <p class="offer-price mb-3">80.000 <i class="fas fa-tags"></i><span class="regular-price">
-                      100.000</span></p><button type="button" class="btn btn-primary btn-sm"><i
-                      class="fas fa-shopping-cart"></i> Añadir al carrito</button>
+                  <h4 class="offer-price mb-3">80.000 
+                    <i class="fas fa-tags"></i>
+                    <span class="regular-price">100.000</span>
+                  </h4>
                 </div>
               </a>
+              <div class="frutagro-card-footer">
+                <button type="button" class="btn btn-primary btn-sm"><i
+                  class="fas fa-shopping-cart"></i> Añadir al carrito</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col-12">
-          <a class="float-right text-secondary text-decoration h6" href="shop.html">Ver todos</a>
+          <a class="float-right text-secondary text-decoration h6" href="fruits.html">Ver todos</a>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="offer-product">
+  <section class="offert-image">
     <div class="container">
       <div class="row no-gutters">
         <div class="col-md-6">
@@ -411,111 +437,121 @@
     <div class="container">
       <div class="frutagro-best-deals">
         <h5 class="heading-design-h5">Mejores ofertas en vegetales
-          <span class="badge bg-success float-right">20% de descuento</span>
+          <span class="badge bg-success float-right text-white">20% 
+            <span class="discount-tag">de descuento</span>
+          </span>
         </h5>
       </div>
       <div class="row justify-content-center mt-4 mb-2">
-        <div class="col-sm-12 col-md-4 col-lg-3">
+        <div class="col-md-6 col-lg-3">
           <div class="frutagro-card">
-            <div class="card product h-100">
-              <a href="">
-                <div class="product-header">
+            <div class="card frutagro-card-item h-100">
+              <a href="product.html">
+                <div class="frutagro-card-header">
                   <span class="badge bg-success">50% menos</span>
                   <img class="img-fluid" src="assets/img/product-05-lettuce.jpg" alt="">
-                  <!-- <img class="card-img-top" src="assets/img/product-3.jpg" alt=""> -->
                 </div>
-                <div class="product-body">
+                <div class="frutagro-card-body">
                   <h5>Lechuga</h5>
                   <h6>A partir de 500 gr</h6>
-                </div>
-                <div class="product-footer">
-                  <p class="offer-price mb-3">50.000 <i class="fas fa-tags"></i><span class="regular-price">
-                      100.000</span></p><button type="button" class="btn btn-primary btn-sm"><i
-                      class="fas fa-shopping-cart"></i> Añadir al carrito</button>
+                  <h4 class="offer-price mb-3">50.000 
+                    <i class="fas fa-tags"></i>
+                    <span class="regular-price">100.000</span>
+                  </h4>
                 </div>
               </a>
+              <div class="frutagro-card-footer">
+                <button type="button" class="btn btn-primary btn-sm"><i
+                  class="fas fa-shopping-cart"></i> Añadir al carrito</button>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-sm-12 col-md-4 col-lg-3">
+        <div class="col-md-6 col-lg-3">
           <div class="frutagro-card">
-            <div class="card product h-100">
-              <a href="">
-                <div class="product-header">
+            <div class="card frutagro-card-item h-100">
+              <a href="product.html">
+                <div class="frutagro-card-header">
                   <span class="badge bg-success">20% menos</span>
                   <img class="img-fluid" src="assets/img/product-06-tomato.jpg" alt="">
-                  <!-- <img class="card-img-top" src="assets/img/product-3.jpg" alt=""> -->
                 </div>
-                <div class="product-body">
+                <div class="frutagro-card-body">
                   <h5>Tomate</h5>
                   <h6>A partir de 500 gr</h6>
-                </div>
-                <div class="product-footer">
-                  <p class="offer-price mb-3">80.000 <i class="fas fa-tags"></i><span class="regular-price">
-                      100.000</span></p><button type="button" class="btn btn-primary btn-sm"><i
-                      class="fas fa-shopping-cart"></i> Añadir al carrito</button>
+                  <h4 class="offer-price mb-3">80.000 
+                    <i class="fas fa-tags"></i>
+                    <span class="regular-price">100.000</span>
+                  </h4>
                 </div>
               </a>
+              <div class="frutagro-card-footer">
+                <button type="button" class="btn btn-primary btn-sm"><i
+                  class="fas fa-shopping-cart"></i> Añadir al carrito</button>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-sm-12 col-md-4 col-lg-3">
+        <div class="col-md-6 col-lg-3">
           <div class="frutagro-card">
-            <div class="card product h-100">
-              <a href="">
-                <div class="product-header">
+            <div class="card frutagro-card-item h-100">
+              <a href="product.html">
+                <div class="frutagro-card-header">
                   <span class="badge bg-success">20% menos</span>
                   <img class="img-fluid" src="assets/img/product-07-onion.jpg" alt="">
-                  <!-- <img class="card-img-top" src="assets/img/product-3.jpg" alt=""> -->
                 </div>
-                <div class="product-body">
+                <div class="frutagro-card-body">
                   <h5>Cebolla</h5>
                   <h6>A partir de 500 gr</h6>
-                </div>
-                <div class="product-footer">
-                  <p class="offer-price mb-3">80.000 <i class="fas fa-tags"></i><span class="regular-price">
-                      100.000</span></p><button type="button" class="btn btn-primary btn-sm"><i
-                      class="fas fa-shopping-cart"></i> Añadir al carrito</button>
+                  <h4 class="offer-price mb-3">80.000 
+                    <i class="fas fa-tags"></i>
+                    <span class="regular-price">100.000</span>
+                  </h4>
                 </div>
               </a>
+              <div class="frutagro-card-footer">
+                <button type="button" class="btn btn-primary btn-sm"><i
+                  class="fas fa-shopping-cart"></i> Añadir al carrito</button>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-sm-12 col-md-4 col-lg-3">
+        <div class="col-md-6 col-lg-3">
           <div class="frutagro-card">
-            <div class="card product h-100">
-              <a href="">
-                <div class="product-header">
+            <div class="card frutagro-card-item h-100">
+              <a href="product.html">
+                <div class="frutagro-card-header">
                   <span class="badge bg-success">20% menos</span>
                   <img class="img-fluid" src="assets/img/product-08-potato.jpg" alt="">
-                  <!-- <img class="card-img-top" src="assets/img/product-3.jpg" alt=""> -->
                 </div>
-                <div class="product-body">
+                <div class="frutagro-card-body">
                   <h5>Papas</h5>
-                  <h6><span class="mdi mdi-approval"></span>A partir de 500 gr
-                  </h6>
-                </div>
-                <div class="product-footer">
-                  <p class="offer-price mb-3">80.000 <i class="fas fa-tags"></i><span class="regular-price">
-                      100.000</span></p><button type="button" class="btn btn-primary btn-sm"><i
-                      class="fas fa-shopping-cart"></i> Añadir al carrito</button>
+                  <h6>A partir de 500 gr</h6>
+                  <h4 class="offer-price mb-3">80.000 
+                    <i class="fas fa-tags"></i>
+                    <span class="regular-price">100.000</span>
+                  </h4>
                 </div>
               </a>
+              <div class="frutagro-card-footer">
+                <button type="button" class="btn btn-primary btn-sm"><i
+                  class="fas fa-shopping-cart"></i> Añadir al carrito</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col-12">
-          <a class="float-right text-secondary text-decoration h6" href="shop.html">Ver todos</a>
+          <a class="float-right text-secondary text-decoration h6" href="fruits.html">Ver todos</a>
         </div>
       </div>
     </div>
   </section>
 
+
   <!-- Footer -->
   <footer class="bg-white">
-    <section class="section-padding footer border-top-galery">
+    <section class="section-padding footer">
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-6 col-lg-3 mr-auto">
@@ -524,16 +560,17 @@
           </div>
 
           <div class="col-sm-6 col-md-3 col-lg-2">
-            <h6 class="mb-4">CATEGORIAS</h6>
+            <h6 class="footer-item mb-4">CATEGORIAS</h6>
             <ul>
-              <li><a href="#">Frutas</a></li>
+              <li><a href="fruits.html">Frutas</a></li>
               <li><a href="#">Vegetales</a></li>
               <ul>
               </ul>
             </ul>
           </div>
+
           <div class="col-sm-6 col-md-3 col-lg-2">
-            <h6 class="mb-4">NOSOTROS</h6>
+            <h6 class="footer-item mb-4">NOSOTROS</h6>
             <ul>
               <li><a href="#">Visión</a></li>
               <li><a href="#">Misión</a></li>
@@ -543,15 +580,16 @@
           </div>
 
           <div class="col-sm-6 col-md-6 col-lg-3">
-            <h6 class="mb-4">CONTACTO</h6>
+            <h6 class="footer-item mb-4">CONTACTO</h6>
             <p class="mb-0">
               <a class="text-dark" href="#"><i class="fas fa-mobile-alt"></i> +58 414 123 4567</a></p>
             <p class="mb-0">
               <a class="text-secondary" href="#"><i class="far fa-envelope"></i> loremipsumn@gmail.com</a>
             </p>
           </div>
+
           <div class="col-sm-6 col-md-6 col-lg-auto">
-            <h6 class="mb-4">SIGUENOS EN</h6>
+            <h6 class="footer-item mb-4">SIGUENOS EN</h6>
             <div class="footer-social">
               <a class="btn-instagram" href="#"><i class="fab fa-lg fa-instagram"></i></a>
               <a class="btn-whatsapp" href="#"><i class="fab fa-lg fa-whatsapp"></i></a>
@@ -560,16 +598,19 @@
         </div>
       </div>
     </section>
-    <div class="footer-bottom py-3">
-      <p class="m-0 text-center text-white">Copyright © Distribuidora Frutagro 2020</p>
+    <div class="footer-bottom">
+      <p class="m-0 text-white text-center">Copyright © Distribuidora Frutagro 2020</p>
     </div>
     <!-- /.container -->
   </footer>
 
+  <div class="scroll-top d-none btn-secondary">
+    <i class="fa fa-angle-up"></i>
+  </div>
+
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="assets/js/prueba.js"></script>
-  <script src="assets/js/carousel/owl.carousel.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
