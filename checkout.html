@@ -18,7 +18,6 @@
   <link rel="stylesheet" href="assets/icons/css/all.css">
   <link rel="stylesheet" href="assets/personal-icon-v1.0/personal-all.css">
   <link rel="stylesheet" href="assets/css/carousel/owl.carousel.min.css">
-  <link rel="stylesheet" href="assets/css/carousel/owl.theme.default.min.css">
 
 </head>
 
@@ -208,866 +207,383 @@
     </div>
   </nav>
 
-  <section class="shop-list section-padding">
+  <div data-notify="container" class="col-xs-11 col-sm-3 alert alert-success animated fadeInDown d-none" role="alert"
+    data-notify-position="top-center"
+    style="display: inline-block; margin: 0px auto; position: fixed; transition: all 0.5s ease-in-out 0s; z-index: 2031; top: 0px; left: 0px; right: 0px;">
+    <button type="button" aria-hidden="true" class="close" data-notify="dismiss">&nbsp;×</button><span data-notify="message"><i class="fa fa-check-circle"></i>&nbsp; Success: You have added <a href="https://codezeel.com/opencart/OPC01/OPC010013/index.php?route=product/product&amp;product_id=47">Accusantium Doloremque</a> to your <a href="https://codezeel.com/opencart/OPC01/OPC010013/index.php?route=checkout/cart">shopping cart</a>!</span>
+    <div class="progress" data-notify="progressbar">
+      <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+        aria-valuemax="100" style="width: 80%;"></div>
+    </div><a href="#" target="_blank" data-notify="url"></a></div>
+
+  <section class="store-shopping-cart section-padding">
     <div id="checkout-cart" class="container">
 
       <div class="row">
-        <aside id="column-left" class="col-sm-3 d-sm-none d-md-none d-lg-block">
-
-
+        <div class="col-sm-3 d-none d-lg-block">
           <div class="swiper-viewport">
-            <div id="banner0" class="swiper-container  single-banner ">
+            <div class="swiper-container single-banner">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <a href="#"><img src="assets/img/mercado.jpg" alt="Left banner" class="img-responsive" /></a>
                 </div>
               </div>
-              <!-- If we need pagination -->
-              <div class="swiper-pagination"></div>
             </div>
           </div>
-          <script type="text/javascript">
-            <!--
-            $('#banner0').swiper({
-              effect: 'fade',
-              autoplay: 2500,
-              pagination: '.swiper-pagination', // If we need pagination
-              autoplayDisableOnInteraction: false
-            });
-            -->
-          </script>
-          <div class="box special">
-            <div class="container">
-              <div class="box-heading">Especiales</div>
-              <div class="box-content">
 
-                <div class="box-product  productbox-grid" id="special-grid">
-                  <div class="product-items">
-                    <div class="product-block product-thumb transition">
-                      <div class="product-block-inner">
-                        <div class="image">
-                          <a
-                            href="https://codezeel.com/opencart/OPC01/OPC010013/index.php?route=product/product&amp;product_id=35">
-
-                            <img class="img-responsive hover-image"
-                              src="assets/img/product-02-banana.jpg"
-                              title="Commodi Consequatur" alt="Commodi Consequatur" />
+          <!-- <div class="box box-special">
+            <div class="box-heading">Especiales</div>
+            <div class="box-content">
+              <div class="box-product">
+                <div class="product-items">
+                  <div class="product-thumb">
+                    <div class="product-block-inner">
+                      <div class="image">
+                        <a  href="#">
+                            <img class="img-responsive" src="assets/img/product-02-banana.jpg" title="Producto" alt="Producto" />
                           </a>
-                        </div>
-
-                        <div class="product-details">
-                          <div class="caption">
-                            <h4>
-                              <a
-                                href="https://codezeel.com/opencart/OPC01/OPC010013/index.php?route=product/product&amp;product_id=35 ">Cambur</a>
-                            </h4>
-
-
-                            <p class="price">
-                              <span class="price-new">$134.00</span> <span class="price-old">$136.40</span>
-                              <span class="price-tax">Ex Tax: $110.00</span>
-                            </p>
-
-
-                            <button type="button" class="addtocart mt-3 d-flex col-12 justify-content-end" onclick="cart.add('35 ');"><span class="mt-3 justify-content-end text-secondary text-decoration">Ver producto</span>
+                      </div>
+                      <div class="product-details">
+                        <div class="caption">
+                          <h4><a href="#">Cambur</a></h4>
+                          <p class="price">
+                            <span class="price-new">$134.00</span>
+                            <span class="price-old">$136.40</span>
+                            <span class="price-tax">Ex Tax: $110.00</span>
+                          </p>
+                          <button type="button" class="addtocart d-flex col-12 justify-content-end">
+                            <span class="mt-3 text-secondary text-decoration">Ver producto</span>
                             </button>
-
-                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-
                 </div>
               </div>
             </div>
-          </div>
-          <span class="special_default_width" style="display:none; visibility:hidden"></span>
+          </div> -->
+        </div>
 
-        </aside>
-
-        <div id="content" class="col-sm-9">
-          <h1>Caja</h1>
+        <div class="col-sm-12 col-md-12 col-lg-9">
+          <h4 class="shopping-cart-title font-weight-bold mb-4">Caja</h4>
           <div class="panel-group" id="accordion">
             <div class="panel panel-default">
               <div class="panel-heading">
-                <h4 class="panel-title">
-                  <a href="#collapse-checkout-option" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle" aria-expanded="true">Paso 1: Caja Opciones <i class="fa fa-caret-down"></i></a>
-                </h4>
+                <a href="#collapse-payment-address" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle" aria-expanded="true"><h4 class="panel-title">Paso 1: Detalles de facturación<i class="fa fa-caret-down"></i></h4></a>
               </div>
-              <div class="panel-collapse collapse in" id="collapse-checkout-option" aria-expanded="true">
+              <div class="panel-collapse collapse in" id="collapse-payment-address" aria-expanded="true">
                 <div class="panel-body">
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <h2>Nuevo cliente</h2>
-                      <p>Caja Opciones:</p>
-                      <div class="radio">
-                        <label>         <input type="radio" name="account" value="register" checked="checked">
-                    Registrar Cuenta</label>
-                      </div>
-                      <div class="radio">
-                        <label>         <input type="radio" name="account" value="guest">
-                    Guest Caja</label>
-                      </div>
-                      <p>Al crear una cuenta, podrá comprar más rápido, estar al día del estado de un pedido y realizar un seguimiento de los pedidos que haya realizado anteriormente.</p>
-                      <input type="button" value="Continuar" id="button-account" data-loading-text="Loading..." class="btn btn-primary">
-      </div>
-                      <div class="col-sm-6">
-                        <h2>Returning Customer</h2>
-                        <p>I am a returning customer</p>
-                        <div class="form-group">
-                          <label class="control-label" for="input-email">Correo electrónico</label>
-                          <input type="text" name="email" value="" placeholder="Correo electrónico" id="input-email" class="form-control">
-        </div>
-                          <div class="form-group">
-                            <label class="control-label" for="input-password">Contraseña</label>
-                            <input type="password" name="password" value="" placeholder="Contraseña" id="input-password" class="form-control">
-                            <div class="forget-password">
-                              <a href="https://codezeel.com/opencart/OPC01/OPC010013/index.php?route=account/forgotten">Contraseña olvidada</a>
-                            </div>
-                          </div>
-                          <input type="button" value="Iniciar sesión" id="button-login" data-loading-text="Loading..." class="btn btn-primary">
-      </div>
+                  <form class="form-horizontal">
+                    <div id="payment-new">
+                      
+                      <div class="form-group row required align-items-center justify-content-center">
+                        <label class="col-sm-3 control-label col-form-label" for="input-payment-firstname">Primer nombre</label>
+                        <div class="col-sm-9 col-md-8">
+                          <input type="text" class="form-control" name="firstname" placeholder="Nombre" id="input-payment-firstname">
                         </div>
                       </div>
+
+                      <div class="form-group row required align-items-center justify-content-center">
+                        <label class="col-sm-3 control-label col-form-label" for="input-payment-lastname">Segundo apellido</label>
+                        <div class="col-sm-9 col-md-8">
+                          <input type="text" class="form-control" name="lastname" placeholder="Apellido" id="input-payment-lastname">
+                        </div>
+                      </div>
+                      
+                      <div class="form-group row  align-items-center justify-content-center">
+                        <label class="col-sm-3 control-label col-form-label" for="input-payment-company">Empresa</label>
+                        <div class="col-sm-9 col-md-8">
+                         <input type="text" class="form-control" name="company" placeholder="Empresa" id="input-payment-company">
+                        </div>
+                      </div>
+                      
+                      <div class="form-group row required align-items-center justify-content-center">
+                        <label class="col-sm-3 control-label col-form-label" for="input-payment-address-1">Dirección 1</label>
+                        <div class="col-sm-9 col-md-8">
+                          <input type="text" class="form-control" name="address_1" placeholder="Dirección 1" id="input-payment-address-1">
+                        </div>
+                      </div>
+                      
+                      <div class="form-group row align-items-center justify-content-center">
+                        <label class="col-sm-3 control-label col-form-label" for="input-payment-address-2">Dirección 2</label>
+                        <div class="col-sm-9 col-md-8">
+                          <input type="text" class="form-control" name="address_2" placeholder="Dirección 2" id="input-payment-address-2">
+                        </div>
+                      </div>
+                      
+                      <div class="form-group row required align-items-center justify-content-center">
+                        <label class="col-sm-3 control-label col-form-label" for="input-payment-city">Ciudad</label>
+                        <div class="col-sm-9 col-md-8">
+                          <input type="text" class="form-control" name="city" placeholder="Ciudad" id="input-payment-city">
+                        </div>
+                      </div>
+                      
+                      <div class="form-group row required align-items-center justify-content-center">
+                        <label class="col-sm-3 control-label col-form-label" for="input-payment-postcode">Código postal</label>
+                        <div class="col-sm-9 col-md-8">
+                          <input type="text" class="form-control" name="postcode" placeholder="Código postal" id="input-payment-postcode">
+                        </div>
+                      </div>
+                                    
+                      <div class="form-group row required align-items-center justify-content-center">
+                        <label class="col-sm-3 control-label col-form-label" for="input-payment-country">País</label>
+                        <div class="col-sm-9 col-md-8">
+                          <select class="form-control" name="country_id" id="input-payment-country">
+                            <option value=""> --- Por favor seleccione --- </option>
+                            <option value="244">Aaland Islands</option>
+                          </select>
+                        </div>
+                      </div>
+                      
+                      <div class="form-group row required align-items-center justify-content-center">
+                        <label class="col-sm-3 control-label col-form-label" for="input-payment-zone">Región / Estado</label>
+                        <div class="col-sm-9 col-md-8">
+                          <select class="form-control" name="zone_id" id="input-payment-zone">
+                            <option value=""> --- Por favor seleccione --- </option>
+                            <option value="3513">Aberdeen</option>
+                          </select>
+                        </div>
+                      </div>
+
                     </div>
-                  </div>
-                  <div class="panel panel-default">
-                    <div class="panel-heading">
-                      <h4 class="panel-title">
-                        <a href="#collapse-payment-address" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle" aria-expanded="true">Paso 2: Detalles de facturación<i class="fa fa-caret-down"></i></a>
-                      </h4>
-                    </div>
-                    <div class="panel-collapse collapse in" id="collapse-payment-address" aria-expanded="true">
-                      <div class="panel-body">
-                        <div class="row">
-                          <div class="col-sm-6">
-                            <fieldset id="account">
-                              <legend>Detalles personales</legend>
-                              <div class="form-group" style="display:  none ;">
-                                <label class="control-label">Customer Group</label>
-                                <div class="radio">
-                                  <label>
-                <input type="radio" name="customer_group_id" value="1" checked="checked">
-                Default</label>
-                                </div>
-                              </div>
-                              <div class="form-group required">
-                                <label class="control-label" for="input-payment-firstname">Nombre</label>
-                                <input type="text" name="firstname" value="" placeholder="Nombre" id="input-payment-firstname" class="form-control">
-          </div>
-                                <div class="form-group required">
-                                  <label class="control-label" for="input-payment-lastname">Apellido</label>
-                                  <input type="text" name="lastname" value="" placeholder="Apellido" id="input-payment-lastname" class="form-control">
-          </div>
-                                  <div class="form-group required">
-                                    <label class="control-label" for="input-payment-email">Correo electrónico</label>
-                                    <input type="text" name="email" value="" placeholder="Correo electrónico" id="input-payment-email" class="form-control">
-          </div>
-                                    <div class="form-group required">
-                                      <label class="control-label" for="input-payment-telephone">Teléfono</label>
-                                      <input type="text" name="telephone" value="" placeholder="Teléfono" id="input-payment-telephone" class="form-control">
-          </div>
-                            </fieldset>
-                          </div>
-                          <div class="col-sm-6">
-                            <fieldset id="address" class="required">
-                              <legend>Dirección</legend>
-                              <div class="form-group">
-                                <label class="control-label" for="input-payment-company">Empresa</label>
-                                <input type="text" name="company" value="" placeholder="Empresa" id="input-payment-company" class="form-control">
-          </div>
-                                <div class="form-group required">
-                                  <label class="control-label" for="input-payment-address-1">Dirección 1</label>
-                                  <input type="text" name="address_1" value="" placeholder="Dirección 1" id="input-payment-address-1" class="form-control">
-          </div>
-                                  <div class="form-group">
-                                    <label class="control-label" for="input-payment-address-2">Dirección 2</label>
-                                    <input type="text" name="address_2" value="" placeholder="Dirección 2" id="input-payment-address-2" class="form-control">
-          </div>
-                                    <div class="form-group required">
-                                      <label class="control-label" for="input-payment-city">Ciudad</label>
-                                      <input type="text" name="city" value="" placeholder="Ciudad" id="input-payment-city" class="form-control">
-          </div>
-                                      <div class="form-group required">
-                                        <label class="control-label" for="input-payment-postcode">Código postal</label>
-                                        <input type="text" name="postcode" value="" placeholder="Código postal" id="input-payment-postcode" class="form-control">
-          </div>
-                                        <div class="form-group required">
-                                          <label class="control-label" for="input-payment-country">País</label>
-                                          <select name="country_id" id="input-payment-country" class="form-control">
-                                            <option value=""> --- Por favor seleccione --- </option>
-                                            <option value="3513">Aberdeen</option>
-            </select>
-                                        </div>
-                                        <div class="form-group required">
-                                          <label class="control-label" for="input-payment-zone">Región / Estado</label>
-                                          <select name="zone_id" id="input-payment-zone" class="form-control">
-                                            <option value=""> --- Por favor seleccione --- </option>
-                                            <option value="3513">Aberdeen</option>
-                                          </select>
-                                        </div>
-                            </fieldset>
-                          </div>
-                        </div>
-                        <div class="checkbox">
-                          <label>     <input type="checkbox" name="shipping_address" value="1" checked="checked">
-            Mis direcciones de envío y facturación son las mismas.</label>
-                        </div>
-                        <div class="buttons">
-                          <div class="pull-right">
-                            <input type="button" value="Continuar" id="button-guest" data-loading-text="Loading..." class="btn btn-primary">
-      </div>
-                          </div>
-                          <script type="text/javascript">
-                            <!--
-                            // Sort the custom fields
-                            $('#account .form-group[data-sort]').detach().each(function () {
-                              if ($(this).attr('data-sort') >= 0 && $(this).attr('data-sort') <= $(
-                                  '#account .form-group').length) {
-                                $('#account .form-group').eq($(this).attr('data-sort')).before(this);
-                              }
-
-                              if ($(this).attr('data-sort') > $('#account .form-group').length) {
-                                $('#account .form-group:last').after(this);
-                              }
-
-                              if ($(this).attr('data-sort') == $('#account .form-group').length) {
-                                $('#account .form-group:last').after(this);
-                              }
-
-                              if ($(this).attr('data-sort') < -$('#account .form-group').length) {
-                                $('#account .form-group:first').before(this);
-                              }
-                            });
-
-                            $('#address .form-group[data-sort]').detach().each(function () {
-                              if ($(this).attr('data-sort') >= 0 && $(this).attr('data-sort') <= $(
-                                  '#address .form-group').length) {
-                                $('#address .form-group').eq($(this).attr('data-sort')).before(this);
-                              }
-
-                              if ($(this).attr('data-sort') > $('#address .form-group').length) {
-                                $('#address .form-group:last').after(this);
-                              }
-
-                              if ($(this).attr('data-sort') == $('#address .form-group').length) {
-                                $('#address .form-group:last').after(this);
-                              }
-
-                              if ($(this).attr('data-sort') < -$('#address .form-group').length) {
-                                $('#address .form-group:first').before(this);
-                              }
-                            });
-
-                            $('#collapse-payment-address input[name=\'customer_group_id\']').on('change', function () {
-                              $.ajax({
-                                url: 'index.php?route=checkout/checkout/customfield&customer_group_id=' + this
-                                  .value,
-                                dataType: 'json',
-                                success: function (json) {
-                                  $('#collapse-payment-address .custom-field').hide();
-                                  $('#collapse-payment-address .custom-field').removeClass('required');
-
-                                  for (i = 0; i < json.length; i++) {
-                                    custom_field = json[i];
-
-                                    $('#payment-custom-field' + custom_field['custom_field_id']).show();
-
-                                    if (custom_field['required']) {
-                                      $('#payment-custom-field' + custom_field['custom_field_id']).addClass(
-                                        'required');
-                                    } else {
-                                      $('#payment-custom-field' + custom_field['custom_field_id'])
-                                        .removeClass('required');
-                                    }
-                                  }
-                                },
-                                error: function (xhr, ajaxOptions, thrownError) {
-                                  alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
-                                }
-                              });
-                            });
-
-                            $('#collapse-payment-address input[name=\'customer_group_id\']:checked').trigger('change');
-                            //
-                            -->
-                          </script>
-                          <script type="text/javascript">
-                            <!--
-                            $('#collapse-payment-address button[id^=\'button-payment-custom-field\']').on('click',
-                              function () {
-                                var node = this;
-
-                                $('#form-upload').remove();
-
-                                $('body').prepend(
-                                  '<form enctype="multipart/form-data" id="form-upload" style="display: none;"><input type="file" name="file" /></form>'
-                                );
-
-                                $('#form-upload input[name=\'file\']').trigger('click');
-
-                                if (typeof timer != 'undefined') {
-                                  clearInterval(timer);
-                                }
-
-                                timer = setInterval(function () {
-                                  if ($('#form-upload input[name=\'file\']').val() != '') {
-                                    clearInterval(timer);
-
-                                    $.ajax({
-                                      url: 'index.php?route=tool/upload',
-                                      type: 'post',
-                                      dataType: 'json',
-                                      data: new FormData($('#form-upload')[0]),
-                                      cache: false,
-                                      contentType: false,
-                                      processData: false,
-                                      beforeSend: function () {
-                                        $(node).button('loading');
-                                      },
-                                      complete: function () {
-                                        $(node).button('reset');
-                                      },
-                                      success: function (json) {
-                                        $(node).parent().find('.text-danger').remove();
-
-                                        if (json['error']) {
-                                          $(node).parent().find('input[name^=\'custom_field\']').after(
-                                            '<div class="text-danger">' + json['error'] + '</div>');
-                                        }
-
-                                        if (json['success']) {
-                                          alert(json['success']);
-
-                                          $(node).parent().find('input[name^=\'custom_field\']').val(json[
-                                            'code']);
-                                        }
-                                      },
-                                      error: function (xhr, ajaxOptions, thrownError) {
-                                        alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr
-                                          .responseText);
-                                      }
-                                    });
-                                  }
-                                }, 500);
-                              });
-                            //
-                            -->
-                          </script>
-                          <script type="text/javascript">
-                            <!--
-                            $('.date').datetimepicker({
-                              language: '',
-                              pickTime: false
-                            });
-
-                            $('.time').datetimepicker({
-                              language: '',
-                              pickDate: false
-                            });
-
-                            $('.datetime').datetimepicker({
-                              language: '',
-                              pickDate: true,
-                              pickTime: true
-                            });
-                            //
-                            -->
-                          </script>
-                          <script type="text/javascript">
-                            <!--
-                            $('#collapse-payment-address select[name=\'country_id\']').on('change', function () {
-                              $.ajax({
-                                url: 'index.php?route=checkout/checkout/country&country_id=' + this.value,
-                                dataType: 'json',
-                                beforeSend: function () {
-                                  $('#collapse-payment-address select[name=\'country_id\']').prop('disabled',
-                                    true);
-                                },
-                                complete: function () {
-                                  $('#collapse-payment-address select[name=\'country_id\']').prop('disabled',
-                                    false);
-                                },
-                                success: function (json) {
-                                  if (json['postcode_required'] == '1') {
-                                    $('#collapse-payment-address input[name=\'postcode\']').parent().parent()
-                                      .addClass('required');
-                                  } else {
-                                    $('#collapse-payment-address input[name=\'postcode\']').parent().parent()
-                                      .removeClass('required');
-                                  }
-
-                                  html = '<option value=""> --- Por favor seleccione --- </option>';
-
-                                  if (json['zone'] && json['zone'] != '') {
-                                    for (i = 0; i < json['zone'].length; i++) {
-                                      html += '<option value="' + json['zone'][i]['zone_id'] + '"';
-
-                                      if (json['zone'][i]['zone_id'] == '') {
-                                        html += ' selected="selected"';
-                                      }
-
-                                      html += '>' + json['zone'][i]['name'] + '</option>';
-                                    }
-                                  } else {
-                                    html += '<option value="0" selected="selected"> --- None --- </option>';
-                                  }
-
-                                  $('#collapse-payment-address select[name=\'zone_id\']').html(html);
-                                },
-                                error: function (xhr, ajaxOptions, thrownError) {
-                                  alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
-                                }
-                              });
-                            });
-
-                            $('#collapse-payment-address select[name=\'country_id\']').trigger('change');
-                            //
-                            -->
-                          </script>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4 class="panel-title">
-                          <a href="#collapse-shipping-address" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle" aria-expanded="true">Paso 3: Detalles de la entrega<i class="fa fa-caret-down"></i></a>
-                        </h4>
-                      </div>
-                      <div class="panel-collapse collapse in" id="collapse-shipping-address" aria-expanded="true">
-                        <div class="panel-body">
-                          <form class="form-horizontal">
-                            <div class="form-group required">
-                              <label class="col-sm-2 control-label" for="input-shipping-firstname">Nombre</label>
-                              <div class="col-sm-10">
-                                <input type="text" name="firstname" value="dfdsf" placeholder="Nombre" id="input-shipping-firstname" class="form-control">
-                </div>
-                              </div>
-                              <div class="form-group required">
-                                <label class="col-sm-2 control-label" for="input-shipping-lastname">Apellido</label>
-                                <div class="col-sm-10">
-                                  <input type="text" name="lastname" value="sdfdscf" placeholder="Apellido" id="input-shipping-lastname" class="form-control">
-                </div>
-                                </div>
-                                <div class="form-group">
-                                  <label class="col-sm-2 control-label" for="input-shipping-company">Empresa</label>
-                                  <div class="col-sm-10">
-                                    <input type="text" name="company" value="" placeholder="Empresa" id="input-shipping-company" class="form-control">
-                </div>
-                                  </div>
-                                  <div class="form-group required">
-                                    <label class="col-sm-2 control-label" for="input-shipping-address-1">Dirección 1</label>
-                                    <div class="col-sm-10">
-                                      <input type="text" name="address_1" value="sdvsdv" placeholder="Dirección 1" id="input-shipping-address-1" class="form-control">
-                </div>
-                                    </div>
-                                    <div class="form-group">
-                                      <label class="col-sm-2 control-label" for="input-shipping-address-2">Dirección 2</label>
-                                      <div class="col-sm-10">
-                                        <input type="text" name="address_2" value="" placeholder="Dirección 2" id="input-shipping-address-2" class="form-control">
-                </div>
-                                      </div>
-                                      <div class="form-group required">
-                                        <label class="col-sm-2 control-label" for="input-shipping-city">Ciudad</label>
-                                        <div class="col-sm-10">
-                                          <input type="text" name="city" value="sadfdasf" placeholder="Ciudad" id="input-shipping-city" class="form-control">
-                </div>
-                                        </div>
-                                        <div class="form-group required">
-                                          <label class="col-sm-2 control-label" for="input-shipping-postcode">Código postal</label>
-                                          <div class="col-sm-10">
-                                            <input type="text" name="postcode" value="adfdsf" placeholder="Código postal" id="input-shipping-postcode" class="form-control">
-                </div>
-                                          </div>
-                                          <div class="form-group required">
-                                            <label class="col-sm-2 control-label" for="input-shipping-country">País</label>
-                                            <div class="col-sm-10">
-                                              <select name="country_id" id="input-shipping-country" class="form-control">
-                    <option value=""> --- Por favor seleccione --- </option>
                     
-                                   
-                    <option value="244">Aaland Islands</option>
-                    
-                                            
-                    <option value="1">Afghanistan</option>
-                    
-                      </select>
-                                            </div>
-                                          </div>
-                                          <div class="form-group required">
-                                            <label class="col-sm-2 control-label" for="input-shipping-zone">Región / Estado</label>
-                                            <div class="col-sm-10">
-                                              <select name="zone_id" id="input-shipping-zone" class="form-control">
-                                                <option value=""> --- Por favor seleccione --- </option>
-                                                <option value="3513">Aberdeen</option>
-                                                <option value="3514">Aberdeenshire</option></select>
-                                            </div>
-                                          </div>
-                                          <div class="buttons">
-                                            <div class="pull-right">
-                                              <input type="button" value="Continuar" id="button-guest-shipping" data-loading-text="Loading..." class="btn btn-primary">
-                </div>
-                                            </div>
-                          </form>
-                          <script type="text/javascript">
-                            <!--
-                            // Sort the custom fields
-                            $('#collapse-shipping-address .form-group[data-sort]').detach().each(function () {
-                              if ($(this).attr('data-sort') >= 0 && $(this).attr('data-sort') <= $(
-                                  '#collapse-shipping-address .form-group').length - 2) {
-                                $('#collapse-shipping-address .form-group').eq(parseInt($(this).attr('data-sort')) +
-                                  2).before(this);
-                              }
-
-                              if ($(this).attr('data-sort') > $('#collapse-shipping-address .form-group').length -
-                                2) {
-                                $('#collapse-shipping-address .form-group:last').after(this);
-                              }
-
-                              if ($(this).attr('data-sort') == $('#collapse-shipping-address .form-group').length -
-                                2) {
-                                $('#collapse-shipping-address .form-group:last').after(this);
-                              }
-
-                              if ($(this).attr('data-sort') < -$('#collapse-shipping-address .form-group').length -
-                                2) {
-                                $('#collapse-shipping-address .form-group:first').before(this);
-                              }
-                            });
-                            //
-                            -->
-                          </script>
-                          <script type="text/javascript">
-                            <!--
-                            $('#collapse-shipping-address button[id^=\'button-shipping-custom-field\']').on('click',
-                              function () {
-                                var node = this;
-
-                                $('#form-upload').remove();
-
-                                $('body').prepend(
-                                  '<form enctype="multipart/form-data" id="form-upload" style="display: none;"><input type="file" name="file" /></form>'
-                                );
-
-                                $('#form-upload input[name=\'file\']').trigger('click');
-
-                                if (typeof timer != 'undefined') {
-                                  clearInterval(timer);
-                                }
-
-                                timer = setInterval(function () {
-                                  if ($('#form-upload input[name=\'file\']').val() != '') {
-                                    clearInterval(timer);
-
-                                    $.ajax({
-                                      url: 'index.php?route=tool/upload',
-                                      type: 'post',
-                                      dataType: 'json',
-                                      data: new FormData($('#form-upload')[0]),
-                                      cache: false,
-                                      contentType: false,
-                                      processData: false,
-                                      beforeSend: function () {
-                                        $(node).button('loading');
-                                      },
-                                      complete: function () {
-                                        $(node).button('reset');
-                                      },
-                                      success: function (json) {
-                                        $(node).parent().find('.text-danger').remove();
-
-                                        if (json['error']) {
-                                          $(node).parent().find('input[name^=\'custom_field\']').after(
-                                            '<div class="text-danger">' + json['error'] + '</div>');
-                                        }
-
-                                        if (json['success']) {
-                                          alert(json['success']);
-
-                                          $(node).parent().find('input[name^=\'custom_field\']').attr(
-                                            'value', json['file']);
-                                        }
-                                      },
-                                      error: function (xhr, ajaxOptions, thrownError) {
-                                        alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr
-                                          .responseText);
-                                      }
-                                    });
-                                  }
-                                }, 500);
-                              });
-                            //
-                            -->
-                          </script>
-                          <script type="text/javascript">
-                            <!--
-                            $('.date').datetimepicker({
-                              language: '',
-                              pickTime: false
-                            });
-
-                            $('.time').datetimepicker({
-                              language: '',
-                              pickDate: false
-                            });
-
-                            $('.datetime').datetimepicker({
-                              language: '',
-                              pickDate: true,
-                              pickTime: true
-                            });
-                            //
-                            -->
-                          </script>
-                          <script type="text/javascript">
-                            <!--
-                            $('#collapse-shipping-address select[name=\'country_id\']').on('change', function () {
-                              $.ajax({
-                                url: 'index.php?route=checkout/checkout/country&country_id=' + this.value,
-                                dataType: 'json',
-                                beforeSend: function () {
-                                  $('#collapse-shipping-address select[name=\'country_id\']').prop('disabled',
-                                    true);
-                                },
-                                complete: function () {
-                                  $('#collapse-shipping-address select[name=\'country_id\']').prop('disabled',
-                                    false);
-                                },
-                                success: function (json) {
-                                  if (json['postcode_required'] == '1') {
-                                    $('#collapse-shipping-address input[name=\'postcode\']').parent().parent()
-                                      .addClass('required');
-                                  } else {
-                                    $('#collapse-shipping-address input[name=\'postcode\']').parent().parent()
-                                      .removeClass('required');
-                                  }
-
-                                  html = '<option value=""> --- Por favor seleccione --- </option>';
-
-                                  if (json['zone'] && json['zone'] != '') {
-                                    for (i = 0; i < json['zone'].length; i++) {
-                                      html += '<option value="' + json['zone'][i]['zone_id'] + '"';
-
-                                      if (json['zone'][i]['zone_id'] == '3521') {
-                                        html += ' selected="selected"';
-                                      }
-
-                                      html += '>' + json['zone'][i]['name'] + '</option>';
-                                    }
-                                  } else {
-                                    html += '<option value="0" selected="selected"> --- None --- </option>';
-                                  }
-
-                                  $('#collapse-shipping-address select[name=\'zone_id\']').html(html);
-                                },
-                                error: function (xhr, ajaxOptions, thrownError) {
-                                  alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
-                                }
-                              });
-                            });
-
-                            $('#collapse-shipping-address select[name=\'country_id\']').trigger('change');
-                            //
-                            -->
-                          </script>
-                        </div>
-                      </div>
+                    <div class="mt-5 mb-2 text-right">
+                        <input type="button" value="Continuar" id="button-payment-address" data-loading-text="Loading..." class="btn btn-primary btn-total">
                     </div>
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4 class="panel-title">
-                          <a href="#collapse-shipping-method" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle" aria-expanded="true">Paso 4: Método de entrega <i class="fa fa-caret-down"></i></a>
-                        </h4>
-                      </div>
-                      <div class="panel-collapse collapse in" id="collapse-shipping-method" aria-expanded="true">
-                        <div class="panel-body">
-                          <p>Seleccione el método de envío preferido para usar en este pedido.</p>
-                          <p><strong>Tarifa plana</strong></p>
-                          <div class="radio">
-                            <label>         <input type="radio" name="shipping_method" value="flat.flat" checked="checked">
-                    Tarifa de envío plana - $ 8.00</label>
-                          </div>
-                          <p><strong>Añadir Comentarios Sobre Su Pedido</strong></p>
-                          <p>
-                            <textarea name="comment" rows="8" class="form-control"></textarea>
-                          </p>
-                          <div class="buttons">
-                            <div class="pull-right">
-                              <input type="button" value="Continuar" id="button-shipping-method" data-loading-text="Loading..." class="btn btn-primary">
+
+                  </form>
+
+                </div>
               </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="panel panel-default">
-                        <div class="panel-heading">
-                          <h4 class="panel-title">
-                            <a href="#collapse-payment-method" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle" aria-expanded="true">Paso 5: Método de pago <i class="fa fa-caret-down"></i></a>
-                          </h4>
-                        </div>
-                        <div class="panel-collapse collapse in" id="collapse-payment-method" aria-expanded="true">
-                          <div class="panel-body">
-                            <p>Seleccione el método de pago preferido para usar en este pedido.</p>
-                            <div class="radio">
-                              <label>        <input type="radio" name="payment_method" value="cod" checked="checked">
-                      Contra reembolso
-                   </label>
-                            </div>
-                            <p><strong>Añadir Comentarios Sobre Su Pedido</strong></p>
-                            <p>
-                              <textarea name="comment" rows="8" class="form-control"></textarea>
-                            </p>
-                            <div class="buttons">
-                              <div class="pull-right">
-                                <input type="checkbox" name="agree" value="1">
-                                He leído y acepto los
-                                <a href="https://codezeel.com/opencart/OPC01/OPC010013/index.php?route=information/information/agree&amp;information_id=5" class="agree"><b>Terminos &amp; Condiciones</b></a>
-                                &nbsp;
-                                <input type="button" value="Continuar" id="button-payment-method" data-loading-text="Loading..." class="btn btn-primary">
-                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="panel panel-default">
-                          <div class="panel-heading">
-                            <h4 class="panel-title">
-                              <a href="#collapse-checkout-confirm" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle" aria-expanded="true">Paso 6: Confirmar pedido <i class="fa fa-caret-down"></i></a>
-                            </h4>
-                          </div>
-                          <div class="panel-collapse collapse in" id="collapse-checkout-confirm" aria-expanded="true">
-                            <div class="panel-body">
-                              <div class="table-responsive">
-                                <table class="table table-bordered table-hover">
-                                  <thead>
-                                    <tr>
-                                      <td class="text-left">Nombre del producto</td>
-                                      <td class="text-left">Codigo</td>
-                                      <td class="text-right">Cantidad</td>
-                                      <td class="text-right">Precio unitario</td>
-                                      <td class="text-right">Total</td>
-                                    </tr>
-                                  </thead>
-                                  <tbody>
+            </div>
 
-                                    <tr>
-                                      <td class="text-left">
-                                        <a href="product.html">Manzanas Rojas/a>
-                                      </td>
-                                      <td class="text-left">Cod-02</td>
-                                      <td class="text-right">2</td>
-                                      <td class="text-right">Bs. 80000</td>
-                                      <td class="text-right">Bs. 160000</td>
-                                    </tr>
-                                    <tr>
-                                      <td class="text-left">
-                                        <a href="product.html">Manzanas Rojas/a>
-                                      </td>
-                                      <td class="text-left">Cod-02</td>
-                                      <td class="text-right">2</td>
-                                      <td class="text-right">Bs. 80000</td>
-                                      <td class="text-right">Bs. 160000</td>
-                                    </tr>
-
-                                  </tbody>
-
-                                  <tfoot>
-
-                                    <tr>
-                                      <td colspan="4" class="text-right"><strong>Sub-Total:</strong></td>
-                                      <td class="text-right">Bs. 190000</td>
-                                    </tr>
-                                    <tr>
-                                      <td colspan="4" class="text-right"><strong>Cargo de envío fijo:</strong></td>
-                                      <td class="text-right">Bs. 5000</td>
-                                    </tr>
-                                    <tr>
-                                      <td colspan="4" class="text-right"><strong>IVA (16.00%)</strong></td>
-                                      <td class="text-right">Bs. 30400</td>
-                                    </tr>
-                                    <tr>
-                                      <td colspan="4" class="text-right"><strong>Descuento (20%)</strong></td>
-                                      <td class="text-right">Bs. 44080</td>
-                                    </tr>
-                                    <tr>
-                                      <td colspan="4" class="text-right"><strong>Total:</strong></td>
-                                      <td class="text-right">Bs. 181320</td>
-                                    </tr>
-                                  </tfoot>
-
-                                </table>
-                              </div>
-                              <div class="buttons">
-                                <div class="pull-right">
-                                  <input type="button" value="Confirmar pedido" id="button-confirm" data-loading-text="Loading..." class="btn btn-primary">
-                  </div>
-                                </div>
-                                <script type="text/javascript">
-                                  <!--
-                                  $('#button-confirm').on('click', function () {
-                                    $.ajax({
-                                      url: 'index.php?route=extension/payment/cod/confirm',
-                                      dataType: 'json',
-                                      beforeSend: function () {
-                                        $('#button-confirm').button('loading');
-                                      },
-                                      complete: function () {
-                                        $('#button-confirm').button('reset');
-                                      },
-                                      success: function (json) {
-                                        if (json['redirect']) {
-                                          location = json['redirect'];
-                                        }
-                                      },
-                                      error: function (xhr, ajaxOptions, thrownError) {
-                                        alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr
-                                          .responseText);
-                                      }
-                                    });
-                                  });
-                                  //
-                                  -->
-                                </script>
-
-                              </div>
-                            </div>
-                          </div>
-                          <div class="panel panel-default">
-                            <div class="panel-heading">
-                              <h4 class="panel-title">
-                                <a href="#collapsefour" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle" aria-expanded="true">Paso 7:  Orden completada
-                                  <i class="fa fa-caret-down"></i></a>
-                              </h4>
-                            </div>
-                            <div id="collapsefour" class="panel-collapse collapse" aria-labelledby="headingThree"
-                              data-parent="#accordionExample">
-                              <div class="card-body">
-                                <div class="text-center">
-                                  <div class="col-lg-10 col-md-10 mx-auto order-done">
-                                    <i class="mdi mdi-check-circle-outline text-secondary"></i>
-                                    <h4 class="text-success">¡Felicidades! Su pedido ha sido aceptado.</h4>
-                                    <p>
-                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lobortis
-                                      tincidunt est, et euismod purus suscipit quis. Etiam euismod ornare elementum. Sed
-                                      ex est, Sed ex est, consectetur eget consectetur, Lorem ipsum dolor sit amet...
-                                    </p>
-                                  </div>
-                                  <div class="text-center">
-                                    <a href="shop.html"><button type="submit" class="btn btn-secondary mb-2 btn-lg">Return to store</button></a>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <a href="#collapse-shipping-address" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle" aria-expanded="true"><h4 class="panel-title">Paso 2: Detalles de entrega <i class="fa fa-caret-down"></i></h4></a>
+              </div>
+              <div class="panel-collapse collapse in" id="collapse-shipping-address" aria-expanded="true">
+                <div class="panel-body">
+                  <form class="form-horizontal">
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="shipping_address" value="existing" checked="checked"> Quiero usar una dirección existente</label>
                     </div>
+                    <div id="shipping-existing">
+                      <select name="address_id" class="form-control">
+                     <option value="12" selected="selected">Lorem, Ipsum, CA, Cambridgeshire, United Kingdom</option>
+                    </select>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="shipping_address" value="new"> Quiero usar una nueva dirección</label>
+                    </div>
+                    <br>
+                    <div id="shipping-new" style="display: none;">
+
+                      <div class="form-group row required align-items-center justify-content-center">
+                        <label class="col-sm-3 control-label col-form-label" for="input-payment-firstname">Primer nombre</label>
+                        <div class="col-sm-9 col-md-8">
+                          <input type="text" class="form-control" name="firstname" placeholder="Nombre" id="input-payment-firstname">
+                        </div>
+                      </div>
+
+                      <div class="form-group row required align-items-center justify-content-center">
+                        <label class="col-sm-3 control-label col-form-label" for="input-payment-lastname">Segundo apellido</label>
+                        <div class="col-sm-9 col-md-8">
+                          <input type="text" class="form-control" name="lastname" placeholder="Apellido" id="input-payment-lastname">
+                        </div>
+                      </div>
+                      
+                      <div class="form-group row  align-items-center justify-content-center">
+                        <label class="col-sm-3 control-label col-form-label" for="input-payment-company">Empresa</label>
+                        <div class="col-sm-9 col-md-8">
+                         <input type="text" class="form-control" name="company" placeholder="Empresa" id="input-payment-company">
+                        </div>
+                      </div>
+                      
+                      <div class="form-group row required align-items-center justify-content-center">
+                        <label class="col-sm-3 control-label col-form-label" for="input-payment-address-1">Dirección 1</label>
+                        <div class="col-sm-9 col-md-8">
+                          <input type="text" class="form-control" name="address_1" placeholder="Dirección 1" id="input-payment-address-1">
+                        </div>
+                      </div>
+                      
+                      <div class="form-group row align-items-center justify-content-center">
+                        <label class="col-sm-3 control-label col-form-label" for="input-payment-address-2">Dirección 2</label>
+                        <div class="col-sm-9 col-md-8">
+                          <input type="text" class="form-control" name="address_2" placeholder="Dirección 2" id="input-payment-address-2">
+                        </div>
+                      </div>
+                      
+                      <div class="form-group row required align-items-center justify-content-center">
+                        <label class="col-sm-3 control-label col-form-label" for="input-payment-city">Ciudad</label>
+                        <div class="col-sm-9 col-md-8">
+                          <input type="text" class="form-control" name="city" placeholder="Ciudad" id="input-payment-city">
+                        </div>
+                      </div>
+                      
+                      <div class="form-group row required align-items-center justify-content-center">
+                        <label class="col-sm-3 control-label col-form-label" for="input-payment-postcode">Código postal</label>
+                        <div class="col-sm-9 col-md-8">
+                          <input type="text" class="form-control" name="postcode" placeholder="Código postal" id="input-payment-postcode">
+                        </div>
+                      </div>
+                                    
+                      <div class="form-group row required align-items-center justify-content-center">
+                        <label class="col-sm-3 control-label col-form-label" for="input-payment-country">País</label>
+                        <div class="col-sm-9 col-md-8">
+                          <select class="form-control" name="country_id" id="input-payment-country">
+                            <option value=""> --- Por favor seleccione --- </option>
+                            <option value="244">Aaland Islands</option>
+                          </select>
+                        </div>
+                      </div>
+                      
+                      <div class="form-group row required align-items-center justify-content-center">
+                        <label class="col-sm-3 control-label col-form-label" for="input-payment-zone">Región / Estado</label>
+                        <div class="col-sm-9 col-md-8">
+                          <select class="form-control" name="zone_id" id="input-payment-zone">
+                            <option value=""> --- Por favor seleccione --- </option>
+                            <option value="3513">Aberdeen</option>
+                          </select>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="mt-5 mb-2 text-right">
+                      <input type="button" value="Continuar" id="button-payment-address" data-loading-text="Loading..." class="btn btn-primary btn-total">
+                    </div>
+
+                  </form>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <a href="#collapse-shipping-method" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle" aria-expanded="true"><h4 class="panel-title">Paso 3: Método de entrega <i class="fa fa-caret-down"></i></h4></a>
+              </div>
+              <div class="panel-collapse collapse in" id="collapse-shipping-method" aria-expanded="true">
+                <div class="panel-body">
+                  <p>Seleccione el método de envío preferido para usar en este pedido.</p>
+                  <p><strong>Tarifa plana</strong></p>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="shipping_method" value="flat.flat" checked="checked">
+                      Tarifa de envío plana - Bs. 2000
+                    </label>
                   </div>
+                  <p><strong>Añadir Comentarios Sobre Su Pedido</strong></p>
+                  <p>
+                    <textarea name="comment" rows="8" class="form-control"></textarea>
+                  </p>
+
+                  <div class="mt-5 mb-2 text-right">
+                    <input type="button" value="Continuar" id="button-payment-address" data-loading-text="Loading..." class="btn btn-primary btn-total">
+                  </div>
+
+                  </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <a href="#collapse-payment-method" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle" aria-expanded="true"><h4 class="panel-title">Paso 4: Método de pago <i class="fa fa-caret-down"></i></h4></a>
+              </div>
+              <div class="panel-collapse collapse in" id="collapse-payment-method" aria-expanded="true">
+                <div class="panel-body">
+                  <p>Seleccione el método de pago preferido para usar en este pedido.</p>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="payment_method" value="cod" checked="checked"> Contra reembolso</label>
+                  </div>
+                  <p><strong>Añadir Comentarios Sobre Su Pedido</strong></p>
+                  <p>
+                    <textarea name="comment" rows="8" class="form-control"></textarea>
+                  </p>
+
+                  <div class="mt-5 mb-2 text-right">
+                    <input type="checkbox" name="agree" value="1">
+                    He leído y estoy de acuerdo con los<a href="#" class="agree"><b> Terminos &amp; Condiciones</b></a>&nbsp;
+                    <input type="button" value="Continuar" id="button-payment-address" data-loading-text="Loading..." class="btn btn-primary btn-total">
+                  </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <a href="#collapse-checkout-confirm" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle" aria-expanded="true"><h4 class="panel-title">Paso 5: Confirmar pedido<i class="fa fa-caret-down"></i></h4></a>
+              </div>
+              <div class="panel-collapse collapse in" id="collapse-checkout-confirm" aria-expanded="true">
+                <div class="panel-body">
+                  <div class="table-responsive">
+                    <table class="table table-bordered table-hover shopping-cart-table ">
+                      <thead>
+                        <tr>
+                          <td class="text-left">Nombre</td>
+                          <td class="text-left">Codigo</td>
+                          <td class="text-right">Cantidad</td>
+                          <td class="text-right">Precio unitario</td>
+                          <td class="text-right">Total</td>
+                        </tr>
+                      </thead>
+                      <tbody>
+
+                        <tr>
+                          <td class="text-left">
+                            <a href="product.html">Manzanas Rojas</a>
+                            <br>&nbsp;<small> - Fecha de entrega: DD-MM-AAAA</small> </td>
+                          <td class="text-left"> 	Cod-02</td>
+                          <td class="text-right">1</td>
+                          <td class="text-right">Bs. 80000</td>
+                          <td class="text-right">Bs. 160000</td>
+                        </tr>
+                      </tbody>
+
+                      <tfoot>
+
+                        <tr>
+                          <td colspan="4" class="text-right"><strong>Sub-Total:</strong></td>
+                          <td class="text-right">Bs. 1900000</td>
+                        </tr>
+                        <tr>
+                          <td colspan="4" class="text-right"><strong>Cargo de envío fijo:</strong></td>
+                          <td class="text-right">Bs. 10000</td>
+                        </tr>
+                        <tr>
+                          <td colspan="4" class="text-right"><strong>IVA (16.00%)</strong></td>
+                          <td class="text-right">Bs. 30400</td>
+                        </tr>
+                        <tr>
+                          <td colspan="4" class="text-right"><strong>Descuento (20%) 	:</strong></td>
+                          <td class="text-right">Bs. 44080</td>
+                        </tr>
+                        <tr>
+                          <td colspan="4" class="text-right"><strong>Total:</strong></td>
+                          <td class="text-right">Bs. 1863200</td>
+                        </tr>
+                      </tfoot>
+
+                    </table>
+                  </div>
+
+                  <div class="mt-5 mb-2 text-right">
+                    <a href="order-completed.html">df</a>
+                    <input type="button" value="Confirmar pedido" id="button-confirm" data-loading-text="Loading..." class="btn btn-primary btn-total">
+                  </div>
+
+                  </div>
+                </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
-
-
-
 
   <!-- Footer -->
   <footer class="bg-white">
